@@ -1,0 +1,53 @@
+:root {
+    --primary-blue: #005BA9;
+    --secondary-blue: #0078C1;
+    --middle-color: #9B4F96;
+    --primary-pink: #FF0F73;
+    --secondary-pink: #FD48C7;
+    --gradient: linear-gradient(0.25turn,var(--primary-blue), var(--secondary-blue), var(--middle-color) , var(--secondary-pink), var(--primary-pink));
+    overflow-x: hidden;
+    height: 100vw;
+    width: 100vw;
+}
+* {
+    max-width: 100%;
+}
+.gradient-box {
+    background: var(--gradient);
+}
+
+.box {
+    width: 99.05vw;
+    height: 100px;
+}
+
+#navbar, #navbar .dropdown-menu{
+    background: #000000;
+}
+#navbar .dropdown-menu .dropdown-divider {
+    color: black;
+}
+.navbar-custom .dropdown-item,.navbar-custom .nav-link {
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+}
+.navbar-custom .dropdown-item:hover,.navbar-custom .nav-link:hover {
+    animation: fade 1s;
+    color: black;
+    background-color: white;
+}
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.navbar .dropdown .dropdown-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+}
+.navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}

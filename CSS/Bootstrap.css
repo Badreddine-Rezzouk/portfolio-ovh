@@ -1,0 +1,50 @@
+/* Custom CSS for off-canvas sidebar */
+@media (max-width: 991.98px) {
+    .offcanvas {
+        width: 250px; /* Adjust the width of the off-canvas sidebar */
+        color: black;
+        background-color: black;
+    }
+
+    .offcanvas .navbar-nav .dropdown-menu {
+        display: none; /* Hide by default */
+        position: relative; /* Make dropdowns relative to their parent */
+        transform: none !important; /* Reset any Bootstrap transforms */
+        margin-top: 0.5rem; /* Add some spacing */
+        width: 100%; /* Make dropdowns full width */
+        left: 0 !important; /* Ensure dropdowns align properly */
+        top: 0 !important; /* Reset any top positioning */
+        background-color: transparent; /* Match offcanvas background */
+        border: none; /* Remove borders */
+    }
+
+    .offcanvas .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+
+    .offcanvas .navbar-nav {
+        flex-direction: column !important;
+    }
+
+    .offcanvas .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .show {
+        animation: ease-in 1s;
+    }
+}
+
+/* Hover effect for dropdowns on larger screens */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .navbar .dropdown#langchange .dropdown-menu {
+        position: fixed;
+        right: 0;
+    }
+}
