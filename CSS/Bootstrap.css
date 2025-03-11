@@ -1,7 +1,7 @@
 /* Custom CSS for off-canvas sidebar */
 @media (max-width: 991.98px) {
     .offcanvas {
-        width: 250px; /* Adjust the width of the off-canvas sidebar */
+        width: 80%; /* Adjust the width of the off-canvas sidebar */
         color: black;
         background-color: black;
     }
