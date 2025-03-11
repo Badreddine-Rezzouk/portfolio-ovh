@@ -91,7 +91,7 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVE
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
 
 // Construct the base URL with the selected language
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'navbar.php/';
+$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 
 <!DOCTYPE html>
