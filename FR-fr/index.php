@@ -4,7 +4,7 @@
 
 <html class="gradient-box">
     <head>
-        <?php require '../Common-files/header.php'; ?>
+        <?php require "../Common-files/header.php"; ?>
     </head>
     <body>
         <?php require "../Common-files/navbar.php" ?>
@@ -91,7 +91,11 @@
                         setInterval(updateDate, 1000);
                     });
                 </script>
-                <h3> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h3>
+                <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
+            </div>
+            <div class="box"></div>
+            <div class="footer w-auto">
+                <?php require "../Common-files/footer.php" ?>
             </div>
         </div>
     </body>

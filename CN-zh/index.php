@@ -105,7 +105,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         setInterval(updateDate, 1000);
                     });
                 </script>
-                <h3>现在是 <span id="current-time"></span>，日期是 <span id="current-date"></span>。</h3>
+                <h4>现在是 <span id="current-time"></span>，日期是 <span id="current-date"></span>。</h4>
             </div>
         </div>
     </body>

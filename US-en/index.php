@@ -98,7 +98,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         setInterval(updateDate, 1000);
                     });
                 </script>
-                <h3>It is currently <span id="current-time"></span> on <span id="current-date"></span> for me.</h3>
+                <h4>It is currently <span id="current-time"></span> on <span id="current-date"></span> for me.</h4>
             </div>
         </div>
     </body>
