@@ -94,9 +94,8 @@
                 <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
             </div>
             <div class="box"></div>
-            <div class="footer w-auto">
-                <?php require "../Common-files/footer.php" ?>
-            </div>
+            <?php require "../Common-files/footer.php" ?>
         </div>
+
     </body>
 </html>

@@ -70,12 +70,13 @@ $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // F
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 
-<footer class="w-100">
-    <div class="row bg-black text-white">
+<div class="footer w-100 mx-auto" style="margin-bottom: -15px;">
+    <div class="row bg-black text-white mx-auto">
         <div class="col">
             <?php echo $texts['Contacts']; ?> <br>
             <?php echo $texts['Email']; ?> : badreddinerezzouk@protonmail.com <br>
             <?php echo $texts['Phone']; ?> : (+33) 7 75 82 59 56 <br>
+            <div class="box"></div>
         </div>
         <div class="col">
             <?php echo $texts['Socials']; ?> <br>
@@ -89,7 +90,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             </svg> <?php echo $texts['Bootstrap']; ?>
         </div>
     </div>
-    <div class="row bg-dark text-white">
+    <div class="row bg-dark text-white mx-auto">
         <
     </div>
-</footer>
+</div>
