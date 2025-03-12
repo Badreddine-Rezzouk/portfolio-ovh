@@ -107,6 +107,8 @@ require "../Common-files/unsupportedlanguage.php" ?>
                 </script>
                 <h4>现在是 <span id="current-time"></span>，日期是 <span id="current-date"></span>。</h4>
             </div>
+            <div class="box"></div>
+            <?php require "../Common-files/footer.php" ?>
         </div>
     </body>
 </html>

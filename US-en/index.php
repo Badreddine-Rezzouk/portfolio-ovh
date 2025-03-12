@@ -100,6 +100,8 @@ require "../Common-files/unsupportedlanguage.php" ?>
                 </script>
                 <h4>It is currently <span id="current-time"></span> on <span id="current-date"></span> for me.</h4>
             </div>
+            <div class="box"></div>
+            <?php require "../Common-files/footer.php" ?>
         </div>
     </body>
 </html>
