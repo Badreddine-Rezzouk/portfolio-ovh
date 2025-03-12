@@ -113,7 +113,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                     <a id="home" class="nav-link" href="<?php echo $baseURL; ?>index.php">
                         <?php echo $texts['home']; ?>
                     </a>
-                    <a id="resume" class="nav-link" href="<?php echo $baseURL; ?>Resume/resume_download.php">
+                    <a id="resume" class="nav-link" href="<?php echo $baseURL; ?>Resume/resume_download.php ">
                         <?php echo $texts['resume']; ?>
                     </a>
                     <a id="Academie" class="nav-link" href="<?php echo $baseURL; ?>Academics.php">
