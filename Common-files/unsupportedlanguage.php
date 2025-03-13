@@ -63,7 +63,7 @@ $language_error_fr = <<<HTML
             <div class="modal-body">
                 Bienvenue sur mon site portfolio. Ce site est actuellement en construction. 
                 Certaines sections peuvent être incomplètes ou sujettes à des modifications. 
-                Je met souvent à jour le site pour améliorer votre expérience. Merci pour votre patience et votre compréhension !
+                Je mets souvent à jour le site pour améliorer votre expérience. Merci pour votre patience et votre compréhension !
             </div>
             <div class="modal-footer">
                 <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</a>
