@@ -1,5 +1,5 @@
 <?php
-$filename = 'CV_Badreddine-Rezzouk_US_en.pdf';
+$filename = 'CV_Badreddine-Rezzouk_US-en.pdf';
 
 if (!file_exists($filename)) {
     http_response_code(404);
