@@ -46,7 +46,7 @@ $texts_footer = [
         'Bootstrap' => 'Bootstrap',
     ],
     'CN-zh' => [
-        'Contacts' => 'Accueil',
+        'Contacts' => '联系信息',
         'Email' => '邮箱',
         'Phone' => '电话',
 

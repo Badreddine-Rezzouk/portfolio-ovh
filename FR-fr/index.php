@@ -1,4 +1,6 @@
-<?php require "../Common-files/redirect.php" ?>
+<?php global $language_error_fr;
+require "../Common-files/redirect.php";
+require "../Common-files/unsupportedlanguage.php" ?>
 
 <!DOCTYPE html>
 
@@ -45,6 +47,7 @@
                     </div>
                 </div>
             </div>
+            <?php echo $language_error_fr?>
             <div class="box"></div>
             <div id="main_page_section" class="container-fluid">
                 <div class="row">

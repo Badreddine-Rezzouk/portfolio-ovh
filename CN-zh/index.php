@@ -53,7 +53,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
             <div id="main_page_section" class="container-fluid">
                 <div class="row">
                     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                        你好，我叫“傅恬蔚”和我是法国人。我是巴黎黎塞纳河畔大学生。
+                        您好，我叫“傅恬蔚”和我是法国人。我是巴黎黎塞纳河畔大学生。
                     </div>
                 </div>
             </div>

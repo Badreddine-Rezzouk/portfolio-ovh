@@ -51,4 +51,31 @@ $language_error_zh = <<<HTML
     myModal.toggle();
 </script>
 HTML;
+
+$language_error_fr = <<<HTML
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Attention - Site en construction </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                Bienvenue sur mon site portfolio. Ce site est actuellement en construction. 
+                Certaines sections peuvent être incomplètes ou sujettes à des modifications. 
+                Je met souvent à jour le site pour améliorer votre expérience. Merci pour votre patience et votre compréhension !
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+    myModal.toggle();
+</script>
+
+HTML;
+
 ?>
