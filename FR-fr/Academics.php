@@ -2,14 +2,14 @@
 
 <!DOCTYPE html>
 
-<html>
+<html class="gradient-box">
 <head>
     <?php require '../Common-files/header.php'; ?>
 </head>
 <body>
 <?php require "../Common-files/navbar.php" ?>
 <div class="gradient-box">
-    <div class="box"></div>
+    <br>
     <div class="bg-white p-4 rounded-3 w-50 mx-auto border border-5 shadow-lg">
         <h2> Mes diplômes et certifications </h2>
     </div>

@@ -31,7 +31,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         <div class="col"></div>
                     </div>
                 </div>
-                <br>
+                <br class="d-md-block d-none">
                 <div class="card mb-3 offset-md-7 border border-5" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-4">

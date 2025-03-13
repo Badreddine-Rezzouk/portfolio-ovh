@@ -27,7 +27,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'Profile.php
 
 <!DOCTYPE html>
 
-<html>
+<html class="gradient-box">
 <head>
     <?php require '../Common-files/header.php'; ?>
 </head>
