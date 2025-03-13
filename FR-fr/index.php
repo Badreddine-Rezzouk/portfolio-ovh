@@ -58,7 +58,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
             </div>
             <div class="box"></div>
             <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
-                <script>
+                <!--<script>
                     // Function to update the time
                     function updateTime() {
                         const dt = luxon.DateTime.now().setZone('Europe/Paris').setLocale('fr');
@@ -93,12 +93,12 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         setInterval(updateTime, 1000);
                         setInterval(updateDate, 1000);
                     });
-                </script>
+                </script>-->
                 <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
             </div>
             <div class="box"></div>
-            <?php require "../Common-files/footer.php" ?>
-        </div>
 
+        </div>
+        <?php require "../Common-files/footer.php" ?>
     </body>
 </html>
