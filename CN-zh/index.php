@@ -18,7 +18,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                     <h2>欢迎来到我的投资组合</h2>
                 </div>
                 <div class="box"></div>
-                <div class="card mb-3 offset-md-1" style="max-width: 540px; justify-content: center;">
+                <div class="card mb-3 offset-1" style="max-width: 540px; justify-content: center;">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
@@ -33,7 +33,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                     </div>
                 </div>
                 <br class="d-md-block d-none">
-                <div class="card mb-3 offset-md-7" style="max-width: 540px;">
+                <div class="card mb-3 offset-md-7 offset-lg-1" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
