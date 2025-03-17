@@ -64,7 +64,7 @@ $language_error_fr = <<<HTML
                 Bienvenue sur mon site portfolio. Ce site est actuellement en construction. 
                 Certaines sections peuvent être incomplètes ou sujettes à des modifications. 
                 Je mets souvent à jour le site pour améliorer votre expérience. Merci pour votre patience et votre compréhension !<br>
-                Vous pouvez constater l'évolution du <a href="https://trello.com/b/6Lxrh8p0/avancement-site-portfolio">site à cette adresse</a>
+                Vous pouvez constater l'évolution du site <a href="https://trello.com/b/6Lxrh8p0/avancement-site-portfolio">à cette adresse</a>
             </div>
             <div class="modal-footer">
                 <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</a>

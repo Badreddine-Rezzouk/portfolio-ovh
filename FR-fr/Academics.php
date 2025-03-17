@@ -28,5 +28,6 @@
     </div>
     <div class="box"></div>
 </div>
+<?php require "../Common-files/footer.php" ?>
 </body>
 </html>

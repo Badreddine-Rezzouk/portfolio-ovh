@@ -32,9 +32,21 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'Profile.php
     <?php require '../Common-files/header.php'; ?>
 </head>
 <body>
-<?php require "../Common-files/navbar.php" ?>
-<div class="gradient-box">
-
-</div>
+    <?php require "../Common-files/navbar.php" ?>
+    <div class="gradient-box">
+        <div class="bg-white p-4 rounded-3 w-auto mx-auto px-1 border border-5 shadow-lg">
+            <p> Informations identifiantes </p>
+            <div class="col text-start">
+                <p> Nom:</p>
+                <p> Anniversaire:</p>
+                <p> Status professionnel:</p>
+            </div>
+            <div class="col text-center">
+                <p> Badreddine REZZOUK </p>
+                <p> 28 Juin 2005 </p>
+            </div>
+        </div>
+    </div>
+    <?php require "../Common-files/footer.php" ?>
 </body>
 </html>
