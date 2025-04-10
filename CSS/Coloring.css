@@ -6,6 +6,7 @@
     --secondary-pink: #FD48C7;
     --gradient: linear-gradient(0.25turn,var(--primary-blue), var(--secondary-blue), var(--middle-color) , var(--secondary-pink), var(--primary-pink));
     overflow-x: hidden;
+    min-height: 100vh;
     width: 100vw;
 }
 * {
