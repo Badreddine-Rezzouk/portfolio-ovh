@@ -70,7 +70,7 @@ $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // F
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 
-<div class="footer w-100 mx-auto" style="margin-bottom: -15px;">
+<div class="footer w-100 mx-auto py-0 my-0" >
     <div class="row bg-black text-white mx-auto">
         <div class="col">
             <?php echo $texts['Contacts']; ?> <br>

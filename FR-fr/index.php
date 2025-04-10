@@ -56,7 +56,9 @@ require "../Common-files/unsupportedlanguage.php" ?>
                     </div>
                 </div>
             </div>
-            <div class="box"></div>
+            <div class="box">
+
+            </div>
             <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
                 <script>
                     // Function to update the time

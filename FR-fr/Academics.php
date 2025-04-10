@@ -28,6 +28,8 @@
             </div>
             <div class="box"></div>
         </div>
+        <hr class="mx-auto rounded-2">
+
         <?php require "../Common-files/footer.php" ?>
     </body>
 </html>

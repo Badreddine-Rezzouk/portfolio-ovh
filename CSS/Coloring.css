@@ -6,19 +6,18 @@
     --secondary-pink: #FD48C7;
     --gradient: linear-gradient(0.25turn,var(--primary-blue), var(--secondary-blue), var(--middle-color) , var(--secondary-pink), var(--primary-pink));
     overflow-x: hidden;
-    height: 100vw;
     width: 100vw;
 }
 * {
     max-width: 100%;
 }
 .gradient-box {
-    background: var(--gradient);
+    background-image: var(--gradient), url('../Images/paris_shadow.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, bottom;
+    background-size:  cover, contain;
 }
 
-.box {
-    height: 100px;
-}
 
 #navbar, #navbar .dropdown-menu{
     background: #000000;

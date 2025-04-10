@@ -13,10 +13,10 @@ require "../Common-files/unsupportedlanguage.php";
     <body >
         <div class="container-fluid">
             <div class="box"></div>
-            <div class="bg-black w-50 mx-auto align-items-center d-flex flex-column justify-content-center" >
+            <div class="bg-black text-white w-50 mx-auto align-items-center d-flex flex-column justify-content-center" >
                 <form method="POST" action="">
                     <button type="submit" value="update">
-                        <img src="mori-calliope-hololive.gif" alt="Mori Calliope gif">
+                        <img src="out-transparent-80.webp" alt="Mori Calliope gif">
                     </button>
                     <span id="global_count_value"></span>
                     <span id="local_countvalue"></span>
