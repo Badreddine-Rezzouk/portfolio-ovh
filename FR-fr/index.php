@@ -12,10 +12,6 @@ require "../Common-files/unsupportedlanguage.php" ?>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
             <div id="main_page_cover" class="container-fluid">
-                <br>
-                <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                    <h2>Bienvenue sur mon portfolio</h2>
-                </div>
                 <div class="box"></div>
                 <div class="card mb-3 offset-md-1 border border-5" style="max-width: 540px; justify-content: center;">
                     <div class="row g-0">
@@ -46,6 +42,11 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         <div class="col"></div>
                     </div>
                 </div>
+                <div class="box"></div>
+            </div>
+            <br>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <h2>Bienvenue sur mon portfolio</h2>
             </div>
             <?php echo $language_error_fr?>
             <div class="box"></div>
