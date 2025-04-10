@@ -98,7 +98,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 <div id="navbar">
     <div class="navbar navbar-expand-lg navbar-custom">
         <!-- Toggler Button for Small Screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-image: none!important;background-color: black!important;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-image: none!important;background-color: white!important;">
             <span class="navbar-toggler-icon"></span>
         </button>
 
