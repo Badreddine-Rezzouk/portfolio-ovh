@@ -58,7 +58,7 @@ $topURL = rtrim($protocol . $host . '/');
 
                     </details>
 
-                        <a class="button" href="<?php echo $topURL?>Files/Mods/download_art.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn-light" href="<?php echo $topURL?>Files/Mods/download_art.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Télécharger
                         </a>
                 </div>
@@ -142,6 +142,7 @@ $topURL = rtrim($protocol . $host . '/');
         </div>
         <div class="box"></div>
     </div>
+    <div class="box"></div>
 </div>
 <?php require "../../Common-files/footer.php"?>
 </body>

@@ -61,6 +61,8 @@ hr {
     width:90%;
 }
 
+details summary::-webkit-details-marker { display:none; }
+
 details {
     width: 80%;
     margin: 0 auto ;
@@ -73,7 +75,6 @@ details {
 summary {
     padding: 1rem;
     display: block;
-    background: #333;
     padding-left: 2.2rem;
     position: relative;
     cursor: pointer;
@@ -84,7 +85,7 @@ summary:before {
     content: '';
     border-width: .4rem;
     border-style: solid;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #000000;
     position: absolute;
     top: 1.3rem;
     left: 1rem;
