@@ -53,10 +53,14 @@ $topURL = rtrim($protocol . $host . '/');
                     </p>
                     <details class="text-start">
                         <summary>Crédits</summary>
-                        <p>Concernant Payday 3 <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
+                        <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
                         <p>Concernant les fanarts: <br> ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (liste non complète) </p>
 
                     </details>
+
+                        <a class="button" href="<?php echo $topURL?>Files/Mods/download_art.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Télécharger
+                        </a>
                 </div>
                 <div class="col-6">
                     <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
@@ -132,7 +136,6 @@ $topURL = rtrim($protocol . $host . '/');
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
             </div>
             <div class="halfbox"></div>
