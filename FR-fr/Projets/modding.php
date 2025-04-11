@@ -92,11 +92,9 @@ $topURL = rtrim($protocol . $host . '/');
                             <div class="carousel-item">
                                 <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408163026_1.jpg" class="d-block " alt="SinderArt Image">
                             </div>
+
                             <div class="carousel-item">
                                 <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408212347_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250409230118_1.jpg" class="d-block " alt="SinderArt Image">
                             </div>
                             <div class="carousel-item">
                                 <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410150156_1.jpg" class="d-block " alt="SinderArt Image">
