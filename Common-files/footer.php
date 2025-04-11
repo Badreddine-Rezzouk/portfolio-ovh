@@ -79,6 +79,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             <div class="box"></div>
         </div>
         <div class="col">
+            <?php echo $texts['Socials']; ?> <br>
             <div class="row row-cols-3">
                 <div class="col">
                     <a href="https://www.linkedin.com/in/badreddine-rezzouk-301873292/">
@@ -98,7 +99,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 
                 </div>
             </div>
-            <?php echo $texts['Socials']; ?> <br>
+
 
 
         </div>

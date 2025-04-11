@@ -8,6 +8,10 @@ html, body {
     height: 100px;
 }
 
+.halfbox {
+    height: 50px;
+}
+
 .gradient-box {
     display: flex;
     flex-direction: column;

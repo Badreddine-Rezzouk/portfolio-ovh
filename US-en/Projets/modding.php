@@ -22,20 +22,20 @@ if (in_array($languageFromURL, $allowed_languages)) {
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
 
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'traducode.php/';
+$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
 ?>
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <?php require '../../../Common-files/header.php'; ?>
+    <?php require '../../Common-files/header.php'; ?>
 </head>
 <body>
-<?php require "../../../Common-files/navbar.php" ?>
+<?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
 
 </div>
-    <?php require "../../../Common-files/footer.php"?>
+<?php require "../../Common-files/footer.php"?>
 </body>
 </html>
