@@ -79,6 +79,8 @@ summary {
     position: relative;
     cursor: pointer;
     user-select: none;
+    list-style: none;
+    outline: none;
 }
 
 summary:before {

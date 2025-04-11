@@ -31,6 +31,7 @@ $topURL = rtrim($protocol . $host . '/');
 <html>
 <head>
     <?php require '../../Common-files/header.php'; ?>
+
 </head>
 <body>
 <?php require "../../Common-files/navbar.php" ?>
