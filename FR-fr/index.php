@@ -11,7 +11,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
     <body>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
-            <div id="main_page_cover" class="container-fluid">
+            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
                 <div class="halfbox"></div>
                 <div class="card mb-3 offset-md-1 border border-5" style="max-width: 540px; justify-content: center;">
                     <div class="row g-0">

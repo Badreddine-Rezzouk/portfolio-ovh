@@ -19,12 +19,6 @@
     background-size:  cover, contain;
 }
 
-#main_page_cover {
-    background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .modding_section{
     background-color: var(--color-shifter);
