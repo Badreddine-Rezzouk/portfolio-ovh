@@ -37,6 +37,16 @@ $topURL = rtrim($protocol . $host . '/');
 <?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
     <div class="box"></div>
+    <div class="bg-white p-4 rounded-3 mx-auto w-50 border border-5 shadow-lg">
+        <h2> Mes mods de jeux vidéos</h2>
+    </div>
+    <div class="box"></div>
+    <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg">
+        <p>
+            Le modding de jeux vidéos est une pratique dont le but est de transformer
+        </p>
+    </div>
+    <div class="box"></div>
     <div id="modding_sinder" class="modding_section">
         <div class="box"></div>
         <div class="bg-white p-4 rounded-3 mx-auto text-center w-75 offset-1 border border-5 shadow-lg">
