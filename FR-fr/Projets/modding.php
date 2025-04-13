@@ -58,10 +58,10 @@ $topURL = rtrim($protocol . $host . '/');
                         <p>Concernant les fanarts: <br> ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (liste non complète) </p>
 
                     </details>
+                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderArtGallery_P.pak" download role="button" aria-expanded="false">
+                        Télécharger
+                    </a>
 
-                        <a class="btn-light" href="<?php echo $topURL?>Files/Mods/download_art.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Télécharger
-                        </a>
                 </div>
                 <div class="col-6">
                     <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
