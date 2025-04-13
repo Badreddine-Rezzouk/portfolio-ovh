@@ -43,7 +43,7 @@ $topURL = rtrim($protocol . $host . '/');
     <div class="box"></div>
     <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg">
         <p>
-            Le modding de jeux vidéos est une pratique dont le but est de transformer
+            Le modding de jeux vidéos est une pratique dont le but est de transformer un jeu vidéo en ajoutant ou modifiant du contenu, avec comme finalité un gameplay qui n'est pas originellement prévu par le développeur.
         </p>
     </div>
     <div class="box"></div>
@@ -56,6 +56,7 @@ $topURL = rtrim($protocol . $host . '/');
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
             </div>
             <div class="halfbox"></div>
+            <!-- Zone Sinder Gallerie -->
             <div class="row">
                 <div class="col-6">
                     <h4> Galerie des arts (mission "Under the Surphaze") </h4>
@@ -68,10 +69,9 @@ $topURL = rtrim($protocol . $host . '/');
                         <p>Concernant les fanarts: <br> ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (liste non complète) </p>
 
                     </details>
-                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderArtGallery_P.pak" download role="button" aria-expanded="false">
+                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderArtGallery_P.pak" download role="button">
                         Télécharger
                     </a>
-
                 </div>
                 <div class="col-6">
                     <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
@@ -148,6 +148,40 @@ $topURL = rtrim($protocol . $host . '/');
                 </div>
             </div>
             <div class="halfbox"></div>
+            <!-- Zone Sinder Distributeur-->
+            <div class="row">
+                <div class="col-7">
+                    <div id="carouselSinderVendingGG" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_211825.png" class="d-block " alt="SinderArt Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_212020.png" class="d-block " alt="SinderArt Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderVendingGG" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSinderVendingGG" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <h4> Distributeurs de boissons Gamer Supps </h4>
+                    <p class="text-start"> Ce mod remplace toutes les textures des distributeurs par une version promouvant la solution énergétique Gamer Supps - Pyro Power </p>
+                    <details class="text-start">
+                        <summary>Crédits</summary>
+                        <p> Gamer Supps pour les assets GG, Sinder et epebe_ pour le design Pyro Pup</p>
+                    </details>
+                    <a class="btn btn-light" href="<?php echo $topURL?>Files/Mods/SinderVendingGG.pak" download role="button">
+                        Télécharger
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="box"></div>
     </div>
