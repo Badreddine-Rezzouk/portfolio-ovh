@@ -48,12 +48,64 @@ require "../Common-files/unsupportedlanguage.php" ?>
             <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
                 <h2>Bienvenue sur mon portfolio</h2>
             </div>
-            <?php echo $language_error_fr?>
+            <div id="error-container"></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    if (!readCookie('fr')) {
+                        // Safely insert HTML content
+                        const errorContainer = document.getElementById("error-container");
+                        const msg = <?php echo json_encode($language_error_fr); ?>;
+
+                        // Create temporary div to parse HTML safely
+                        const temp = document.createElement('div');
+                        temp.innerHTML = msg;
+
+                        // Sanitize content (basic example - consider using DOMPurify for robust sanitization)
+                        const sanitized = sanitizeHTML(temp);
+
+                        errorContainer.appendChild(sanitized);
+
+                        createCookie('fr', 'fr', 1, {
+                            secure: true,
+                            sameSite: 'Strict'
+                        });
+                    }
+                });
+
+                // Basic HTML sanitization function (consider using DOMPurify library instead)
+                function sanitizeHTML(node) {
+                    const allowedTags = ['div', 'span', 'p', 'a', 'strong', 'em']; // Add allowed tags
+                    const allowedAttributes = ['href', 'class', 'id','data-bs-dismiss','aria-hidden']; // Add allowed attributes
+
+                    // If it's a text node, return as is
+                    if (node.nodeType === 3) return node.cloneNode();
+
+                    // Create new element with same tag name
+                    const cleanNode = document.createElement(node.tagName.toLowerCase());
+
+                    // Copy allowed attributes
+                    for (let i = 0; i < node.attributes.length; i++) {
+                        const attr = node.attributes[i];
+                        if (allowedAttributes.includes(attr.name)) {
+                            cleanNode.setAttribute(attr.name, attr.value);
+                        }
+                    }
+
+                    // Recursively sanitize child nodes
+                    for (let i = 0; i < node.childNodes.length; i++) {
+                        const cleanedChild = sanitizeHTML(node.childNodes[i]);
+                        if (cleanedChild) cleanNode.appendChild(cleanedChild);
+                    }
+
+                    return cleanNode;
+                }
+            </script>
+
             <div class="box"></div>
             <div id="main_page_section" class="container-fluid">
                 <div class="row">
                     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                        Bonjour, je m'appelle Badreddine et je suis un étudiant d'origine française à l'université Paris Cité - Rives de Seine.
+                        Bonjour, je m'appelle Badreddine et je suis un étudiant d'origine française actuellement à l'université Paris Cité - Rives de Seine. Bienvenue sur ce désordre qu'est mon portfolio!
                     </div>
                 </div>
             </div>

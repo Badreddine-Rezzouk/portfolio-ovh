@@ -51,6 +51,7 @@ $topURL = rtrim($protocol . $host . '/');
         <div class="box"></div>
         <div class="bg-white p-4 rounded-3 mx-auto text-center w-75 offset-1 border border-5 shadow-lg">
             <h3> Mods Sinder pour Payday 3 </h3>
+            <img src="<?php echo $topURL?>Images/pd3-logo.png" class="img-fluid" alt="Logo Payday 3" />
             <div class="halfbox"></div>
             <div class="text-start">
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
@@ -58,7 +59,7 @@ $topURL = rtrim($protocol . $host . '/');
             <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h4> Galerie des arts (mission "Under the Surphaze") </h4>
                     <p class="text-start"> Ce mod remplace les peintures trouvable dans la mission <a href="https://payday.fandom.com/wiki/Under_The_Surphaze">"Under the Surphaze"</a>
                         avec différents fanarts de Sinder.
@@ -73,7 +74,7 @@ $topURL = rtrim($protocol . $host . '/');
                         Télécharger
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -148,9 +149,11 @@ $topURL = rtrim($protocol . $host . '/');
                 </div>
             </div>
             <div class="halfbox"></div>
+            <hr class="mx-auto">
+            <div class="halfbox"></div>
             <!-- Zone Sinder Distributeur-->
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                     <div id="carouselSinderVendingGG" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -170,7 +173,7 @@ $topURL = rtrim($protocol . $host . '/');
                         </button>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <h4> Distributeurs de boissons Gamer Supps </h4>
                     <p class="text-start"> Ce mod remplace toutes les textures des distributeurs par une version promouvant la solution énergétique Gamer Supps - Pyro Power </p>
                     <details class="text-start">
