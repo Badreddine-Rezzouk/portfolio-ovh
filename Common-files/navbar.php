@@ -6,7 +6,7 @@ $languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is t
 $rest = $uriParts; unset($rest[0]);
 $restOfURL = implode("/", $rest);
 // Define allowed languages
-$allowed_languages = ['FR-fr', 'US-en', 'CN-zh', 'Template']; // Example allowed languages
+$allowed_languages = ['FR-fr', 'US-en', 'CN-zh']; // Example allowed languages
 
 // Validate and set the language
 if (in_array($languageFromURL, $allowed_languages)) {
@@ -66,20 +66,6 @@ $languageTexts = [
         'VA' => 'VirtueAsie',
         'traducode' => 'Traducode',
         'langue' => '语言',
-        'menu' => 'Menu',
-    ],
-    'Template' => [
-        'home' => 'Home',
-        'resume' => 'Resume',
-        'academie' => 'Academics',
-        'profile' => 'Profile',
-        'experiences' => 'Experiences',
-        'emplois' => 'Jobs',
-        'stages' => 'Internships',
-        'projects' => 'Projects',
-        'VA' => 'VirtueAsie',
-        'traducode' => 'Traducode',
-        'langue' => 'Languages',
         'menu' => 'Menu',
     ],
 ];
