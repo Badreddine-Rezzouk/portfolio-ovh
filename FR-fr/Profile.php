@@ -49,9 +49,9 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'Profile.php
                     <p> Etudiant </p>
                 </div>
             </div>
-
-
         </div>
+        <div class="box"></div>
+        <div class="halfbox"></div>
     </div>
     <?php require "../Common-files/footer.php" ?>
 </body>
