@@ -1,0 +1,17 @@
+.container_langues{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.skills {
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 5px;
+}
+.french {width: 100%;} /* Green */
+.english {width: 90%;} /* Blue */
+.spanish {width: 50%;} /* Red */
+.chinese {width: 15%;} /* Dark Grey */

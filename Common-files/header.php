@@ -31,10 +31,11 @@ $topURL = rtrim($protocol . $host) . '/';
 ?>
 
 <meta charset="utf-8"></meta>
-<title> Portfolio </title>
+<title><?php echo isset($title) ? htmlspecialchars($title) : 'Portfolio'; ?></title>
 <link href="<?php echo $topURL?>CSS/Coloring.css" rel="stylesheet">
 <link href="<?php echo $topURL?>CSS/Bootstrap.css" rel="stylesheet">
-<link href="<?php echo $topURL?>CSS/shaping.css" rel="stylesheet"
+<link href="<?php echo $topURL?>CSS/shaping.css" rel="stylesheet">
+<link href="<?php echo $topURL?>CSS/proficiency_bars.css" rel="stylesheet"
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="../JS/summary-animation.js"></script>
 <script src="../JS/cookie_base.js"></script>

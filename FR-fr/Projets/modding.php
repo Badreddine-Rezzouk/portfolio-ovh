@@ -37,7 +37,7 @@ $topURL = rtrim($protocol . $host . '/');
 <?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
     <div class="box"></div>
-    <div class="bg-white p-4 rounded-3 mx-auto w-50 border border-5 shadow-lg">
+    <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
         <h2> Mes mods de jeux vidéos</h2>
     </div>
     <div class="box"></div>
@@ -59,7 +59,7 @@ $topURL = rtrim($protocol . $host . '/');
             <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <h4> Galerie des arts (mission "Under the Surphaze") </h4>
                     <p class="text-start"> Ce mod remplace les peintures trouvable dans la mission <a href="https://payday.fandom.com/wiki/Under_The_Surphaze">"Under the Surphaze"</a>
                         avec différents fanarts de Sinder.
@@ -74,7 +74,7 @@ $topURL = rtrim($protocol . $host . '/');
                         Télécharger
                     </a>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -153,7 +153,7 @@ $topURL = rtrim($protocol . $host . '/');
             <div class="halfbox"></div>
             <!-- Zone Sinder Distributeur-->
             <div class="row">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-lg-7">
                     <div id="carouselSinderVendingGG" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -173,7 +173,7 @@ $topURL = rtrim($protocol . $host . '/');
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <h4> Distributeurs de boissons Gamer Supps </h4>
                     <p class="text-start"> Ce mod remplace toutes les textures des distributeurs par une version promouvant la solution énergétique Gamer Supps - Pyro Power </p>
                     <details class="text-start">
