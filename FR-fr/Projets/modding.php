@@ -24,6 +24,8 @@ $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // F
 
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
 $topURL = rtrim($protocol . $host . '/');
+
+$title = 'Modding - Badreddine Rezzouk';
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +58,11 @@ $topURL = rtrim($protocol . $host . '/');
             <div class="text-start">
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
             </div>
+            <details class="text-start">
+                <summary>Crédits globaux </summary>
+                <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
+                <p>Concernant l'avatar de Sinder et tous les assets liés: Sinder, Nanoless, _epebe</p>
+            </details>
             <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
             <div class="row">
@@ -66,8 +73,7 @@ $topURL = rtrim($protocol . $host . '/');
                     </p>
                     <details class="text-start">
                         <summary>Crédits</summary>
-                        <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
-                        <p>Concernant les fanarts: <br> ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (liste non complète) </p>
+                        <p>ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (liste non complète) </p>
 
                     </details>
                     <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderArtGallery_P.pak" download role="button">

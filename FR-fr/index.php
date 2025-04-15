@@ -13,9 +13,9 @@ $title = "Accueil - Badreddine Rezzouk";
     <body>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
-            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); min-height: 92.5vh; background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
+            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
                 <div class="halfbox"></div>
-                <div class="card mb-3 offset-md-1 border border-5" style="max-width: 540px; justify-content: center;">
+                <div class="card mb-3 offset-lg-1 border border-5 col-lg-4">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
@@ -30,7 +30,7 @@ $title = "Accueil - Badreddine Rezzouk";
                     </div>
                 </div>
                 <br class="d-md-block d-none">
-                <div class="card mb-3 offset-md-7 border border-5" style="max-width: 540px;">
+                <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
@@ -111,9 +111,42 @@ $title = "Accueil - Badreddine Rezzouk";
                     </div>
                 </div>
             </div>
-            <div class="box">
-
+            <div class="box"></div>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <h4>Au programme sur ce portfolio:</h4>
             </div>
+            <div class="halfbox"></div>
+            <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg">
+                <div class="row">
+                    <div class="col">
+                        <h6> Mon profil personel</h6>
+                        <p> Pour tout savoir de ma personne. </p>
+                    </div>
+                    <div class="col">
+                        <h6> Mon profil académique et professionel </h6>
+                        <p> Une manière pas piqué des hannetons de juger mes compétences. </p>
+                    </div>
+                    <div class="col">
+                        <h6> Mes emplois et stages </h6>
+                        <p> Pour prouver que je ne viens pas de la dernière pluie. (WIP) </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h6> </h6>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <a href="<?php echo $baseURL;?>Projets/modding.php">
+                    <div class="col">
+                        <h6> Mes projets de mods </h6>
+                        <p> Qui sait? Peut-être qu'on a des passions en commun. </p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box"></div>
             <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
                 <script>
                     // Function to update the time
