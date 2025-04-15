@@ -19,7 +19,7 @@
     background-size:  cover, contain;
 }
 
-a, a div * {
+a, a *, a div * {
     color: black;
     text-decoration: none; /* no underline */
 }
