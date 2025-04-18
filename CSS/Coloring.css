@@ -29,10 +29,8 @@ a, a *, a div * {
 }
 
 #navbar, #navbar .dropdown-menu{
-    background: #000000;
-}
-#navbar .dropdown-menu .dropdown-divider{
-    color: black;
+    background: black;
+    color: white;
 }
 .navbar-custom .dropdown-item,.navbar-custom .nav-link {
     color: white;

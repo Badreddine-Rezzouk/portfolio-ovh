@@ -4,7 +4,7 @@ $uri = $_SERVER['REQUEST_URI']; // Get the full URI (e.g., /FR-fr/page)
 $uriParts = explode('/', trim($uri, '/')); // Split the URI into parts
 $languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is the language (e.g., FR-fr)
 // Define allowed languages
-$allowed_languages = ['FR-fr', 'US-en', 'CN-zh','Template']; // Example allowed languages
+$allowed_languages = ['FR-fr', 'US-en', 'CN-zh']; // Example allowed languages
 
 // Validate and set the language
 if (in_array($languageFromURL, $allowed_languages)) {

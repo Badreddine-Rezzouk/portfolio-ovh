@@ -37,6 +37,7 @@ $languageTexts = [
         'traducode' => 'Traducode',
         'langue' => 'Langues',
         'menu' => 'Menu',
+        'passions' => 'Passions',
     ],
     'US-en' => [
         'home' => 'Home',
@@ -52,6 +53,7 @@ $languageTexts = [
         'traducode' => 'Traducode',
         'langue' => 'Languages',
         'menu' => 'Menu',
+        'passions' => 'Passions',
     ],
     'CN-zh' => [
         'home' => '首页',
@@ -67,6 +69,7 @@ $languageTexts = [
         'traducode' => 'Traducode',
         'langue' => '语言',
         'menu' => 'Menu',
+        'passions' => 'Passions'
     ],
 ];
 
@@ -112,7 +115,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                         <?php echo $texts['profile']; ?>
                     </a>
                     <li class="nav-item dropdown">
-                        <a id="experiences" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="experiences" class="nav-link dropdown-toggle" href="<?php echo $baseURL;?>Experiences/Experiences.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo $texts['experiences']; ?>
                         </a>
                         <ul class="dropdown-menu">
@@ -134,11 +137,6 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a id="mods" class="dropdown-item" href="<?php echo $baseURL; ?>Projets/modding.php">
-                                    <?php echo $texts['mods']; ?>
-                                </a>
-                            </li>
-                            <li>
                                 <a id="VA" class="dropdown-item" href="<?php echo $baseURL; ?>Projets/Pages_projets/VirtueAsie.php">
                                     <?php echo $texts['VA']; ?>
                                 </a>
@@ -146,6 +144,18 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                             <li>
                                 <a id="traducode" class="dropdown-item" href="<?php echo $baseURL; ?>Projets/Pages_projets/traducode.php">
                                     <?php echo $texts['traducode']; ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="passions" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?php echo $texts['passions'];?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a id="mods" class="dropdown-item" href="<?php echo $baseURL; ?>Passions/modding.php">
+                                    <?php echo $texts['mods']; ?>
                                 </a>
                             </li>
                         </ul>

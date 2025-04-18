@@ -36,6 +36,6 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
 <div class="gradient-box">
 
 </div>
-<?php require "../../Common-files/footer.php"?>
+<?php require "../../Common-files/footer.php" ?>
 </body>
 </html>

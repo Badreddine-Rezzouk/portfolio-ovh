@@ -5,7 +5,7 @@ $uriParts = explode('/', trim($uri, '/')); // Split the URI into parts
 $languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is the language (e.g., FR-fr)
 
 // Define allowed languages
-$allowed_languages = ['FR-fr', 'EN-us', 'CN-zh','Template']; // Example allowed languages
+$allowed_languages = ['FR-fr', 'EN-us', 'CN-zh']; // Example allowed languages
 
 // Validate and set the language
 if (in_array($languageFromURL, $allowed_languages)) {
@@ -62,6 +62,19 @@ $title = 'Modding - Badreddine Rezzouk';
                 <summary>Crédits globaux </summary>
                 <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
                 <p>Concernant l'avatar de Sinder et tous les assets liés: Sinder, Nanoless, _epebe</p>
+            </details>
+            <details class="text-start">
+                <summary> Comment installer un mod Payday 3 </summary>
+                <p> Etape 1: Trouvez où est installé votre jeu Payday 3 et allez dans <span class="text-muted">{Emplacement}/PAYDAY3/Content/Paks/</span> . </p>
+                <p> Etape 2: Créez le dossier "~mods" </p>
+                <p> Etape 3: Ouvrez le launcher depuis lequel vous possédez le jeu et allez dans les paramètres de lancement:</p>
+                <ul>
+                    <li> Dans Steam: Ouvrez la page Payday 3, cliquez sur le boutton paramètres, puis Propriétés, et enfin Général (si Steam ne vous y envoie pas par défaut).</li>
+                    <li> Dans Epic Games Store: Trouvez la carte de Payday 3, faites un clique droit et cliquez sur "Gérer", l'option sera en bas de la fenêtre de paramètres.</li>
+                </ul>
+                <p> Etape 4: Ecrivez dans les options de lancement "-fileopenlog".</p>
+                <div class="halfbox"></div>
+                <p> Et voilà, votre jeu est prêt à être moddé! Il ne reste plus qu'à mettre vos mods dans le fichier "~mods" précédemment créé et à lancer le jeu.</p>
             </details>
             <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
@@ -196,6 +209,6 @@ $title = 'Modding - Badreddine Rezzouk';
     </div>
     <div class="box"></div>
 </div>
-<?php require "../../Common-files/footer.php"?>
+<?php require "../../Common-files/footer.php" ?>
 </body>
 </html>
