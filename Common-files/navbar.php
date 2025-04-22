@@ -1,27 +1,20 @@
 <?php
-// Extract the language from the URL (e.g., http://domain.sub/FR-fr/page)
-$uri = $_SERVER['REQUEST_URI']; // Get the full URI (e.g., /FR-fr/page)
-$uriParts = explode('/', trim($uri, '/')); // Split the URI into parts
-$languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is the language (e.g., FR-fr)
+$uri = $_SERVER['REQUEST_URI'];
+$uriParts = explode('/', trim($uri, '/'));
+$languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null;
 $rest = $uriParts; unset($rest[0]);
 $restOfURL = implode("/", $rest);
-// Define allowed languages
-$allowed_languages = ['FR-fr', 'US-en', 'CN-zh']; // Example allowed languages
+$allowed_languages = ['FR-fr', 'US-en', 'CN-zh'];
 
-// Validate and set the language
 if (in_array($languageFromURL, $allowed_languages)) {
-    // If the language in the URL is valid, update the session
     $_SESSION['prev_lang'] = $languageFromURL;
 } elseif (isset($_SESSION['prev_lang'])) {
-    // If no valid language in the URL, use the session language
     $languageFromURL = $_SESSION['prev_lang'];
 } else {
-    // Default language if no session or URL language is set
     $languageFromURL = 'FR-fr';
     $_SESSION['prev_lang'] = $languageFromURL;
 }
 
-// Define language-specific texts for the navbar
 $languageTexts = [
     'FR-fr' => [
         'home' => 'Accueil',
@@ -32,12 +25,12 @@ $languageTexts = [
         'emplois' => 'Emplois',
         'stages' => 'Stages',
         'projects' => 'Projets',
-        'mods' => 'Modding',
         'VA' => 'VirtueAsie',
         'traducode' => 'Traducode',
         'langue' => 'Langues',
         'menu' => 'Menu',
         'passions' => 'Passions',
+        'mods' => 'Modding',
     ],
     'US-en' => [
         'home' => 'Home',
@@ -73,16 +66,12 @@ $languageTexts = [
     ],
 ];
 
-// Get the texts for the current language
 $texts = isset($languageTexts[$languageFromURL]) ? $languageTexts[$languageFromURL] : $languageTexts['FR-fr']; // Default to FR-fr if language is not found
 
-// Determine the protocol (http or https)
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 
-// Get the host
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
 
-// Construct the base URL with the selected language
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 

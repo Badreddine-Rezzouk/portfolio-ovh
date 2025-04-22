@@ -33,7 +33,6 @@ $title = 'Modding - Badreddine Rezzouk';
 <html>
 <head>
     <?php require '../../Common-files/header.php'; ?>
-
 </head>
 <body>
 <?php require "../../Common-files/navbar.php" ?>
@@ -176,10 +175,10 @@ $title = 'Modding - Badreddine Rezzouk';
                     <div id="carouselSinderVendingGG" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_211825.png" class="d-block " alt="SinderArt Image">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_211825.png" class="d-block img-click" alt="SinderArt Image">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_212020.png" class="d-block " alt="SinderArt Image">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_212020.png" class="d-block img-click" alt="SinderArt Image">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderVendingGG" data-bs-slide="prev">
@@ -208,6 +207,24 @@ $title = 'Modding - Badreddine Rezzouk';
         <div class="box"></div>
     </div>
     <div class="box"></div>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="" id="modalImage" class="img-fluid w-100" alt="Full view" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.img-click').forEach(img => {
+            img.addEventListener('click', function () {
+                const src = this.getAttribute('data-bs-image');
+                document.getElementById('modalImage').setAttribute('src', src);
+            });
+        });
+    </script>
 </div>
 <?php require "../../Common-files/footer.php" ?>
 </body>
