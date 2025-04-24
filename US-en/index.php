@@ -118,19 +118,19 @@ $title = "Home page - Badreddine Rezzouk";
     <div class="halfbox"></div>
     <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg">
         <div class="row">
-            <a class="col" href="<?php echo $baseURL;?>Profile.php">
+            <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Profile.php">
                 <div class="col">
                     <h6> My personal profile </h6>
                     <p> To know everything about me. </p>
                 </div>
             </a>
-            <a class="col" href="<?php echo $baseURL;?>Academics.php">
+            <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Academics.php">
                 <div class="col">
                     <h6> My academic and professional profile </h6>
                     <p> A neat way to judge my skills. </p>
                 </div>
             </a>
-            <a class="col" href="<?php echo $baseURL;?>Experiences.php">
+            <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences.php">
                 <div class="col">
                     <h6> My jobs and internships </h6>
                     <p> To prove I wasn't born yesterday. (WIP) </p>
@@ -138,13 +138,13 @@ $title = "Home page - Badreddine Rezzouk";
             </a>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col link-underline link-underline-opacity-0">
                 <h6> </h6>
             </div>
-            <div class="col">
+            <div class="col link-underline link-underline-opacity-0">
 
             </div>
-            <a class="col" href="<?php echo $baseURL;?>Projets/modding.php">
+            <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Passions/modding.php">
                 <div class="col">
                     <h6> My mods </h6>
                     <p> Who knows, maybe we share passions in common. </p>
@@ -190,7 +190,7 @@ $title = "Home page - Badreddine Rezzouk";
                 setInterval(updateDate, 1000);
             });
         </script>
-        <h4> It is currently <span id="current-time"></span>  <span id="current-date"></span> for me.</h4>
+        <h4> It is currently <span id="current-time"></span> on <span id="current-date"></span> for me.</h4>
     </div>
     <div class="box"></div>
 
