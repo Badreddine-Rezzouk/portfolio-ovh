@@ -110,7 +110,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 
             </div>
             <?php echo $texts['Casual']; ?> <br>
-            <div class="row">
+            <div class="row row-cols-4">
                 <div class="col">
                     <a href="https://x.com/Rrat_Dead_Beat">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
@@ -126,6 +126,8 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                         </svg>
                     </a>
                 </div>
+            </div>
+            <div class="row row-cols-4">
                 <div class="col">
                     <a href="https://modworkshop.net/user/Rrat_deadbeat">
                         <img src="<?php echo $topURL; ?>Images/logo/mws_logo_white.png" width="32" height="32">
@@ -136,8 +138,8 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                         <img src="<?php echo $topURL;?>Images/logo/nexus_logo.png" width="32" height="32">
                     </a>
                 </div>
-
             </div>
+            <div class="halfbox"></div>
         </div>
     </div>
     <div class="row bg-dark text-white mx-auto mb-0 shadow-lg">
