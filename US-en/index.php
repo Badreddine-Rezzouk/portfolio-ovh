@@ -157,7 +157,7 @@ $title = "Home page - Badreddine Rezzouk";
         <script>
             // Function to update the time
             function updateTime() {
-                const dt = luxon.DateTime.now().setZone('Europe/Paris').setLocale('fr');
+                const dt = luxon.DateTime.now().setZone('Europe/Paris').setLocale('en');
 
                 const formattedTime = dt.toLocaleString(luxon.DateTime.TIME_WITH_SECONDS);
 

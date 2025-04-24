@@ -66,7 +66,7 @@ $title = 'Modding - Badreddine Rezzouk';
             <details class="text-start">
                 <summary> How to install a Payday 3 mod </summary>
                 <p> Step 1: Find where your Payday 3 install is and go to <span class="text-muted">{Directory}/PAYDAY3/Content/Paks/</span> . </p>
-                <p> Step 2: Créez le dossier "~mods" </p>
+                <p> Step 2: Create the folder "~mods" </p>
                 <p> Step 3: Open the launcher you bought the game with and go to the launch settings:</p>
                 <ul>
                     <li> In Steam: Find the Payday 3 page, click on the settings button, then Properties, and General (if Steam doesn't open it by default).</li>

@@ -22,7 +22,8 @@ if (in_array($languageFromURL, $allowed_languages)) {
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
 
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'stages.php/';
+$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
+$topURL = rtrim($protocol . $host . '/');
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +35,14 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'stages.php/
 <body>
 <?php require "../../../Common-files/navbar.php" ?>
 <div class="gradient-box">
-
+    <div class="halfbox"></div>
+    <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
+        <h2> Mes stages </h2>
+    </div>
+    <div class="box"></div>
+    <img class="w-60 mx-auto" src="<?php echo $topURL;?>Images/wow-such-empty.png" alt="logo">
+    <div class="halfbox"></div>
+    <?php require "../../../Common-files/footer.php" ?>
 </div>
 </body>
 </html>

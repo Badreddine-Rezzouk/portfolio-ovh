@@ -46,6 +46,7 @@ $title = "Emplois - Badreddine Rezzouk";
             <div class="box"></div>
             <div class="bg-white p-4 rounded-3 mx-auto text-center w-80 border border-5 shadow-lg">
                 <h4> Amazon warehouse : Agent exploitation logistique et production </h4>
+                <span class="badge rounded-pill text-bg-success">Contrat conclu</span>
                 <div class="row">
                     <div class="halfbox"></div>
                     <div class="col-12 col-lg-4">
@@ -72,7 +73,7 @@ $title = "Emplois - Badreddine Rezzouk";
                         </div>
                         <div class="halfbox"></div>
                         <p class="text-start">
-                            Pendant une durée d'approximativement deux mois, j'ai travaillé sur une mission Amazon. Celle-ci consistait à assurer la livraison de produits au consommmateur à une étape du processus. Lors de cette mission, mes postes étaient le <abbr title="Emballer le produit dans le carton de livraison">packing</abbr> et la <abbr title="Déballage des produits de grossiste pour les injecter dans le FC">receive</abbr>.
+                            Pendant une durée d'approximativement deux mois, j'ai travaillé sur une mission Amazon. Celle-ci consistait à assurer la livraison de produits au consommmateur à une étape du processus. Lors de cette mission, mes postes étaient le <abbr title="Emballage du produit dans le carton de livraison">packing</abbr> et la <abbr title="Déballage des produits de grossiste pour les injecter dans le FC">receive</abbr>.
                         </p>
                     </div>
                 </div>
