@@ -57,6 +57,12 @@ $title = 'Modding - Badreddine Rezzouk';
             <div class="text-start">
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
             </div>
+            <div class="alert alert-danger">
+                Mise à jour du 27 avril : <br>
+                Il est apparu que Sinder et son (ancien) manager REDACTED ont commis des actes odieux à l'encontre de la créatrice Nanoless et de plusieurs streameurs/ses virtuel(le)s, je désapprouve totalement ce type de comportement. Après réflexion, j'ai pris la décision suivante : <br>
+                Les mods la concernant resteront sur la page du portfolio et de modworkshop, aucun autre mod ne sera créé à son image.
+                Merci de votre compréhension.
+            </div>
             <details class="text-start">
                 <summary>Crédits globaux </summary>
                 <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>

@@ -58,6 +58,12 @@ $title = 'Modding - Badreddine Rezzouk';
             <div class="text-start">
                 A series of mods featuring the vtuber <a href="https://www.twitch.tv/sinder">Sinder</a> for the video game Payday 3.
             </div>
+            <div class="alert alert-danger" role="alert">
+                Update on April 27th: <br>
+                It has come out that Sinder and her (then) manager REDACTED have commited despicable acts against creator Nanoless and multiple vtubers, I absolutely do not condone this type of behavior. After some mental back and forth, I have come to the following decision: <br>
+                The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created.
+                Thank you for your understanding.
+            </div>
             <details class="text-start">
                 <summary> Overall credits </summary>
                 <p>For Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
