@@ -61,7 +61,7 @@ $title = 'Modding - Badreddine Rezzouk';
             <div class="alert alert-danger" role="alert">
                 Update on April 27th: <br>
                 It has come out that Sinder and her (then) manager REDACTED have commited despicable acts against creator Nanoless and multiple vtubers, I absolutely do not condone this type of behavior. After some mental back and forth, I have come to the following decision: <br>
-                The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created.
+                The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created. <br>
                 Thank you for your understanding.
             </div>
             <details class="text-start">
