@@ -1,5 +1,6 @@
 <?php
 header("HTTP/1.0 404 Not Found");
+$title = "404 Not Found";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,7 @@ header("HTTP/1.0 404 Not Found");
 </head>
 <body>
     <?php require "Common-files/navbar.php" ?>
-    <div class="gradient-box" style="align-content: center; justify-content: center;">
+    <div class="gradient-box">
         <div class="box"></div>
         <div class="bg-white p-4 rounded-3 text-center w-50 h-100 mx-auto border border-5 shadow-lg">
             <h1>404 - Page Not Found</h1>

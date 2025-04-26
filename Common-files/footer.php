@@ -70,7 +70,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 
 <div class="footer w-100 mx-auto py-0 my-0" >
-    <div class="row bg-black text-white mx-auto">
+    <div class="row bg-black text-white mx-auto pt-1">
         <div class="col">
             <?php echo $texts['Contacts']; ?> <br>
             <?php echo $texts['Email']; ?> : badreddinerezzouk@protonmail.com <br>
@@ -141,6 +141,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             </div>
             <div class="halfbox"></div>
         </div>
+        <div class="col"></div>
     </div>
     <div class="row bg-dark text-white mx-auto mb-0 shadow-lg">
         <div class="col"><?php echo $texts['Credits']; ?> <br>

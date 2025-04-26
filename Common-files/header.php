@@ -35,7 +35,8 @@ $topURL = rtrim($protocol . $host) . '/';
 <link href="<?php echo $topURL?>CSS/Coloring.css" rel="stylesheet">
 <link href="<?php echo $topURL?>CSS/Bootstrap.css" rel="stylesheet">
 <link href="<?php echo $topURL?>CSS/shaping.css" rel="stylesheet">
-<link href="<?php echo $topURL?>CSS/proficiency_bars.css" rel="stylesheet"
+<link href="<?php echo $topURL?>CSS/proficiency_bars.css" rel="stylesheet">
+<link href="<?php echo $topURL?>CSS/animation.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="../JS/summary-animation.js"></script>
 <script src="../JS/cookie_base.js"></script>

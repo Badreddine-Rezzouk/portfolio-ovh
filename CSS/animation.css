@@ -1,0 +1,22 @@
+
+/*.card, div .bg-white {
+    animation: slideInSmooth 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes slideInSmooth {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.card.animate, div .bg-white.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}*/
+
