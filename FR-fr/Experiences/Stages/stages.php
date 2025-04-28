@@ -24,6 +24,8 @@ $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // F
 
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
 $topURL = rtrim($protocol . $host . '/');
+
+$title = 'Stages - Badreddine Rezzouk';
 ?>
 
 <!DOCTYPE html>
