@@ -56,19 +56,24 @@ $title = "Emplois - Badreddine Rezzouk";
                     <div class="col-12 col-lg-8">
                         <div class="row">
                             <div class="col-auto text-start">
-                                <p> Type de contrat : <br>
-                                    Exploitant du contrat : <br>
-                                    Lieu d'exploitation: <br> <br>
-                                    Durée du contrat: <br>
-
-                                </p>
-                            </div>
-                            <div class="col text-center">
-                                <p> Mission Intérim  <br>
-                                    Adecco Onsite Brétigny <br>
-                                    Amazon warehouse, Fulfillment center ORY4, Centre d'essais en vol, Brétigny-sur-Orge <br>
-                                    Du 12 Juillet 2024 au 27 Septembre 2024 </p>
-                                </p>
+                                <table class="table">
+                                    <tr>
+                                        <th scope="col"> Type de contrat : </th>
+                                        <td> Mission Intérim </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Exploitant du contrat :</th>
+                                        <td> Adecco Onsite Brétigny </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Lieu d'exploitation:</th>
+                                        <td> Amazon warehouse, Fulfillment center ORY4, Centre d'essais en vol, Brétigny-sur-Orge </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Durée du contrat:</th>
+                                        <td> Du 12 Juillet 2024 au 27 Septembre 2024 </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                         <div class="halfbox"></div>

@@ -16,7 +16,7 @@ $title = "Proficiences - Badreddine Rezzouk"?>
         </div>
         <div class="box"></div>
         <div class="bg-white p-4 rounded-3 w-60 mx-auto border border-5 shadow-lg">
-            <p> Sur cette page, vous trouverez touttes les informations relatives à mes études, incluant où j'ai étudié, quel diplômes j'ai validé et les certifications que je possède. </p>
+            <p> Sur cette page, vous trouverez toutes les informations relatives à mes études, incluant où j'ai étudié, quel diplômes j'ai validé et les certifications que je possède. </p>
         </div>
         <div class="halfbox"></div>
         <hr class="mx-auto rounded-2">
