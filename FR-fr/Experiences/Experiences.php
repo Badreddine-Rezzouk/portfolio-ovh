@@ -1,6 +1,5 @@
-<?php global $language_error_fr;
+<?php
 require "../../Common-files/redirect.php";
-require "../../Common-files/unsupportedlanguage.php";
 $title = "Experiences - Badreddine Rezzouk";
 ?>
 

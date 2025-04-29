@@ -1,5 +1,7 @@
-<?php require "../Common-files/redirect.php";
-$title = "Proficiences - Badreddine Rezzouk"?>
+<?php
+require "../Common-files/redirect.php";
+$title = "Proficiences - Badreddine Rezzouk"
+?>
 
 <!DOCTYPE html>
 
