@@ -22,4 +22,5 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVE
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
 
 $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'redirect.php/';
+$topURL = rtrim($protocol . $host . '/');
 ?>
