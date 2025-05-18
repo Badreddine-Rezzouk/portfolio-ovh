@@ -65,7 +65,7 @@ $title = 'Modding - Badreddine Rezzouk';
             <!-- Zone Sinder Phone Wallpaper-->
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div id="carouselSinderPhone" class="carousel slide" data-ride="carousel">
+                    <div id="carouselSinderPhone" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png" class="d-block" alt="SinderPhoneWallpaper Image">
@@ -77,6 +77,14 @@ $title = 'Modding - Badreddine Rezzouk';
                                 <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/xHTIlTxNZx1EaxXkAE4q3HDtVnIfE3lP.png" class="d-block" alt="SinderPhoneWallpaper Image">
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderPhone" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSinderPhone" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
