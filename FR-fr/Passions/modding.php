@@ -32,17 +32,17 @@ $title = 'Modding - Badreddine Rezzouk';
             <div class="text-start">
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
             </div>
-            <div class="alert alert-danger">
-                Mise à jour du 27 avril 2025: <br>
+            <details class="alert alert-danger">
+                <summary>Mise à jour du 27 avril 2025: </summary>
                 Il est apparu que Sinder et son (ancien) manager REDACTED ont commis des actes odieux à l'encontre de la créatrice Nanoless et de plusieurs streameurs/ses virtuel(le)s, je désapprouve totalement ce type de comportement. Après réflexion, j'ai pris la décision suivante : <br>
                 Les mods la concernant resteront sur la page du portfolio et de modworkshop, aucun autre mod ne sera créé à son image. <br>
                 Merci de votre compréhension.
-            </div>
-            <div class="alert alert-warning">
-                Mise à jour du 18 mai 2025: <br>
+            </details>
+            <details class="alert alert-warning">
+                <summary>Mise à jour du 18 mai 2025: </summary>
                 Après avoir analysé les évènements de la "semaine de drama", j'en suis arrivé à la conclusion que seul REDACTED est responsable des actes commis envers Nanoless, et qu'une personne tierce ayant aidée Nanoless à traduire son document a reformulé celui-ci afin de nuire à la réputaion de Sinder (<a href="https://x.com/Selena_Augusta/status/1921872776526168072">Cette personne</a>, bien que biaisée, présente la majorité des arguments contre la culpabilité de Sinder). Avec cette nouvelle optique, il ne me semble plus logique de rester sur ma décision du 27 Avril. Ainsi: <br>
-                La création de mods figurant Sinder pourra être repris, .
-            </div>
+                La création de mods figurant Sinder pourra être repris.
+            </details>
             <details class="text-start">
                 <summary>Crédits globaux </summary>
                 <p>Concernant Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
@@ -62,10 +62,44 @@ $title = 'Modding - Badreddine Rezzouk';
                 <p> Et voilà, votre jeu est prêt à être moddé! Il ne reste plus qu'à mettre vos mods dans le fichier "~mods" précédemment créé et à lancer le jeu.</p>
             </details>
             <div class="halfbox"></div>
+            <!-- Zone Sinder Phone Wallpaper-->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div id="carouselSinderPhone" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/dGyPs8hXXFLOabNGdmjKdzWr2qfoHSKi.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/xHTIlTxNZx1EaxXkAE4q3HDtVnIfE3lP.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h4> Fond d'écran de téléphone </h4>
+                    <p><small> Sorti le 20 Juillet 2024 </small></p>
+                    <p class="text-start"> Ce mod utilise le fanart succube d'Hioyami comme fond d'écran pour le téléphone.</p>
+                    <details class="text-start">
+                        <summary> Crédits </summary>
+                        <p> Hioyami </p>
+                    </details>
+                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderPhoneWallpaper_P.pak" download role="button">
+                        Télécharger
+                    </a>
+                </div>
+            </div>
+            <div class="halfbox"></div>
+            <hr class="mx-auto">
+            <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h4> Galerie des arts (mission "Under the Surphaze") </h4>
+                    <p><small> Sorti le 10 Avril 2025 </small></p>
                     <p class="text-start"> Ce mod remplace les peintures trouvable dans la mission <a href="https://payday.fandom.com/wiki/Under_The_Surphaze">"Under the Surphaze"</a>
                         avec différents fanarts de Sinder.
                     </p>
@@ -179,6 +213,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 </div>
                 <div class="col-12 col-lg-5">
                     <h4> Distributeurs de boissons Gamer Supps </h4>
+                    <p><small> Sorti le 13 Avril 2025 </small></p>
                     <p class="text-start"> Ce mod remplace toutes les textures des distributeurs par une version promouvant la solution énergétique Gamer Supps - Pyro Power </p>
                     <details class="text-start">
                         <summary>Crédits</summary>

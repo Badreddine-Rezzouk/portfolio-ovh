@@ -58,17 +58,17 @@ $title = 'Modding - Badreddine Rezzouk';
             <div class="text-start">
                 A series of mods featuring the vtuber <a href="https://www.twitch.tv/sinder">Sinder</a> for the video game Payday 3.
             </div>
-            <div class="alert alert-danger" role="alert">
-                Update on April 27th: <br>
+            <details class="alert alert-danger">
+                <summary>Update on April 27th:</summary>
                 It has come out that Sinder and her (then) manager REDACTED have commited despicable acts against creator Nanoless and multiple vtubers, I absolutely do not condone this type of behavior. After some mental back and forth, I have come to the following decision: <br>
                 The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created. <br>
                 Thank you for your understanding.
-            </div>
-            <div class="alert alert-warning">
-                Update from May 18, 2025: <br>
+            </details>
+            <details class="alert alert-warning">
+                <summary>Update from May 18, 2025:</summary>
                 After analyzing the events of the "drama week", I have come to the conclusion that only REDACTED is responsible for the actions taken against Nanoless, and that a third party who helped Nanoless translate her document reworded it in a way that harmed Sinder's reputation (<a href="https://x.com/Selena_Augusta/status/1921872776526168072">This person</a>, although biased, presents most of the arguments against Sinder's culpability). With this new perspective, it no longer seems logical to stick with my April 27 decision. Therefore: <br>
                 The creation of mods featuring Sinder may resume.
-            </div>
+            </details>
 
             <details class="text-start">
                 <summary> Overall credits </summary>
@@ -89,10 +89,44 @@ $title = 'Modding - Badreddine Rezzouk';
                 <p> There we go, your game is now ready to be modded! Just place your mods in the previously created "~mods" folder and launch the game.</p>
             </details>
             <div class="halfbox"></div>
+            <!-- Zone Sinder Phone Wallpaper-->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div id="carouselSinderPhone" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/dGyPs8hXXFLOabNGdmjKdzWr2qfoHSKi.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/xHTIlTxNZx1EaxXkAE4q3HDtVnIfE3lP.png" class="d-block" alt="SinderPhoneWallpaper Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h4> Phone Wallpaper </h4>
+                    <p><small> Released on July 20th 2024 </small></p>
+                    <p class="text-start"> This mods uses Hioyami's succubus art as a wallpaper for the phone.</p>
+                    <details class="text-start">
+                        <summary> Credits </summary>
+                        <p> Hioyami </p>
+                    </details>
+                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderPhoneWallpaper_P.pak" download role="button">
+                        Download
+                    </a>
+                </div>
+            </div>
+            <div class="halfbox"></div>
+            <hr class="mx-auto">
+            <div class="halfbox"></div>
             <!-- Zone Sinder Gallerie -->
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h4> Art gallery (mission "Under the Surphaze") </h4>
+                    <p><small> Released on April 10th 2025 </small></p>
                     <p class="text-start"> This mod replaces the paintings found in the <a href="https://payday.fandom.com/wiki/Under_The_Surphaze">"Under the Surphaze"</a>
                         mission with multiple fanarts of Sinder.
                     </p>
@@ -206,6 +240,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 </div>
                 <div class="col-12 col-lg-5">
                     <h4> Gamer Supps vending machine </h4>
+                    <p><small> Released on April 13th 2025 </small></p>
                     <p class="text-start"> This mod replaces all vending machine textures with ones promoting the energy solution Gamer Supps - Pyro Power </p>
                     <details class="text-start">
                         <summary>Credits</summary>
