@@ -33,10 +33,15 @@ $title = 'Modding - Badreddine Rezzouk';
                 Une suite de mods figurant la streameuse virtuelle <a href="https://www.twitch.tv/sinder">Sinder</a> pour le jeu vidéo Payday 3.
             </div>
             <div class="alert alert-danger">
-                Mise à jour du 27 avril : <br>
+                Mise à jour du 27 avril 2025: <br>
                 Il est apparu que Sinder et son (ancien) manager REDACTED ont commis des actes odieux à l'encontre de la créatrice Nanoless et de plusieurs streameurs/ses virtuel(le)s, je désapprouve totalement ce type de comportement. Après réflexion, j'ai pris la décision suivante : <br>
                 Les mods la concernant resteront sur la page du portfolio et de modworkshop, aucun autre mod ne sera créé à son image. <br>
                 Merci de votre compréhension.
+            </div>
+            <div class="alert alert-warning">
+                Mise à jour du 18 mai 2025: <br>
+                Après avoir analysé les évènements de la "semaine de drama", j'en suis arrivé à la conclusion que seul REDACTED est responsable des actes commis envers Nanoless, et qu'une personne tierce ayant aidée Nanoless à traduire son document a reformulé celui-ci afin de nuire à la réputaion de Sinder (<a href="https://x.com/Selena_Augusta/status/1921872776526168072">Cette personne</a>, bien que biaisée, présente la majorité des arguments contre la culpabilité de Sinder). Avec cette nouvelle optique, il ne me semble plus logique de rester sur ma décision du 27 Avril. Ainsi: <br>
+                La création de mods figurant Sinder pourra être repris, .
             </div>
             <details class="text-start">
                 <summary>Crédits globaux </summary>

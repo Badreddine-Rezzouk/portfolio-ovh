@@ -64,6 +64,12 @@ $title = 'Modding - Badreddine Rezzouk';
                 The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created. <br>
                 Thank you for your understanding.
             </div>
+            <div class="alert alert-warning">
+                Update from May 18, 2025: <br>
+                After analyzing the events of the "drama week", I have come to the conclusion that only REDACTED is responsible for the actions taken against Nanoless, and that a third party who helped Nanoless translate her document reworded it in a way that harmed Sinder's reputation (<a href="https://x.com/Selena_Augusta/status/1921872776526168072">This person</a>, although biased, presents most of the arguments against Sinder's culpability). With this new perspective, it no longer seems logical to stick with my April 27 decision. Therefore: <br>
+                The creation of mods featuring Sinder may resume.
+            </div>
+
             <details class="text-start">
                 <summary> Overall credits </summary>
                 <p>For Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>

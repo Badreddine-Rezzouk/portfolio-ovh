@@ -169,50 +169,31 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const dropdowns = document.querySelectorAll('.dropdown');
-
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('mouseenter', function() {
-                this.classList.add('show');
-                this.querySelector('.dropdown-menu').classList.add('show');
-            });
-
-            dropdown.addEventListener('mouseleave', function() {
-                this.classList.remove('show');
-                this.querySelector('.dropdown-menu').classList.remove('show');
-            });
-        });
-    });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const dropdowns = document.querySelectorAll('.dropdown');
-
-        dropdowns.forEach(dropdown => {
+    document.querySelectorAll('.nav-item.dropdown').forEach(function (dropdown) {
+        dropdown.addEventListener('mouseenter', function () {
             const toggle = dropdown.querySelector('.dropdown-toggle');
             const menu = dropdown.querySelector('.dropdown-menu');
-
-            // Handle hover for desktop and offcanvas modes
-            dropdown.addEventListener('mouseenter', function () {
-                menu.classList.add('show');
-            });
-
-            dropdown.addEventListener('mouseleave', function () {
-                menu.classList.remove('show');
-            });
+            bootstrap.Dropdown.getOrCreateInstance(toggle).show();
+            toggle.classList.add('show');
+            menu.classList.add('show');
         });
 
-        // Close dropdowns when clicking outside
-        document.addEventListener('click', function (e) {
-            if (!e.target.matches('.dropdown-toggle')) {
-                const openDropdowns = document.querySelectorAll('.dropdown-menu.show');
-                openDropdowns.forEach(dropdown => {
-                    dropdown.classList.remove('show');
-                });
-            }
+        dropdown.addEventListener('mouseleave', function () {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            bootstrap.Dropdown.getOrCreateInstance(toggle).hide();
+            toggle.classList.remove('show');
+            menu.classList.remove('show');
         });
+
+        // Prevent focus from persisting on dropdowns with href="#" like "Projects"
+        const toggler = dropdown.querySelector('.dropdown-toggle');
+        if (toggler && toggler.getAttribute('href') === '#') {
+            toggler.addEventListener('click', function (e) {
+                e.preventDefault();
+                toggler.blur();  // Remove focus after click
+            });
+        }
     });
 </script>
