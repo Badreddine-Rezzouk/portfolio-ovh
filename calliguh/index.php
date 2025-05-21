@@ -1,33 +1,60 @@
-<?php global $language_error_fr;
-require "../Common-files/redirect.php";
-require "../Common-files/unsupportedlanguage.php";
-//require "increment.php";
-?>
+<?php $title = "Calliguh"?>
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <?php require "../Common-files/header.php"?>
+        <meta charset="UTF-8">
+        <?php require_once '../Common-files/header.php'?>
+        <style>
+            #clickButton {
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+            }
+        </style>
     </head>
-    <body >
-        <div class="container-fluid">
+    <body>
+        <div class="width-box" style="background: url('./bg-calliguh.png'); background-size: cover; min-height: 80vh">
             <div class="box"></div>
-            <div class="bg-black text-white w-50 mx-auto align-items-center d-flex flex-column justify-content-center" >
-                <form method="POST" action="">
-                    <button type="submit" value="update">
-                        <img src="out-transparent-80.webp" alt="Mori Calliope gif">
-                    </button>
-                    <span id="global_count_value"></span>
-                    <span id="local_countvalue"></span>
-                </form>
-
-
-                <h6> Subscribe to <a>Mori Calliope's channel</a></h6>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <h4>Global Counter</h4>
+                <h1 id="counter">0</h1>
             </div>
-        </div>
-        <div id="credits">
+            <button class="mx-auto p-3 w-25" id="clickButton">
+                <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
+            </button>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <p class="mx-auto"> Subscribe to <a href="https://www.youtube.com/@MoriCalliope">Mori Calliope Ch. hololive-EN</a></p>
+            </div>
+            <div class="halfbox"></div>
+            <script>
+                const counterEl = document.getElementById('counter');
+                const button = document.getElementById('clickButton');
+                fetch('counter.txt')
+                    .then(response => response.text())
+                    .then(count => {
+                        counterEl.textContent = count;
+                    });
+                const interval = setInterval(function() {
+                    fetch('counter.txt')
+                        .then(response => response.text())
+                        .then(count => {
+                            counterEl.textContent = count;
+                        });
+                }, 5000);
 
+                button.addEventListener('click', () => {
+                    fetch('counter.php')
+                        .then(response => response.text())
+                        .then(count => {
+                            counterEl.textContent = count;
+                        });
+                });
+            </script>
         </div>
+        <footer class="sticky-bottom bg-white p-3 border-top border-light shadow-lg">
+            Made by Rrat_Deadbeat, AKA <a href="https://www.badreddinerezzouk.com"> Badreddine Rezzouk</a>
+        </footer>
     </body>
 </html>

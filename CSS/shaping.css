@@ -12,7 +12,7 @@ html, body {
     height: 50px;
 }
 
-.gradient-box {
+.gradient-box, .width-box {
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; Ensure the wrapper takes at least the full viewport height */
