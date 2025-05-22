@@ -8,6 +8,22 @@
         <link rel="stylesheet" href="CSS/stylesheet.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+        <script>
+            function playRandomAudio() {
+                fetch('get_random_audio.php')
+                    .then(response => response.text())
+                    .then(filePath => {
+                        if (filePath) {
+                            const audio = document.getElementById('audioPlayer');
+                            audio.src = filePath;
+                            audio.play();
+                        } else {
+                            alert("No audio files found.");
+                        }
+                    })
+                    .catch(error => console.error('Error fetching audio:', error));
+            }
+        </script>
     </head>
     <body>
         <div class="width-box" style="background: url('./bg-calliguh.png'); background-size: cover; min-height: 80vh">
@@ -24,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <button class="mx-auto p-1 w-25" id="clickButton">
+                    <button class="mx-auto p-1 w-25" id="clickButton" onclick="playRandomAudio()">
                         <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
                     </button>
                 </div>
