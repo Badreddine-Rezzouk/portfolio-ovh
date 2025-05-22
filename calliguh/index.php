@@ -2,7 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Calliguh </title>
+        <title> "Guh" </title>
+        <meta name="description" content="This is a fansite dedicated to Hololive EN Myth's Mori Calliope. It shall be called the Guh button (Yes, this description is a shameless copy of Joel'z' Fauna ara).">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://calliguh.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content='"Guh"'>
+        <meta property="og:description" content="This is a fansite dedicated to Hololive EN Myth's Mori Calliope. It shall be called the Guh button (Yes, this description is a shameless copy of Joel'z' Fauna ara).">
+        <meta property="og:image" content="">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="calliguh.com">
+        <meta property="twitter:url" content="https://calliguh.com">
+        <meta name="twitter:title" content='Guh"'>
+        <meta name="twitter:description" content="This is a fansite dedicated to Hololive EN Myth's Mori Calliope. It shall be called the Guh button (Yes, this description is a shameless copy of Joel'z' Fauna ara).">
+        <meta name="twitter:image" content="">
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/stylesheet.css">
@@ -75,7 +92,7 @@
             </script>
         </div>
         <footer class="sticky-bottom bg-white p-3 border-top border-light shadow-lg">
-            Made by Rrat_Deadbeat, AKA <a href="https://www.badreddinerezzouk.com"> Badreddine Rezzouk</a>
+            Made by Rrat_Deadbeat, AKA <a href="https://www.badreddinerezzouk.com"> Badreddine Rezzouk</a> <p class="text-end"> Credits: Joel Z, Mori Calliope, @walfieee, Cover corp.</p>
         </footer>
     </body>
 </html>
