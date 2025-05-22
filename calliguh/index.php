@@ -13,7 +13,7 @@
         <div class="width-box" style="background: url('./bg-calliguh.png'); background-size: cover; min-height: 80vh">
             <div class="box"></div>
             <div class="row">
-                <div class="col">
+                <div class="col offset-1">
                     <div class="bg-white p-4 rounded-3 text-center mx-auto border border-5 shadow-lg">
                         <h4>Global Counter</h4>
                         <h1 id="counter">0</h1>
