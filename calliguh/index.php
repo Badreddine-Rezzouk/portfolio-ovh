@@ -17,6 +17,7 @@
                         <h4>Global Counter</h4>
                         <h1 id="counter">0</h1>
                     </div>
+                    <div class="halfbox"></div>
                     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
                         <p class="mx-auto"> Subscribe to <a href="https://www.youtube.com/@MoriCalliope">Mori Calliope Ch. hololive-EN</a></p>
                     </div>
