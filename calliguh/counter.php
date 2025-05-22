@@ -1,20 +1,19 @@
 <?php
-$counterFile = 'counter.txt';
+$file = 'counter.txt';
 
-// Lock the file during update to avoid race conditions
-$fp = fopen($counterFile, 'c+');
+// Lock the file while reading/writing
+$fp = fopen($file, 'c+');
 if (flock($fp, LOCK_EX)) {
-    $count = (int)fread($fp, filesize($counterFile) ?: 1);
-    $count++;
-    ftruncate($fp, 0);
+    $count = (int)fread($fp, filesize($file));
     rewind($fp);
+    $count++;
+    ftruncate($fp, 0); // clear previous content
     fwrite($fp, $count);
     fflush($fp);
     flock($fp, LOCK_UN);
-    fclose($fp);
     echo $count;
 } else {
-    http_response_code(500);
-    echo "Could not lock file";
+    echo "Error";
 }
+fclose($fp);
 ?>

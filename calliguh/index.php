@@ -31,17 +31,19 @@
             <script>
                 const counterEl = document.getElementById('counter');
                 const button = document.getElementById('clickButton');
-                fetch('counter.txt')
+                fetch('counter.txt?ts=' + new Date().getTime()) // add cache buster
                     .then(response => response.text())
                     .then(count => {
                         counterEl.textContent = count;
                     });
+
                 const interval = setInterval(function() {
-                    fetch('counter.txt')
+                    fetch('counter.txt?ts=' + new Date().getTime()) // add cache buster
                         .then(response => response.text())
                         .then(count => {
                             counterEl.textContent = count;
                         });
+
                 }, 5000);
 
                 button.addEventListener('click', () => {
