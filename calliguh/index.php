@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <button class="mx-auto p-3 w-25" id="clickButton">
+                    <button class="mx-auto p-1 w-25" id="clickButton">
                         <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
                     </button>
                 </div>
