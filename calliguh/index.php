@@ -11,16 +11,21 @@
     <body>
         <div class="width-box" style="background: url('./bg-calliguh.png'); background-size: cover; min-height: 80vh">
             <div class="box"></div>
-            <div class="row"></div>
-            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                <h4>Global Counter</h4>
-                <h1 id="counter">0</h1>
-            </div>
-            <button class="mx-auto p-3 w-25" id="clickButton">
-                <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
-            </button>
-            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                <p class="mx-auto"> Subscribe to <a href="https://www.youtube.com/@MoriCalliope">Mori Calliope Ch. hololive-EN</a></p>
+            <div class="row">
+                <div class="col">
+                    <div class="bg-white p-4 rounded-3 text-center mx-auto border border-5 shadow-lg">
+                        <h4>Global Counter</h4>
+                        <h1 id="counter">0</h1>
+                    </div>
+                    <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                        <p class="mx-auto"> Subscribe to <a href="https://www.youtube.com/@MoriCalliope">Mori Calliope Ch. hololive-EN</a></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="mx-auto p-3 w-25" id="clickButton">
+                        <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
+                    </button>
+                </div>
             </div>
             <div class="halfbox"></div>
             <script>
