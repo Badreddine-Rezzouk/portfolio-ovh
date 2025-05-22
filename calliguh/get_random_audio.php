@@ -1,5 +1,5 @@
 <?php
-$folder = 'audio_files/';
+$folder = 'audio/';
 $files = glob($folder . '*.{mp3,wav,ogg}', GLOB_BRACE);
 
 if ($files) {
