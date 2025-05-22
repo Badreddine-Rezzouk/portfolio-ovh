@@ -43,6 +43,7 @@
                     <button class="mx-auto p-1 w-25" id="clickButton" onclick="playRandomAudio()">
                         <img src="mori-calliope-hololive.gif" alt="Invisible Click Trigger">
                     </button>
+                    <audio id="audioPlayer" controls></audio>
                 </div>
             </div>
             <div class="halfbox"></div>
