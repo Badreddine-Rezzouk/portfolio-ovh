@@ -25,6 +25,7 @@ $languageTexts = [
         'emplois' => 'Emplois',
         'stages' => 'Stages',
         'projects' => 'Projets',
+        'Calliguh' => 'Calliguh',
         'VA' => 'VirtueAsie',
         'traducode' => 'Traducode',
         'langue' => 'Langues',
@@ -42,6 +43,7 @@ $languageTexts = [
         'stages' => 'Internships',
         'projects' => 'Projects',
         'mods' => 'Modding',
+        'Calliguh' => 'Calliguh',
         'VA' => 'VirtueAsie',
         'traducode' => 'Traducode',
         'langue' => 'Languages',
@@ -58,6 +60,7 @@ $languageTexts = [
         'stages' => '实习',
         'projects' => '项目',
         'mods' => '游戏模组',
+        'Calliguh' => 'Calliguh',
         'VA' => 'VirtueAsie',
         'traducode' => 'Traducode',
         'langue' => '语言',
@@ -125,6 +128,11 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                             <?php echo $texts['projects']; ?>
                         </a>
                         <ul class="dropdown-menu">
+                            <li>
+                                <a id="Calliguh" class="dropdown-item" href="<?php echo $baseURL?>Projets/Pages_projets/calliguh.php">
+                                    <?php echo $texts['Calliguh']; ?>
+                                </a>
+                            </li>
                             <li>
                                 <a id="VA" class="dropdown-item" href="<?php echo $baseURL; ?>Projets/Pages_projets/VirtueAsie.php">
                                     <?php echo $texts['VA']; ?>
