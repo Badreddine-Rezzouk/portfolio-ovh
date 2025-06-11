@@ -22,12 +22,9 @@ function updateDate() {
         console.error("Element with ID 'current-date' not found!");
     }
 }
-// Ensure the DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
-    // Update the time immediately
     updateTime();
     updateDate();
-    // Update the time every second (1000 milliseconds)
     setInterval(updateTime, 1000);
     setInterval(updateDate, 1000);
 });

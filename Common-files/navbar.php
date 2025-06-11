@@ -177,7 +177,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
     </div>
 </div>
 
-<script>
+<!--<script>
     document.querySelectorAll('.nav-item.dropdown').forEach(function (dropdown) {
         dropdown.addEventListener('mouseenter', function () {
             const toggle = dropdown.querySelector('.dropdown-toggle');
@@ -204,4 +204,4 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             });
         }
     });
-</script>
+</script>-->
