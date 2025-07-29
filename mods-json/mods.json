@@ -1,0 +1,29 @@
+{
+  "games": [
+    { "id": "payday3", "name":  "Payday 3"},
+    { "id": "f1-24", "name": "EA Sport F1 24"}
+  ],
+  "categories": [
+    { "id": "sinder", "name": "Mods Sinder" },
+    { "id": "aura-gx", "name": "Mods GX Aura" }
+  ],
+  "mods": [
+    {
+      "id": "sinder-pd3_phone",
+      "title": "Fond d'écran de téléphone - Sinder Succube",
+      "date": 2024/07/20,
+      "description": "Ce mod utilise le fanart succube d'Hioyami comme fond d'écran pour le téléphone.",
+      "game": "payday3",
+      "categories": ["sinder"],
+      "download_url": "#"
+    },
+    {
+      "id": "aura-gx-pd3_phone",
+      "title": "Ultra HD Textures",
+      "description": "Improves texture quality in Witcher 3.",
+      "game": "payday3",
+      "categories": ["aura-gx"],
+      "download_url": "#"
+    }
+  ]
+}
