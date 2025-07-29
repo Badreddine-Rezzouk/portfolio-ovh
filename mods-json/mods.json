@@ -21,9 +21,21 @@
     {
       "id": "aura-gx-pd3_phone",
       "title": "Fond d'écran de téléphone - GX Aura",
+      "date": "08/08/2024",
       "description": "Ce mod utilise le fanart Baka Mitai de Roko comme fond d'écran pour le téléphone.",
       "game": "payday3",
       "categories": ["aura-gx"],
+      "images": [""],
+      "download_url": "#"
+    },
+    {
+      "id": "aura-gx-pd3_van",
+      "title": "Livrée de van - GX Aura",
+      "date": "19/07/2024",
+      "description": "Ce mod transforme le van de Payday 3 en un design basé sur la streameuse GX Aura.",
+      "game": "payday3",
+      "categories": ["aura-gx"],
+      "images": [""],
       "download_url": "#"
     }
   ]

@@ -58,6 +58,7 @@ $title = 'Mod - Badreddine Rezzouk';
                     const cat = categories.find(c => c.id === cid);
                     return cat ? cat.name : cid;
                 }).join(', ');
+                modImages = game.images;
 
 
                 document.getElementById('modTitle').innerText = mod.title;
@@ -67,7 +68,7 @@ $title = 'Mod - Badreddine Rezzouk';
                     <h5><strong>Date :</strong> ${mod.date}</h5>
                     <p><strong>Catégories :</strong> ${modCategories}</p>
                     <p>${mod.description}</p>
-                    ${mod.images?.map(src => `<img class="mod-screenshot" src="${src}" alt="Screenshot du mod">`).join('') || ''}
+                    ${modImages?.map(src => `<img class="mod-screenshot" src="${src}" alt="Screenshot du mod">`).join('') || ''}
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
