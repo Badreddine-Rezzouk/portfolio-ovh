@@ -35,7 +35,7 @@
       "description": "Ce mod transforme le van de Payday 3 en un design basé sur la streameuse GX Aura.",
       "game": "payday3",
       "categories": ["aura-gx"],
-      "images": [""],
+      "images": ["aura-gx-pd3_van_1.png"],
       "download_url": "#"
     }
   ]
