@@ -177,31 +177,3 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
     </div>
 </div>
 
-<!--<script>
-    document.querySelectorAll('.nav-item.dropdown').forEach(function (dropdown) {
-        dropdown.addEventListener('mouseenter', function () {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            const menu = dropdown.querySelector('.dropdown-menu');
-            bootstrap.Dropdown.getOrCreateInstance(toggle).show();
-            toggle.classList.add('show');
-            menu.classList.add('show');
-        });
-
-        dropdown.addEventListener('mouseleave', function () {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            const menu = dropdown.querySelector('.dropdown-menu');
-            bootstrap.Dropdown.getOrCreateInstance(toggle).hide();
-            toggle.classList.remove('show');
-            menu.classList.remove('show');
-        });
-
-        // Prevent focus from persisting on dropdowns with href="#" like "Projects"
-        const toggler = dropdown.querySelector('.dropdown-toggle');
-        if (toggler && toggler.getAttribute('href') === '#') {
-            toggler.addEventListener('click', function (e) {
-                e.preventDefault();
-                toggler.blur();  // Remove focus after click
-            });
-        }
-    });
-</script>-->
