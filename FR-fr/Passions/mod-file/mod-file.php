@@ -53,28 +53,79 @@ $title = 'Mod - Badreddine Rezzouk';
                     return;
                 }
 
-                const game = games.find(g => g.id === mod.game)?.name || 'Jeu inconnu';
+                const gameData = games.find(g => g.id === mod.game);
+                const gameName = gameData?.name || 'Jeu inconnu';
+
                 const modCategories = mod.categories.map(cid => {
                     const cat = categories.find(c => c.id === cid);
                     return cat ? cat.name : cid;
                 }).join(', ');
-                const imageHTML = (mod.images || []).map(filename =>
-                    `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" alt="Screenshot du mod">`
-                ).join('');
 
+                // Build the image section (carousel or single image)
+                let imageHTML = '';
+                const images = mod.images || [];
 
-                document.getElementById('modTitle').innerText = mod.title;
+                if (images.length > 1) {
+                    const indicators = images.map((_, i) => `
+                        <button type="button" data-bs-target="#carouselMod" data-bs-slide-to="${i}" ${i === 0 ? 'class="active"' : ''} aria-label="Slide ${i + 1}"></button>
+                    `).join('');
+
+                    const items = images.map((filename, i) => `
+                        <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                            <img src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" class="d-block w-100 mod-screenshot" alt="Screenshot ${i + 1}">
+                        </div>
+                    `).join('');
+
+                    imageHTML = `
+                        <div id="carouselMod" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                ${indicators}
+                            </div>
+                            <div class="carousel-inner">
+                                ${items}
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMod" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMod" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
+                    `;
+                } else if (images.length === 1) {
+                    imageHTML = `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${images[0]}" alt="Screenshot du mod">`;
+                }
+
+                // Build download buttons if any
+                let downloadButtons = '';
+                if (mod.download) {
+                    if (mod.download.direct) {
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.direct}" target="_blank">⬇️ Télécharger</a>`;
+                    }
+                    if (mod.download.nexus) {
+                        downloadButtons += `<a class="btn btn-outline-dark me-2 mb-2" href="${mod.download.nexus}" target="_blank">Nexus Mods</a>`;
+                    }
+                    if (mod.download.modworkshop) {
+                        downloadButtons += `<a class="btn btn-outline-success me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">ModWorkshop</a>`;
+                    }
+                }
 
                 const contentHTML = `
                     <div class="row">
-                    <div class="col">
-                        <h4><strong>Jeu :</strong> ${game}</h4>
-                        <h5><strong>Date :</strong> ${mod.date}</h5>
-                        <p><strong>Catégories :</strong> ${modCategories}</p>
-                        <p>${mod.description}</p>
-                    </div>
-                    <div class="col">
-                        ${imageHTML}
+                        <div class="col-md-6 text-start">
+                            <h4><strong>Jeu :</strong> ${gameName}</h4>
+                            <h5><strong>Date :</strong> ${mod.date}</h5>
+                            <p><strong>Catégories :</strong> ${modCategories}</p>
+                            <p>${mod.description}</p>
+                            <div class="mt-3">
+                                ${downloadButtons}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            ${imageHTML}
+                        </div>
                     </div>
                 `;
 
@@ -86,6 +137,7 @@ $title = 'Mod - Badreddine Rezzouk';
             });
     });
 </script>
+
 
 <?php require "../../../Common-files/footer.php" ?>
 </body>
