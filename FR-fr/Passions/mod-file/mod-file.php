@@ -58,7 +58,7 @@ $title = 'Mod - Badreddine Rezzouk';
                     const cat = categories.find(c => c.id === cid);
                     return cat ? cat.name : cid;
                 }).join(', ');
-                modThumbnail = "<?php echo $topURL?>Images/mod/" + <?php echo $modId?> + "/" + game.images[0];
+                const modThumbnail = "<?php echo $topURL?>Images/mod/" + <?php echo $modId?> + "/" + game.images[0];
 
 
                 document.getElementById('modTitle').innerText = mod.title;
