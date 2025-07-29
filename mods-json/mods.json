@@ -16,7 +16,7 @@
       "game": "payday3",
       "categories": ["sinder"],
       "images": ["cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png"],
-      "download_url": "#"
+      "download": "#"
     },
     {
       "id": "aura-gx-pd3_phone",
@@ -26,7 +26,7 @@
       "game": "payday3",
       "categories": ["aura-gx"],
       "images": [""],
-      "download_url": "#"
+      "download": "#"
     },
     {
       "id": "aura-gx-pd3_van",
@@ -37,7 +37,7 @@
       "categories": ["aura-gx"],
       "images": ["aura-gx-pd3_van_1.png"],
       "download": {
-        "direct": "",
+        "direct": "#",
         "modworkshop": "https://modworkshop.net/mod/48630",
 
       }

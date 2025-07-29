@@ -111,7 +111,6 @@ $title = 'Modding - Badreddine Rezzouk';
                 div.className = 'mod-card';
                 const gameName = getGameName(mod.game);
                 const modThumbnail = topURL + "Images/mod/" + mod.id + "/" + mod.images[0];
-                //const modDate = luxon.toLocaleString(mod.date);
 
                 // Set the click handler using a proper function
                 div.onclick = function () {
