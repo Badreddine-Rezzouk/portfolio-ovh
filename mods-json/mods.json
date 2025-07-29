@@ -11,16 +11,17 @@
     {
       "id": "sinder-pd3_phone",
       "title": "Fond d'écran de téléphone - Sinder Succube",
-      "date": "2024/07/20",
+      "date": "20/07/2024",
       "description": "Ce mod utilise le fanart succube d'Hioyami comme fond d'écran pour le téléphone.",
       "game": "payday3",
       "categories": ["sinder"],
+      "images": ["cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png"],
       "download_url": "#"
     },
     {
       "id": "aura-gx-pd3_phone",
-      "title": "Ultra HD Textures",
-      "description": "Improves texture quality in Witcher 3.",
+      "title": "Fond d'écran de téléphone - GX Aura",
+      "description": "Ce mod utilise le fanart Baka Mitai de Roko comme fond d'écran pour le téléphone.",
       "game": "payday3",
       "categories": ["aura-gx"],
       "download_url": "#"

@@ -42,7 +42,7 @@ $title = 'Modding - Badreddine Rezzouk';
         </select>
     </div>
 
-    <div id="modList" class="mod-list col offset-1 bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
+    <div id="modList" class="mod-list col-7 mx-auto bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
     <div class="halfbox"></div>
     </div>
     <script>
@@ -103,23 +103,33 @@ $title = 'Modding - Badreddine Rezzouk';
 
         function renderMods(mods) {
             const baseURL = "<?php echo $baseURL ?>";
+            const topURL = "<?php echo $topURL ?>";
             const list = document.getElementById('modList');
             list.innerHTML = '';
             mods.forEach(mod => {
                 const div = document.createElement('div');
                 div.className = 'mod-card';
                 const gameName = getGameName(mod.game);
-                const modDate = luxon.toLocaleString(mod.date);
+                const modThumbnail = topURL + "Images/mod/" + mod.id + "/" + mod.images[0];
+                //const modDate = luxon.toLocaleString(mod.date);
 
                 // Set the click handler using a proper function
                 div.onclick = function () {
-                    window.location.href = baseURL + 'Passions/mod-file/mod-file.php?modid=' + mod.id;
+                    window.location.href = baseURL + 'Passions/mod-file/mod-file.php?modId=' + mod.id;
                 };
 
                 div.innerHTML = `
-                        <h3>${mod.title}</h3> <p>${gameName}</p>
-                        <h5>${modDate}</h5>
-                        <p>${mod.description}</p>
+                        <div class="row">
+                        <div class="col">
+                            <img src="${modThumbnail}"></img>
+                        </div>
+                        <div class="col">
+                            <h4>${mod.title} | <small>${gameName}</small></h4>
+                            <h6>${mod.date}</h6>
+                            <p>${mod.description}</p>
+                        </div>
+                        </div>
+
                 `;
 
                 list.appendChild(div);
