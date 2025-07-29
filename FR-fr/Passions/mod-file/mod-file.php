@@ -66,11 +66,16 @@ $title = 'Mod - Badreddine Rezzouk';
                 document.getElementById('modTitle').innerText = mod.title;
 
                 const contentHTML = `
-                    <h4><strong>Jeu :</strong> ${game}</h4>
-                    <h5><strong>Date :</strong> ${mod.date}</h5>
-                    <p><strong>Catégories :</strong> ${modCategories}</p>
-                    <p>${mod.description}</p>
-                    ${imageHTML}
+                    <div class="row">
+                    <div class="col">
+                        <h4><strong>Jeu :</strong> ${game}</h4>
+                        <h5><strong>Date :</strong> ${mod.date}</h5>
+                        <p><strong>Catégories :</strong> ${modCategories}</p>
+                        <p>${mod.description}</p>
+                    </div>
+                    <div class="col">
+                        ${imageHTML}
+                    </div>
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
