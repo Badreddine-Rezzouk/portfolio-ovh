@@ -20,7 +20,7 @@ $title = 'Mod - Badreddine Rezzouk';
 <body>
 <?php require "../../../Common-files/navbar.php" ?>
 <div class="gradient-box">
-    <div class="box"></div>
+    <div class="halfbox"></div>
     <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
         <h2 id="modTitle">Chargement du mod...</h2>
     </div>
@@ -104,13 +104,13 @@ $title = 'Mod - Badreddine Rezzouk';
                         downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="<?php echo $topURL?>Files/Mods/${mod.download.direct}" target="_blank">⬇️ Téléchargement direct</a>`;
                     }
                     if (mod.download.nexus) {
-                        downloadButtons += `<a class="btn btn-outline-dark me-2 mb-2" href="${mod.download.nexus}" target="_blank">Nexus Mods</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.nexus}" target="_blank">⬇️ Nexus Mods</a>`;
                     }
                     if (mod.download.modworkshop) {
-                        downloadButtons += `<a class="btn btn-outline-success me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">ModWorkshop</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">⬇️ ModWorkshop</a>`;
                     }
                     if (mod.download.steam) {
-                        downloadButtons += `<a class="btn btn-outline-success me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">Steam Workshop</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">⬇️ Steam Workshop</a>`;
                     }
                 }
 
