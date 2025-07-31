@@ -53,7 +53,7 @@
       "description": "Ce mod transforme le van de Payday 3 en un design basé sur la streameuse GX Aura.",
       "game": "payday3",
       "categories": ["aura-gx"],
-      "images": ["aura-gx-pd3_van_1.png"],
+      "images": ["aura-gx-pd3_van_1.png","aura-gx-pd3_van_2.png","aura-gx-pd3_van_3.png","aura-gx-pd3_van_4.png"],
       "download": {
         "direct": "AuraGXEscapeVan_P.pak",
         "modworkshop": "https://modworkshop.net/mod/48630",
