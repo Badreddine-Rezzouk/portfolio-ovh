@@ -114,6 +114,10 @@ $title = 'Mod - Badreddine Rezzouk';
                     }
                 }
 
+                if (gameData.guide){
+                    guideSection += ${gameData.guide}
+                }
+
                 const contentHTML = `
                     <div class="row">
                         <div class="col-md-6 text-start">
@@ -124,11 +128,13 @@ $title = 'Mod - Badreddine Rezzouk';
                             <div class="mt-3">
                                 ${downloadButtons}
                             </div>
+                            ${guideSection}
                         </div>
                         <div class="col-md-6">
                             ${imageHTML}
                         </div>
                     </div>
+
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
