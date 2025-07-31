@@ -19,11 +19,11 @@ $title = 'Modding - Badreddine Rezzouk';
 <body>
 <?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
-    <div class="box"></div>
+    <div class="halfbox"></div>
     <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
         <h2> Mes mods de jeux vidéos</h2>
     </div>
-    <div class="box"></div>
+    <div class="halfbox"></div>
     <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg">
         <p>
             Le modding de jeux vidéos est une pratique dont le but est de transformer un jeu vidéo en ajoutant ou modifiant du contenu, avec comme finalité un gameplay qui n'est pas originellement prévu par le développeur.
@@ -31,7 +31,7 @@ $title = 'Modding - Badreddine Rezzouk';
     </div>
     <div class="box"></div>
     <div class="row">
-    <div class="filters col-3 offset-1 bg-white p-4 rounded-3 border border-5 shadow-lg">
+    <div class="filters col-3 offset-1 bg-white p-4 rounded-3 border border-5 shadow-lg" style="max-height:14vw;">
         <label for="gameFilter"> Jeu concerné: </label>
         <select id="gameFilter" class="form-select mb-3">
             <option value="">Tous les jeux</option>
