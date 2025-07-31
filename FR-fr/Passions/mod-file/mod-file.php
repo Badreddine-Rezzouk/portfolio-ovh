@@ -115,7 +115,7 @@ $title = 'Mod - Badreddine Rezzouk';
                 }
                 let guideSection = '';
                 if (gameData.guide){
-                    guideSection += ${gameData.guide}
+                    guideSection += gameData.guide
                 }
 
                 const contentHTML = `
