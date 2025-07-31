@@ -55,6 +55,7 @@ $title = 'Mod - Badreddine Rezzouk';
 
                 const gameData = games.find(g => g.id === mod.game);
                 const gameName = gameData?.name || 'Jeu inconnu';
+                document.getElementById('modTitle').innerText = gameName;
 
                 const modCategories = mod.categories.map(cid => {
                     const cat = categories.find(c => c.id === cid);
