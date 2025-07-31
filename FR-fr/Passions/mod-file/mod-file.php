@@ -52,7 +52,7 @@ $title = 'Mod - Badreddine Rezzouk';
                     document.getElementById('modTitle').innerText = "Mod introuvable.";
                     return;
                 } else {
-                    document.getElementById('modTitle').innerText = m.title;
+                    document.getElementById('modTitle').innerText = mod.title;
                 }
 
                 const gameData = games.find(g => g.id === mod.game);
