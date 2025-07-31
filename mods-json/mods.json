@@ -15,9 +15,10 @@
       "description": "Ce mod utilise le fanart succube d'Hioyami comme fond d'écran pour le téléphone.",
       "game": "payday3",
       "categories": ["sinder"],
-      "images": ["cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png"],
+      "images": ["sinder-pd3_phone_1.png","sinder-pd3_phone_2.png","sinder-pd3_phone_3.png"],
       "download": {
-        "direct": "SinderPhoneWallpaper_P.pak"
+        "direct": "SinderPhoneWallpaper_P.pak",
+        "modworkshop": "https://modworkshop.net/mod/48647"
       }
     },
     {
@@ -27,8 +28,11 @@
       "description": "Ce mod utilise le fanart Baka Mitai de Roko comme fond d'écran pour le téléphone.",
       "game": "payday3",
       "categories": ["aura-gx"],
-      "images": [""],
-      "download": "#"
+      "images": ["aura-gx-pd3_phone_1.png"],
+      "download": {
+        "direct": "AuraGXPhoneWallpaper_P.pak",
+        "modworkshop": "https://modworkshop.net/mod/48899"
+      }
     },
     {
       "id": "aura-gx-pd3_van",
@@ -39,7 +43,7 @@
       "categories": ["aura-gx"],
       "images": ["aura-gx-pd3_van_1.png"],
       "download": {
-        "direct": "#",
+        "direct": "AuraGXEscapeVan_P.pak",
         "modworkshop": "https://modworkshop.net/mod/48630"
 
       }
