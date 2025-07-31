@@ -128,6 +128,7 @@ $title = 'Modding - Badreddine Rezzouk';
                             <p>${mod.description}</p>
                         </div>
                         </div>
+                        <div class="quarterbox"></div>
 
                 `;
 

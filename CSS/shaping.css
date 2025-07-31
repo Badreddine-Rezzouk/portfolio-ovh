@@ -7,9 +7,11 @@ html, body {
 .box {
     height: 100px;
 }
-
 .halfbox {
     height: 50px;
+}
+.quarterbox {
+    height: 25px;
 }
 
 .gradient-box, .width-box {
