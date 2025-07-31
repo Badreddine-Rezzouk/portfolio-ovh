@@ -1,5 +1,5 @@
 <?php
-global $topURL;
+global $topURL, $baseURL;
 require "../../../Common-files/redirect.php";
 $modId = $_GET['modId'] ?? '';
 $title = 'Mod - Badreddine Rezzouk';
@@ -37,7 +37,7 @@ $title = 'Mod - Badreddine Rezzouk';
     const modId = "<?php echo $modId ?>";
 
     document.addEventListener('DOMContentLoaded', () => {
-        fetch('<?php echo $topURL ?>mods-json/mods.json')
+        fetch('<?php echo $baseURL?>mods-json/mods.json')
             .then(res => res.json())
             .then(data => {
                 const allMods = data.mods;
