@@ -1,5 +1,5 @@
 <?php
-global $topURL;
+global $topURL, $baseURL;
 require "../../Common-files/redirect.php";
 $title = 'Modding - Badreddine Rezzouk';
 ?>
@@ -49,7 +49,7 @@ $title = 'Modding - Badreddine Rezzouk';
         let allMods = [], games = [], categories = [];
 
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('<?php echo $topURL?>mods-json/mods.json')
+            fetch('<?php echo $baseURL?>mods-json/mods.json')
                 .then(res => res.json())
                 .then(data => {
                     allMods = data.mods;
