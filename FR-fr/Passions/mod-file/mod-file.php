@@ -10,9 +10,6 @@ $title = 'Mod - Badreddine Rezzouk';
 <head>
     <?php require '../../../Common-files/header.php'; ?>
     <style>
-        .mod-detail {
-            max-width: 800px;
-        }
         .mod-screenshot {
             width: 100%;
             border-radius: 12px;
@@ -27,9 +24,9 @@ $title = 'Mod - Badreddine Rezzouk';
     <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
         <h2 id="modTitle">Chargement du mod...</h2>
     </div>
-    <div class="box"></div>
+    <div class="halfbox"></div>
 
-    <div class="bg-white p-4 rounded-3 mx-auto mod-detail border border-5 shadow-lg" id="modContent">
+    <div class="bg-white p-4 rounded-3 mx-auto w-75 border border-5 shadow-lg" id="modContent">
         <!-- Content will be filled by JS -->
     </div>
     <div class="box"></div>
@@ -104,7 +101,7 @@ $title = 'Mod - Badreddine Rezzouk';
                 let downloadButtons = '';
                 if (mod.download) {
                     if (mod.download.direct) {
-                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.direct}" target="_blank">⬇️ Télécharger</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="<?php echo $topURL?>Files/Mods/${mod.download.direct}" target="_blank">⬇️ Télécharger</a>`;
                     }
                     if (mod.download.nexus) {
                         downloadButtons += `<a class="btn btn-outline-dark me-2 mb-2" href="${mod.download.nexus}" target="_blank">Nexus Mods</a>`;

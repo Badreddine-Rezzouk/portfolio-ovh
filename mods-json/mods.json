@@ -16,7 +16,9 @@
       "game": "payday3",
       "categories": ["sinder"],
       "images": ["cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png"],
-      "download": "#"
+      "download": {
+        "direct": "SinderPhoneWallpaper_P.pak"
+      }
     },
     {
       "id": "aura-gx-pd3_phone",
