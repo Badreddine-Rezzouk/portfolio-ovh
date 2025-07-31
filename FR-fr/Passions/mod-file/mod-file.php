@@ -101,13 +101,16 @@ $title = 'Mod - Badreddine Rezzouk';
                 let downloadButtons = '';
                 if (mod.download) {
                     if (mod.download.direct) {
-                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="<?php echo $topURL?>Files/Mods/${mod.download.direct}" target="_blank">⬇️ Télécharger</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="<?php echo $topURL?>Files/Mods/${mod.download.direct}" target="_blank">⬇️ Téléchargement direct</a>`;
                     }
                     if (mod.download.nexus) {
                         downloadButtons += `<a class="btn btn-outline-dark me-2 mb-2" href="${mod.download.nexus}" target="_blank">Nexus Mods</a>`;
                     }
                     if (mod.download.modworkshop) {
                         downloadButtons += `<a class="btn btn-outline-success me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">ModWorkshop</a>`;
+                    }
+                    if (mod.download.steam) {
+                        downloadButtons += `<a class="btn btn-outline-success me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">Steam Workshop</a>`;
                     }
                 }
 

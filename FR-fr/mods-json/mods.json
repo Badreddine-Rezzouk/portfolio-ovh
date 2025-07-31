@@ -22,6 +22,18 @@
       }
     },
     {
+      "id": "sinder-pd3_art-gallery",
+      "title": "Galerie des arts (mission \"Under the Surphaze\") - Sinder",
+      "date": "10/04/2025",
+      "description": "Ce mod remplace les peintures trouvable dans la mission <a href=\"https://payday.fandom.com/wiki/Under_The_Surphaze\">\"Under the Surphaze\"</a> avec différents fanarts de Sinder.\n",
+      "game": "payday3",
+      "categories": ["sinder"],
+      "images": ["sinder-pd3_art-gallery_1.png","sinder-pd3_art-gallery_2.png","sinder-pd3_art-gallery_3.png","sinder-pd3_art-gallery_4.png","sinder-pd3_art-gallery_5.png","sinder-pd3_art-gallery_6.png","sinder-pd3_art-gallery_7.png","sinder-pd3_art-gallery_8.png","sinder-pd3_art-gallery_9.png","sinder-pd3_art-gallery_10.png","sinder-pd3_art-gallery_11.png","sinder-pd3_art-gallery_12.png","sinder-pd3_art-gallery_13.png","sinder-pd3_art-gallery_14.png","sinder-pd3_art-gallery_15.png","sinder-pd3_art-gallery_16.png","sinder-pd3_art-gallery_17.png","sinder-pd3_art-gallery_18.png","sinder-pd3_art-gallery_19.png"],
+      "download": {
+        "direct": "SinderArtGallery_P.pak"
+      }
+    },
+    {
       "id": "aura-gx-pd3_phone",
       "title": "Fond d'écran de téléphone - GX Aura",
       "date": "08/08/2024",
