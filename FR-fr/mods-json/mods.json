@@ -4,7 +4,13 @@
       "name":  "Payday 3",
       "guide": "<details class=\"text-start\">\n<summary> Comment installer un mod Payday 3 </summary>\n<p> Etape 1: Trouvez où est installé votre jeu Payday 3 et allez dans <span class=\"text-muted\">{Emplacement}/PAYDAY3/Content/Paks/</span> . </p>\n<p> Etape 2: Créez le dossier \"~mods\" </p>\n<p> Etape 3: Ouvrez le launcher depuis lequel vous possédez le jeu et allez dans les paramètres de lancement:</p>\n<ul>\n<li> Dans Steam: Ouvrez la page Payday 3, cliquez sur le boutton paramètres, puis Propriétés, et enfin Général (si Steam ne vous y envoie pas par défaut).</li>\n<li> Dans Epic Games Store: Trouvez la carte de Payday 3, faites un clique droit et cliquez sur \"Gérer\", l'option sera en bas de la fenêtre de paramètres.</li>\n</ul>\n<p> Etape 4: Ecrivez dans les options de lancement \"-fileopenlog\".</p>\n<div class=\"halfbox\"></div>\n<p> Et voilà, votre jeu est prêt à être moddé! Il ne reste plus qu'à mettre vos mods dans le fichier \"~mods\" précédemment créé et à lancer le jeu.</p>\n</details>\n"
     },
-    { "id": "f1-24", "name": "EA Sport F1 24"}
+    {
+      "id": "f1-24",
+      "name": "EA Sport F1 24"},
+    {
+      "id": "ets2",
+      "name": "Euro Truck Simulator 2"
+    }
   ],
   "categories": [
     { "id": "sinder", "name": "Mods Sinder" },
@@ -61,6 +67,18 @@
         "direct": "AuraGXEscapeVan_P.pak",
         "modworkshop": "https://modworkshop.net/mod/48630",
         "nexus": "https://www.nexusmods.com/payday3/mods/96"
+      }
+    },
+    {
+      "id": "aura-gx-ets2_renault-t",
+      "title": "Livrée de camion Renault T - GX Aura",
+      "date": "20/04/2024",
+      "description": "Ce mod transforme le Renault T en un design basé sur la streameuse GX Aura.",
+      "game": "ets2",
+      "categories": ["aura-gx"],
+      "images": ["aura-gx-ets2_renault-t_1.png","aura-gx-ets2_renault-t_2.png","aura-gx-ets2_renault-t_3.png","aura-gx-ets2_renault-t_4.png"],
+      "download": {
+        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3227703980"
       }
     }
   ]
