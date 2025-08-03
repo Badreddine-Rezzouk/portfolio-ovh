@@ -110,7 +110,7 @@ $title = 'Mod - Badreddine Rezzouk';
                         downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">⬇️ ModWorkshop</a>`;
                     }
                     if (mod.download.steam) {
-                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.modworkshop}" target="_blank">⬇️ Steam Workshop</a>`;
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.steam}" target="_blank">⬇️ Steam Workshop</a>`;
                     }
                 }
                 let guideSection = '';
