@@ -12,7 +12,7 @@ $title = 'Modding - Badreddine Rezzouk';
     <style>
         .mod-card:hover{
             cursor: pointer;
-            background: rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.2);
         }
     </style>
 </head>
