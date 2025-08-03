@@ -31,7 +31,7 @@ $title = 'Modding - Badreddine Rezzouk';
     </div>
     <div class="box"></div>
     <div class="row">
-    <div class="filters col-sm-10 col-3 offset-1 bg-white p-4 rounded-3 border border-5 shadow-lg" style="max-height:14vw;">
+    <div class="filters col-sm-10 col-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg" style="max-height:14vw;">
         <label for="gameFilter"> Jeu concerné: </label>
         <select id="gameFilter" class="form-select mb-3">
             <option value="">Tous les jeux</option>
