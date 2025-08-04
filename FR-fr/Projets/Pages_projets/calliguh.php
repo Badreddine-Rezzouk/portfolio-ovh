@@ -35,7 +35,7 @@ $title = "Calliguh - Badreddine Rezzouk";
                                     <img src="<?php echo $topURL?>Images/projets/calliguh/calliguh_1.png" class="d-block w-100" alt="Calliguh">
                                 </div>
                                 <div class="carousel-item">
-                                    <img>
+                                    <img src="<?php echo $topURL?>Images/projets/calliguh/calliguh_2.png" class="d-block w-100" alt="Calliguh">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselCalliguh" data-bs-slide="prev">
