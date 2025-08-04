@@ -18,12 +18,12 @@ $title = "Calliguh - Badreddine Rezzouk";
                 <h2>Calliguh</h2>
             </div>
             <div class="box"></div>
-            <div class="bg-white p-4 rounded-3 w-70 mx-auto border border-5 shadow-lg">
+            <div class="bg-white p-4 rounded-3 w-30 mx-auto border border-5 shadow-lg">
                 <blockquote class="text-end">
                     <h6> "Guh" </h6>
                     <cite>- Mori Calliope, 2020 - ???? </cite>
                 </blockquote>
-                <p> Ce projet consiste à présenter un compteur synchronisé avec tout le monde. Ici, on remplace le bouton basique par un GIF de Mori Calliope.</p>
+
             </div>
             <div class="halfbox"></div>
             <div class="bg-white p-4 rounded-3 w-70 mx-auto border border-5 shadow-lg">
@@ -47,6 +47,10 @@ $title = "Calliguh - Badreddine Rezzouk";
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p> Ce projet consiste à présenter un compteur synchronisé avec tout le monde. Ici, on remplace le bouton basique par un GIF de Mori Calliope.</p>
+                        <a class="btn btn-primary me-2 mb-2" href="https://calliguh.com/" target="_blank"> Accéder au site </a>
                     </div>
                 </div>
             </div>
