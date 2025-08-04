@@ -32,7 +32,7 @@ $title = "Calliguh - Badreddine Rezzouk";
                         <div id="carouselCalliguh" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img>
+                                    <img src="<?php echo $topURL?>Images/projets/calliguh/calliguh_1.png" class="d-block w-100" alt="Calliguh">
                                 </div>
                                 <div class="carousel-item">
                                     <img>
