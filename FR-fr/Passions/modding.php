@@ -125,7 +125,7 @@ $title = 'Modding - Badreddine Rezzouk';
                         <div class="col">
                             <h4>${mod.title} | <small>${gameName}</small></h4>
                             <h6>${mod.date}</h6>
-                            <p>${mod.description}</p>
+                            <p>${mod.shortdescription}</p>
                         </div>
                         </div>
                         <div class="quarterbox"></div>
