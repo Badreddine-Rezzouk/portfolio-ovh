@@ -112,6 +112,15 @@ $title = 'Mod - Badreddine Rezzouk';
                     if (mod.download.steam) {
                         downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.steam}" target="_blank">⬇️ Steam Workshop</a>`;
                     }
+                    if (mod.download.overtake) {
+                        downloadButtons += `<a class="btn btn-primary me-2 mb-2" href="${mod.download.overtake}" target="_blank">⬇️ Overtake.gg</a>`;
+                    }
+                }
+                let statusPill = '';
+                if (mod.status === 'released') {
+                    statusPill += `<span class="badge badge-success"> Publié </span>`;
+                } else if (mod.status === 'working') {
+                    statusPill += `<span class="badge badge-warning"> En cours de production </span>`;
                 }
                 let guideSection = '';
                 if (gameData.guide){
@@ -121,9 +130,10 @@ $title = 'Mod - Badreddine Rezzouk';
                 const contentHTML = `
                     <div class="row">
                         <div class="col-md-6 text-start">
-                            <h4><strong>Jeu :</strong> ${gameName}</h4>
+                            <h5><strong>Jeu :</strong> ${gameName}</h5>
                             <h5><strong>Date :</strong> ${mod.date}</h5>
                             <p><strong>Catégories :</strong> ${modCategories}</p>
+                            ${statusPill}
                             <p>${mod.description}</p>
                             <div class="mt-3">
                                 ${downloadButtons}

@@ -20,6 +20,7 @@
     {
       "id": "sinder-pd3_phone",
       "title": "Fond d'écran de téléphone - Sinder Succube",
+      "status": "released",
       "date": "20/07/2024",
       "description": "Ce mod utilise le fanart succube d'Hioyami comme fond d'écran pour le téléphone.",
       "game": "payday3",
@@ -33,6 +34,7 @@
     {
       "id": "sinder-pd3_art-gallery",
       "title": "Galerie des arts (mission \"Under the Surphaze\") - Sinder",
+      "status": "released",
       "date": "10/04/2025",
       "description": "Ce mod remplace les peintures trouvable dans la mission <a href=\"https://payday.fandom.com/wiki/Under_The_Surphaze\">\"Under the Surphaze\"</a> avec différents fanarts de Sinder.\n",
       "game": "payday3",
@@ -43,8 +45,34 @@
       }
     },
     {
+      "id": "sinder-pd3_vending-gg",
+      "title": "Distributeur Gamersupps - Sinder",
+      "status": "released",
+      "date": "10/04/2025",
+      "description": "Ce mod remplace les pubs des distributeurs avec une texture promouvant la solution Gamersupps de Sinder Pyro Power.\n",
+      "game": "payday3",
+      "categories": ["sinder"],
+      "images": ["sinder-pd3_vending-gg_1.png","sinder-pd3_vending-gg_2.png"],
+      "download": {
+        "direct": "SinderVendingGG_P.pak"
+      }
+    },
+    {
+      "id": "sinder-f1-24_red-bull",
+      "title": "Gamersupps Pyro Pup Industries",
+      "status": "working",
+      "date": "10/04/2025",
+      "description": "Ce mod remplace l'équipe Oracle Red Bull Racing par une équipe fictive basée sur Sinder.\n\nLes pilotes deviennent respectivement:\nMax Verstappen -> Sinder (renommée \"Sinder PUP\")\nSergio Checo Pérez -> Trickywi (renommée \"Trickywi Nouvelle NEPHASIS\")",
+      "game": "f1-24",
+      "categories": ["sinder"],
+      "images": ["sinder-pd3_vending-gg_1.png","sinder-pd3_vending-gg_2.png"],
+      "download": {
+      }
+    },
+    {
       "id": "aura-gx-pd3_phone",
       "title": "Fond d'écran de téléphone - GX Aura",
+      "status": "released",
       "date": "08/08/2024",
       "description": "Ce mod utilise le fanart Baka Mitai de Roko comme fond d'écran pour le téléphone.",
       "game": "payday3",
@@ -58,6 +86,7 @@
     {
       "id": "aura-gx-pd3_van",
       "title": "Livrée de van - GX Aura",
+      "status": "released",
       "date": "19/07/2024",
       "description": "Ce mod transforme le van de Payday 3 en un design basé sur la streameuse GX Aura.",
       "game": "payday3",
@@ -72,6 +101,7 @@
     {
       "id": "aura-gx-ets2_renault-t",
       "title": "Livrée de camion Renault T - GX Aura",
+      "status": "released",
       "date": "20/04/2024",
       "description": "Ce mod transforme le Renault T en un design basé sur la streameuse GX Aura.",
       "game": "ets2",
