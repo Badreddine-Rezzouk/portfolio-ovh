@@ -118,9 +118,9 @@ $title = 'Mod - Badreddine Rezzouk';
                 }
                 let statusPill = '';
                 if (mod.status === 'released') {
-                    statusPill += `<span class="badge badge-success"> Publié </span>`;
+                    statusPill += `<span class="badge rounded-pill text-bg-success"> Publié </span>`;
                 } else if (mod.status === 'working') {
-                    statusPill += `<span class="badge badge-warning"> En cours de production </span>`;
+                    statusPill += `<span class="badge rounded-pill text-bg-warning"> En cours de production </span>`;
                 }
                 let guideSection = '';
                 if (gameData.guide){
