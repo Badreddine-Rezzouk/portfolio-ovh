@@ -112,6 +112,13 @@ $title = 'Modding - Badreddine Rezzouk';
                 const gameName = getGameName(mod.game);
                 const modThumbnail = topURL + "Images/mod/" + mod.id + "/" + mod.images[0];
 
+                let statusPill = '';
+                if (mod.status === 'released') {
+                    statusPill += `<span class="badge badge-success"> Publié </span>`;
+                } else if (mod.status === 'working') {
+                    statusPill += `<span class="badge badge-warning"> En cours de production </span>`;
+                }
+
                 // Set the click handler using a proper function
                 div.onclick = function () {
                     window.location.href = baseURL + 'Passions/mod-file/mod-file.php?modId=' + mod.id;
@@ -125,6 +132,7 @@ $title = 'Modding - Badreddine Rezzouk';
                         <div class="col">
                             <h4>${mod.title} | <small>${gameName}</small></h4>
                             <h6>${mod.date}</h6>
+                            ${statusPill}
                             <p>${mod.shortdescription}</p>
                         </div>
                         </div>
