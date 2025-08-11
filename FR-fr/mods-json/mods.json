@@ -65,7 +65,7 @@
       "description": "Ce mod remplace l'équipe Oracle Red Bull Racing par une équipe fictive basée sur Sinder.\n\nLes pilotes deviennent respectivement:\nMax Verstappen -> Sinder (renommée \"Sinder PUP\")\nSergio Checo Pérez -> Trickywi (renommée \"Trickywi Nouvelle NEPHASIS\")",
       "game": "f1-24",
       "categories": ["sinder"],
-      "images": ["sinder-pd3_vending-gg_1.png","sinder-pd3_vending-gg_2.png"],
+      "images": ["sinder-f1-24_red-bull_1.png"],
       "download": {
       }
     },
