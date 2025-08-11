@@ -23,7 +23,7 @@ $title = 'Stages - Badreddine Rezzouk';
     <div class="box"></div>
     <div class="bg-white p-4 rounded-3 mx-auto text-center w-80 border border-5 shadow-lg">
         <h4> AB Legacy : Gestion locative </h4>
-        <span class="badge rounded-pill text-bg-primary">Contrat conclu</span>
+        <span class="badge rounded-pill text-bg-success">Contrat conclu</span>
         <div class="row">
             <div class="halfbox"></div>
             <div class="col-12 col-lg-8 mx-auto">
