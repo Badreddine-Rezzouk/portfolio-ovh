@@ -117,6 +117,20 @@
       "download": {
         "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3227703980"
       }
+    },
+    {
+      "id": "aura-gx-ets2_renault-t",
+      "title": "Livrée de remorque - GX Aura",
+      "status": "released",
+      "date": "20/04/2024",
+      "shortdescription": "Ce mod applique un design basé sur la streameuse GX Aura sur les remorques standard.",
+      "description": "Ce mod applique un design basé sur la streameuse GX Aura sur les remorques standard.",
+      "game": "ets2",
+      "categories": ["aura-gx"],
+      "images": ["aura-gx-ets2_trailers_1.png","aura-gx-ets2_trailers_2.png","aura-gx-ets2_trailers_3.png","aura-gx-ets2_trailers_4.png","aura-gx-ets2_trailers_5.png","aura-gx-ets2_trailers_6.png","aura-gx-ets2_trailers_7.png"],
+      "download": {
+        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3249068350"
+      }
     }
   ]
 }
