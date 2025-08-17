@@ -1,0 +1,208 @@
+{
+  "games": [
+    {
+      "id": "payday3",
+      "name": "Payday 3",
+      "guide": "<details class=\"text-start\">\n<summary> How to install a Payday 3 mod </summary>\n<p> Step 1: Find where your Payday 3 game is installed and go to <span class=\"text-muted\">{Location}/PAYDAY3/Content/Paks/</span> . </p>\n<p> Step 2: Create the \"~mods\" folder </p>\n<p> Step 3: Open the launcher where you own the game and go to the launch options:</p>\n<ul>\n<li> On Steam: Open the Payday 3 page, click the settings button, then Properties, and finally General (if Steam doesn’t take you there by default).</li>\n<li> On Epic Games Store: Find the Payday 3 tile, right‑click it, and click \"Manage\"; the option will be at the bottom of the settings window.</li>\n</ul>\n<p> Step 4: Enter \"-fileopenlog\" in the launch options.</p>\n<div class=\"halfbox\"></div>\n<p> And there you go, your game is ready to be modded! Just put your mods in the \"~mods\" folder you created earlier and launch the game.</p>\n</details>\n"
+    },
+    {
+      "id": "f1-24",
+      "name": "EA Sport F1 24"
+    },
+    {
+      "id": "ets2",
+      "name": "Euro Truck Simulator 2"
+    }
+  ],
+  "categories": [
+    {
+      "id": "sinder",
+      "name": "Sinder Mods"
+    },
+    {
+      "id": "aura-gx",
+      "name": "GX Aura Mods"
+    }
+  ],
+  "mods": [
+    {
+      "id": "sinder-pd3_phone",
+      "title": "Phone Wallpaper - Sinder Succubus",
+      "status": "released",
+      "date": "20/07/2024",
+      "shortdescription": "This mod uses Hioyami’s succubus fanart as the phone wallpaper.",
+      "description": "This mod uses Hioyami’s succubus fanart as the phone wallpaper.",
+      "game": "payday3",
+      "categories": [
+        "sinder"
+      ],
+      "images": [
+        "sinder-pd3_phone_1.png",
+        "sinder-pd3_phone_2.png",
+        "sinder-pd3_phone_3.png"
+      ],
+      "download": {
+        "direct": "SinderPhoneWallpaper_P.pak",
+        "modworkshop": "https://modworkshop.net/mod/48647"
+      }
+    },
+    {
+      "id": "sinder-pd3_art-gallery",
+      "title": "Art Gallery (mission \"Under the Surphaze\") - Sinder",
+      "status": "released",
+      "date": "10/04/2025",
+      "shortdescription": "This mod replaces the paintings found in the mission \"Under the Surphaze\" with various Sinder fanarts.\n",
+      "description": "This mod replaces the paintings found in the mission <a href=\"https://payday.fandom.com/wiki/Under_The_Surphaze\">\"Under the Surphaze\"</a> with various Sinder fanarts.\n",
+      "game": "payday3",
+      "categories": [
+        "sinder"
+      ],
+      "images": [
+        "sinder-pd3_art-gallery_1.png",
+        "sinder-pd3_art-gallery_2.png",
+        "sinder-pd3_art-gallery_3.png",
+        "sinder-pd3_art-gallery_4.png",
+        "sinder-pd3_art-gallery_5.png",
+        "sinder-pd3_art-gallery_6.png",
+        "sinder-pd3_art-gallery_7.png",
+        "sinder-pd3_art-gallery_8.png",
+        "sinder-pd3_art-gallery_9.png",
+        "sinder-pd3_art-gallery_10.png",
+        "sinder-pd3_art-gallery_11.png",
+        "sinder-pd3_art-gallery_12.png",
+        "sinder-pd3_art-gallery_13.png",
+        "sinder-pd3_art-gallery_14.png",
+        "sinder-pd3_art-gallery_15.png",
+        "sinder-pd3_art-gallery_16.png",
+        "sinder-pd3_art-gallery_17.png",
+        "sinder-pd3_art-gallery_18.png",
+        "sinder-pd3_art-gallery_19.png"
+      ],
+      "download": {
+        "direct": "SinderArtGallery_P.pak"
+      }
+    },
+    {
+      "id": "sinder-pd3_vending-gg",
+      "title": "Gamersupps Vending Machine - Sinder",
+      "status": "released",
+      "date": "10/04/2025",
+      "shortdescription": "This mod replaces vending machine ads with a texture promoting Sinder Pyro Power’s Gamersupps.",
+      "description": "This mod replaces vending machine ads with a texture promoting Sinder Pyro Power’s Gamersupps.\n",
+      "game": "payday3",
+      "categories": [
+        "sinder"
+      ],
+      "images": [
+        "sinder-pd3_vending-gg_1.png",
+        "sinder-pd3_vending-gg_2.png"
+      ],
+      "download": {
+        "direct": "SinderVendingGG_P.pak"
+      }
+    },
+    {
+      "id": "sinder-f1-24_red-bull",
+      "title": "F1 Team Gamersupps Pyro Pup Industries",
+      "status": "working",
+      "date": "N/A",
+      "shortdescription": "This mod replaces the Oracle Red Bull Racing team with a fictional, Sinder‑themed team.",
+      "description": "This mod replaces the Oracle Red Bull Racing team with a fictional, Sinder‑themed team. <br><br> The drivers are replaced as follows: <br> Max Verstappen -> Sinder (renamed \"Sinder PUP\") <br> Sergio Checo Pérez -> Trickywi (renamed \"Trickywi Nouvelle NEPHASIS\")",
+      "game": "f1-24",
+      "categories": [
+        "sinder"
+      ],
+      "images": [
+        "sinder-f1-24_red-bull_1.png"
+      ],
+      "download": {}
+    },
+    {
+      "id": "aura-gx-pd3_phone",
+      "title": "Phone Wallpaper - GX Aura",
+      "status": "released",
+      "date": "08/08/2024",
+      "shortdescription": "This mod uses Roko’s Baka Mitai fanart as the phone wallpaper.",
+      "description": "This mod uses Roko’s Baka Mitai fanart as the phone wallpaper.",
+      "game": "payday3",
+      "categories": [
+        "aura-gx"
+      ],
+      "images": [
+        "aura-gx-pd3_phone_1.png"
+      ],
+      "download": {
+        "direct": "AuraGXPhoneWallpaper_P.pak",
+        "modworkshop": "https://modworkshop.net/mod/48899"
+      }
+    },
+    {
+      "id": "aura-gx-pd3_van",
+      "title": "Van Livery - GX Aura",
+      "status": "released",
+      "date": "19/07/2024",
+      "shortdescription": "This mod transforms Payday 3’s van into a design based on the streamer GX Aura.",
+      "description": "This mod transforms Payday 3’s van into a design based on the streamer GX Aura.",
+      "game": "payday3",
+      "categories": [
+        "aura-gx"
+      ],
+      "images": [
+        "aura-gx-pd3_van_1.png",
+        "aura-gx-pd3_van_2.png",
+        "aura-gx-pd3_van_3.png",
+        "aura-gx-pd3_van_4.png"
+      ],
+      "download": {
+        "direct": "AuraGXEscapeVan_P.pak",
+        "modworkshop": "https://modworkshop.net/mod/48630",
+        "nexus": "https://www.nexusmods.com/payday3/mods/96"
+      }
+    },
+    {
+      "id": "aura-gx-ets2_renault-t",
+      "title": "Renault T Truck Livery - GX Aura",
+      "status": "released",
+      "date": "18/05/2024",
+      "shortdescription": "This mod transforms the Renault T into a design based on the streamer GX Aura.",
+      "description": "This mod transforms the Renault T into a design based on the streamer GX Aura.",
+      "game": "ets2",
+      "categories": [
+        "aura-gx"
+      ],
+      "images": [
+        "aura-gx-ets2_renault-t_1.png",
+        "aura-gx-ets2_renault-t_2.png",
+        "aura-gx-ets2_renault-t_3.png",
+        "aura-gx-ets2_renault-t_4.png"
+      ],
+      "download": {
+        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3227703980"
+      }
+    },
+    {
+      "id": "aura-gx-ets2_trailers",
+      "title": "Trailer Livery - GX Aura",
+      "status": "released",
+      "date": "20/04/2024",
+      "shortdescription": "This mod applies a design based on the streamer GX Aura to the standard trailers.",
+      "description": "This mod applies a design based on the streamer GX Aura to the standard trailers. <br> The affected trailers are: insulated, dry, curtain‑sided, refrigerated",
+      "game": "ets2",
+      "categories": [
+        "aura-gx"
+      ],
+      "images": [
+        "aura-gx-ets2_trailers_1.png",
+        "aura-gx-ets2_trailers_2.png",
+        "aura-gx-ets2_trailers_3.png",
+        "aura-gx-ets2_trailers_4.png",
+        "aura-gx-ets2_trailers_5.png",
+        "aura-gx-ets2_trailers_6.png",
+        "aura-gx-ets2_trailers_7.png"
+      ],
+      "download": {
+        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3249068350"
+      }
+    }
+  ]
+}

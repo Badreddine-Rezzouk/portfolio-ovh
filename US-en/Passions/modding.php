@@ -1,30 +1,6 @@
 <?php
-// Extract the language from the URL (e.g., http://domain.sub/FR-fr/page)
-$uri = $_SERVER['REQUEST_URI']; // Get the full URI (e.g., /FR-fr/page)
-$uriParts = explode('/', trim($uri, '/')); // Split the URI into parts
-$languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is the language (e.g., FR-fr)
-
-// Define allowed languages
-$allowed_languages = ['FR-fr', 'EN-us', 'CN-zh']; // Example allowed languages
-
-// Validate and set the language
-if (in_array($languageFromURL, $allowed_languages)) {
-    // If the language in the URL is valid, update the session
-    $_SESSION['prev_lang'] = $languageFromURL;
-} elseif (isset($_SESSION['prev_lang'])) {
-    // If no valid language in the URL, use the session language
-    $languageFromURL = $_SESSION['prev_lang'];
-} else {
-    // Default language if no session or URL language is set
-    $languageFromURL = 'FR-fr';
-    $_SESSION['prev_lang'] = $languageFromURL;
-}
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
-
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/');
-$topURL = rtrim($protocol . $host . '/');
-
+global $topURL, $baseURL;
+require "../../Common-files/redirect.php";
 $title = 'Modding - Badreddine Rezzouk';
 ?>
 
@@ -33,253 +9,140 @@ $title = 'Modding - Badreddine Rezzouk';
 <html>
 <head>
     <?php require '../../Common-files/header.php'; ?>
+    <style>
+        .mod-card:hover{
+            cursor: pointer;
+            background-color: rgba(255,255,255,0.2);
+        }
+    </style>
 </head>
 <body>
 <?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
-    <div class="box"></div>
+    <div class="halfbox"></div>
     <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
-        <h2> My video games mods</h2>
+        <h2> My Video Game Mods </h2>
     </div>
-    <div class="box"></div>
+    <div class="halfbox"></div>
     <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg">
         <p>
-
-            Video game modding is a practice where the goal is to transform a video game by adding or modifying content, with the aim of gameplay that was not originally intended by the developer.
+            Video game modding is the practice of transforming a video game by adding or modifying content, with the goal of creating gameplay not originally intended by the developer.
         </p>
     </div>
     <div class="box"></div>
-    <div id="modding_sinder" class="modding_section">
-        <div class="box"></div>
-        <div class="bg-white p-4 rounded-3 mx-auto text-center w-75 offset-1 border border-5 shadow-lg">
-            <h3> Sinder mods for Payday 3 </h3>
-            <img src="<?php echo $topURL?>Images/pd3-logo.png" class="img-fluid" alt="Logo Payday 3" />
-            <div class="halfbox"></div>
-            <div class="text-start">
-                A series of mods featuring the vtuber <a href="https://www.twitch.tv/sinder">Sinder</a> for the video game Payday 3.
-            </div>
-            <details class="alert alert-danger">
-                <summary>Update on April 27th:</summary>
-                It has come out that Sinder and her (then) manager REDACTED have commited despicable acts against creator Nanoless and multiple vtubers, I absolutely do not condone this type of behavior. After some mental back and forth, I have come to the following decision: <br>
-                The mods relevant to her will stay up on the portfolio and modworkshop page, no further mods will be created. <br>
-                Thank you for your understanding.
-            </details>
-            <details class="alert alert-warning">
-                <summary>Update from May 18, 2025:</summary>
-                After analyzing the events of the "drama week", I have come to the conclusion that only REDACTED is responsible for the actions taken against Nanoless, and that a third party who helped Nanoless translate her document reworded it in a way that harmed Sinder's reputation (<a href="https://x.com/Selena_Augusta/status/1921872776526168072">This person</a>, although biased, presents most of the arguments against Sinder's culpability). With this new perspective, it no longer seems logical to stick with my April 27 decision. Therefore: <br>
-                The creation of mods featuring Sinder may resume.
-            </details>
-
-            <details class="text-start">
-                <summary> Overall credits </summary>
-                <p>For Payday 3: <br><a href="https://www.starbreeze.com/">Starbreeze Entertainment</a></p>
-                <p>For Sinder and all pertinent assets: Sinder, Nanoless, _epebe</p>
-            </details>
-            <details class="text-start">
-                <summary> How to install a Payday 3 mod </summary>
-                <p> Step 1: Find where your Payday 3 install is and go to <span class="text-muted">{Directory}/PAYDAY3/Content/Paks/</span> . </p>
-                <p> Step 2: Create the folder "~mods" </p>
-                <p> Step 3: Open the launcher you bought the game with and go to the launch settings:</p>
-                <ul>
-                    <li> In Steam: Find the Payday 3 page, click on the settings button, then Properties, and General (if Steam doesn't open it by default).</li>
-                    <li> In Epic Games Store: Find the Payday 3 card, Right-click on it and select Properties, the input box will be at the bottom of the new window.</li>
-                </ul>
-                <p> Step 4: Insert "-fileopenlog" in the input box.</p>
-                <div class="halfbox"></div>
-                <p> There we go, your game is now ready to be modded! Just place your mods in the previously created "~mods" folder and launch the game.</p>
-            </details>
-            <div class="halfbox"></div>
-            <!-- Zone Sinder Phone Wallpaper-->
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div id="carouselSinderPhone" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/cwbE92PiWJ6eoRPML7pSwgVjLWvABYbE.png" class="d-block" alt="SinderPhoneWallpaper Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/dGyPs8hXXFLOabNGdmjKdzWr2qfoHSKi.png" class="d-block" alt="SinderPhoneWallpaper Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderPhoneWallpaper/xHTIlTxNZx1EaxXkAE4q3HDtVnIfE3lP.png" class="d-block" alt="SinderPhoneWallpaper Image">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderPhone" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSinderPhone" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h4> Phone Wallpaper </h4>
-                    <p><small> Released on July 20th 2024 </small></p>
-                    <p class="text-start"> This mods uses Hioyami's succubus art as a wallpaper for the phone.</p>
-                    <details class="text-start">
-                        <summary> Credits </summary>
-                        <p> Hioyami </p>
-                    </details>
-                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderPhoneWallpaper_P.pak" download role="button">
-                        Download
-                    </a>
-                </div>
-            </div>
-            <div class="halfbox"></div>
-            <hr class="mx-auto">
-            <div class="halfbox"></div>
-            <!-- Zone Sinder Gallerie -->
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h4> Art gallery (mission "Under the Surphaze") </h4>
-                    <p><small> Released on April 10th 2025 </small></p>
-                    <p class="text-start"> This mod replaces the paintings found in the <a href="https://payday.fandom.com/wiki/Under_The_Surphaze">"Under the Surphaze"</a>
-                        mission with multiple fanarts of Sinder.
-                    </p>
-                    <details class="text-start">
-                        <summary>Credits</summary>
-                        <p>ChillyChonkas, Ashsa689, IbbyChan02, Sinonamon, Tofuubear, maybetori (incomplete list) </p>
-
-                    </details>
-                    <a class="btn btn-light" href="<?php echo $topURL ?>Files/Mods/SinderArtGallery_P.pak" download role="button">
-                        Download
-                    </a>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div id="carouselSinderArt" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408110240_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408122900_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135146_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135155_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135219_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135228_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135258_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408135309_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408163026_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250408212347_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410150156_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410185303_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410185722_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410211431_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410211441_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410211518_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410211717_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410211755_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderArt/20250410212104_1.jpg" class="d-block " alt="SinderArt Image">
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderArt" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSinderArt" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="halfbox"></div>
-            <hr class="mx-auto">
-            <div class="halfbox"></div>
-            <!-- Zone Sinder Distributeur-->
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <div id="carouselSinderVendingGG" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_211825.png" class="d-block img-click" alt="SinderArt Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="<?php echo $topURL; ?>Images/mod/SinderVendingGG/Screenshot_2025-04-07_212020.png" class="d-block img-click" alt="SinderArt Image">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinderVendingGG" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSinderVendingGG" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <h4> Gamer Supps vending machine </h4>
-                    <p><small> Released on April 13th 2025 </small></p>
-                    <p class="text-start"> This mod replaces all vending machine textures with ones promoting the energy solution Gamer Supps - Pyro Power </p>
-                    <details class="text-start">
-                        <summary>Credits</summary>
-                        <p> Gamer Supps for all GG assets, Sinder and epebe_ for the Pyro Pup design </p>
-                    </details>
-                    <a class="btn btn-light" href="<?php echo $topURL?>Files/Mods/SinderVendingGG.pak" download role="button">
-                        Download
-                    </a>
-                </div>
-            </div>
+    <div class="row">
+        <div class="filters col-10 col-md-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg" style="max-height:14vw;">
+            <label for="gameFilter"> Game: </label>
+            <select id="gameFilter" class="form-select mb-3">
+                <option value="">All Games</option>
+            </select>
+            <label for="categoryFilter"> Category: </label>
+            <select id="categoryFilter" class="form-select mb-3">
+                <option value="">All Categories</option>
+            </select>
         </div>
-        <div class="box"></div>
-    </div>
-    <div class="box"></div>
-    <!-- Bootstrap Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-dark">
-                <div class="modal-body p-0">
-                    <img src="" id="modalImage" class="img-fluid w-100" alt="Full view" />
-                </div>
-            </div>
-        </div>
+
+        <div id="modList" class="mod-list col-10 col-md-7 mx-auto bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
+        <div class="halfbox"></div>
     </div>
     <script>
-        document.querySelectorAll('.img-click').forEach(img => {
-            img.addEventListener('click', function () {
-                const src = this.getAttribute('data-bs-image');
-                document.getElementById('modalImage').setAttribute('src', src);
-            });
+        let allMods = [], games = [], categories = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('<?php echo $baseURL?>mods-json/mods.json')
+                .then(res => res.json())
+                .then(data => {
+                    allMods = data.mods;
+                    games = data.games;
+                    categories = data.categories;
+
+                    populateFilters();
+                    renderMods(allMods);
+                });
+
+            document.getElementById('gameFilter').addEventListener('change', applyFilters);
+            document.getElementById('categoryFilter').addEventListener('change', applyFilters);
         });
+
+        function populateFilters() {
+            const gameFilter = document.getElementById('gameFilter');
+            games.forEach(g => {
+                const opt = document.createElement('option');
+                opt.value = g.id;
+                opt.textContent = g.name;
+                gameFilter.appendChild(opt);
+            });
+
+            const categoryFilter = document.getElementById('categoryFilter');
+            categories.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c.id;
+                opt.textContent = c.name;
+                categoryFilter.appendChild(opt);
+            });
+        }
+
+        function applyFilters() {
+            const selectedGame = document.getElementById('gameFilter').value;
+            const selectedCategory = document.getElementById('categoryFilter').value;
+
+            const filtered = allMods.filter(mod => {
+                const gameMatch = selectedGame ? mod.game === selectedGame : true;
+                const categoryMatch = selectedCategory ? mod.categories.includes(selectedCategory) : true;
+                return gameMatch && categoryMatch;
+            });
+
+            renderMods(filtered);
+        }
+
+        function getGameName(gameId) {
+            const game = games.find(g => g.id === gameId);
+            return game ? game.name : 'Unknown Game';
+        }
+
+
+        function renderMods(mods) {
+            const baseURL = "<?php echo $baseURL ?>";
+            const topURL = "<?php echo $topURL ?>";
+            const list = document.getElementById('modList');
+            list.innerHTML = '';
+            mods.forEach(mod => {
+                const div = document.createElement('div');
+                div.className = 'mod-card';
+                const gameName = getGameName(mod.game);
+                const modThumbnail = topURL + "Images/mod/" + mod.id + "/" + mod.images[0];
+
+                let statusPill = '';
+                if (mod.status === 'released') {
+                    statusPill += `<span class="badge rounded-pill text-bg-success"> Released </span>`;
+                } else if (mod.status === 'working') {
+                    statusPill += `<span class="badge rounded-pill text-bg-warning"> In progress </span>`;
+                }
+
+                // Set the click handler using a proper function
+                div.onclick = function () {
+                    window.location.href = baseURL + 'Passions/mod-file/mod-file.php?modId=' + mod.id;
+                };
+
+                div.innerHTML = `
+                        <div class="row">
+                        <div class="col">
+                            <img src="${modThumbnail}"></img>
+                        </div>
+                        <div class="col">
+                            <h4>${mod.title} | <small>${gameName}</small></h4>
+                            <h6>${mod.date}</h6>
+                            ${statusPill}
+                            <p>${mod.shortdescription}</p>
+                        </div>
+                        </div>
+                        <div class="quarterbox"></div>
+
+                `;
+
+                list.appendChild(div);
+            });
+        }
     </script>
 </div>
 <?php require "../../Common-files/footer.php" ?>
