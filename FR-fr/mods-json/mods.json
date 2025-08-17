@@ -14,7 +14,10 @@
   ],
   "categories": [
     { "id": "sinder", "name": "Mods Sinder" },
-    { "id": "aura-gx", "name": "Mods GX Aura" }
+    { "id": "aura-gx", "name": "Mods GX Aura" },
+    { "id": "trickywi", "name": "Mods Trickywi"},
+    { "id": "yuzu", "name": "Mods Yuzu"},
+    { "id": "vienna", "name": "Mods Vienna"}
   ],
   "mods": [
     {
@@ -66,9 +69,9 @@
       "status": "working",
       "date": "N/A",
       "shortdescription": "Ce mod remplace l'équipe Oracle Red Bull Racing par une équipe fictive basée sur Sinder.",
-      "description": "Ce mod remplace l'équipe Oracle Red Bull Racing par une équipe fictive basée sur Sinder. <br><br> Les pilotes deviennent respectivement: <br> Max Verstappen -> Sinder (renommée \"Sinder PUP\") <br> Sergio Checo Pérez -> Trickywi (renommée \"Trickywi Nouvelle NEPHASIS\")",
+      "description": "Ce mod remplace l'équipe Oracle Red Bull Racing par une équipe fictive basée sur Sinder. <br><br> Les pilotes deviennent respectivement: <br> Max Verstappen -> Sinder (renommée \"Sinder PUP\") <br> Sergio Checo Pérez -> Trickywi (renommée \"Trickywi Nouvelle NEPHASIS\") <br> Yuki Tsunoda -> Yuzu Sanagi <br> Daniel Ricciardo -> Vienna (renamed \"Vienna Noodle\") <br><br> Et les équipes deviennent: <br> Oracle Red Bull Racing -> Gamersupps Pyro Pup Industries Formula 1 Team <br> Visa Cashapp RB F1 Team -> ",
       "game": "f1-24",
-      "categories": ["sinder"],
+      "categories": ["sinder","trickywi","yuzu","vienna"],
       "images": ["sinder-f1-24_red-bull_1.png"],
       "download": {
       }
