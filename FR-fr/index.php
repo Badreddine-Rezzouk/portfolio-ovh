@@ -128,10 +128,10 @@ $title = "Accueil - Badreddine Rezzouk";
                     <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Academics.php">
                     <div class="col">
                         <h6> Mon profil académique et professionel </h6>
-                        <p> Une manière pas piqué des hannetons de juger mes compétences. </p>
+                        <p> Une manière pas piquée des hannetons de juger mes compétences. </p>
                     </div>
                     </a>
-                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences.php">
+                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences/Experiences.php">
                     <div class="col">
                         <h6> Mes emplois et stages </h6>
                         <p> Pour prouver que je ne viens pas de la dernière pluie. (WIP) </p>

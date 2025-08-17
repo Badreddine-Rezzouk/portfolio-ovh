@@ -166,7 +166,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                             <?php echo $texts['langue']; ?>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/FR-fr/' . $restOfURL; ?>" lang="FR-fr">🇫🇷 Français (WIP)</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/FR-fr/' . $restOfURL; ?>" lang="FR-fr">🇫🇷 Français</a></li>
                             <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/US-en/' . $restOfURL; ?>" lang="US-en">🇺🇸 English (WIP)</a></li>
                             <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/CN-zh/' . $restOfURL; ?>" lang="CN-zh">🇨🇳 中文 (WIP)</a></li>
                         </ul>
