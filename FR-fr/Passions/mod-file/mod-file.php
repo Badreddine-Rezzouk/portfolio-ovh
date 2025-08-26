@@ -144,9 +144,7 @@ $title = 'Mod - Badreddine Rezzouk';
                             ${imageHTML}
                         </div>
                     </div>
-                    <meta property="og:title" content="${mod.title}">
-                    <meta property="og:description" content="${mod.description}">
-                    <meta property="og:image" content="${mod.images[0]}">
+
 
                 `;
 
