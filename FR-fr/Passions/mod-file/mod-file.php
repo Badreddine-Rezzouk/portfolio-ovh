@@ -138,11 +138,11 @@ $title = 'Mod - Badreddine Rezzouk';
                                 ${downloadButtons}
                             </div>
                             ${guideSection}
-                            <p>${mod.description}</p>
                         </div>
                         <div class="col-md-6">
                             ${imageHTML}
                         </div>
+                        <p>${mod.description}</p>
                     </div>
 
 
