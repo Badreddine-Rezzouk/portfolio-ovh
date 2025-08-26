@@ -134,11 +134,12 @@ $title = 'Mod - Badreddine Rezzouk';
                             <h5><strong>Date:</strong> ${mod.date}</h5>
                             <p><strong>Categories:</strong> ${modCategories}</p>
                             ${statusPill}
-                            <p>${mod.description}</p>
+
                             <div class="mt-3">
                                 ${downloadButtons}
                             </div>
                             ${guideSection}
+                            <p>${mod.description}</p>
                         </div>
                         <div class="col-md-6">
                             ${imageHTML}
