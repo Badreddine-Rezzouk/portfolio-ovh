@@ -103,29 +103,32 @@ $title = "Proficiences - Badreddine Rezzouk"
             <div class="halfbox"></div>
             <div class="row">
                 <div class="col">
-                    <div class="bg-white p-4 rounded-3 text-center col-3 mx-auto border border-5 shadow-lg">
-                        <div class="col">
-                            <h4> Mes langues de programmation </h4>
-                            <p class="text-start">
-                                Langues WEB:
-                            <ul>
-                                <li> HTML5 </li>
-                                <li> CSS3 </li>
-                                <li> JavaScript </li>
-                                <li> PHP (8.3) </li>
+                    <div class="bg-white p-4 rounded-3 text-center mx-auto border border-5 shadow-lg">
+                        <div class="row">
+                            <div class="col">
+                                <h4> Mes langues de programmation </h4>
+                                <p class="text-start">
+                                    Langues WEB:
+                                <ul>
+                                    <li> HTML5 </li>
+                                    <li> CSS3 </li>
+                                    <li> JavaScript </li>
+                                    <li> PHP (8.3) </li>
 
-                            </ul>
-                            </p>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h4> Frameworks:</h4>
+                                <ul class="text-start">
+                                    <li> Bootstrap </li>
+                                    <li> React </li>
+                                    <li> Symfony </li>
+                                    <li> .NET </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h4> Frameworks:</h4>
-                            <ul class="text-start">
-                                <li> Bootstrap </li>
-                                <li> React </li>
-                                <li> Symfony </li>
-                                <li> .NET </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col"></div>
