@@ -103,7 +103,7 @@ $title = "Proficiences - Badreddine Rezzouk"
             <div class="halfbox"></div>
             <div class="row">
                 <div class="col">
-                    <div class="bg-white p-4 rounded-3 text-center mx-auto border border-5 shadow-lg">
+                    <div class="bg-white p-4 rounded-3 offset-1 text-center mx-auto border border-5 shadow-lg">
                         <div class="row">
                             <div class="col">
                                 <h4> Mes langues de programmation </h4>
