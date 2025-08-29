@@ -120,7 +120,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                             <div class="col">
                                 <p class="text-start">
                                     Frameworks:
-                                <ul class="text-start">
+                                <ul>
                                     <li> Bootstrap </li>
                                     <li> React </li>
                                     <li> Symfony </li>
