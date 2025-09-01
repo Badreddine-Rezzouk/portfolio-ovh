@@ -25,7 +25,7 @@ $title = "Profil - Badreddine Rezzouk";
                     <div class="col text-center">
                         <p> Badreddine REZZOUK </p>
                         <p> 28 Juin 2005 </p>
-                        <p> Etudiant </p>
+                        <p> Etudiant - En recherche d'entreprise </p>
                     </div>
                 </div>
             </div>
@@ -56,6 +56,18 @@ $title = "Profil - Badreddine Rezzouk";
             </div>
         </section>
         <div class="halfbox"></div>
+        <div class="bg-white p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
+            <h4> Mes passions </h4>
+            <div class="row rows-cols-3">
+                <div class="col-3 card" style="width: 18rem;">
+                    <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Gasly's A524">
+                    <div class="card-body">
+                        <h5 class="card-title">La Formule 1</h5>
+                        <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons (et dépression si vous êtes un fan de Ferrari).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <?php require "../Common-files/footer.php" ?>
 </body>
