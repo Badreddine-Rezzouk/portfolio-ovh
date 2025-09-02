@@ -67,7 +67,7 @@ $languageTexts = [
         'traducode' => 'Traducode',
         'langue' => '语言',
         'menu' => 'Menu',
-        'passions' => 'Passions',
+        'passions' => '爱好',
         'formula-1' => '一级方程式赛车'
     ],
 ];
