@@ -37,7 +37,7 @@ $title = "一级方程式 - Badreddine Rezzouk";
                 <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly-face_thumbnail.png" alt="皮埃尔·加斯利">
             </div>
         </div>
-        <p> 一个地道的法国人，雄鸡高唱！<br><br>
+        <p> 一个地道的法国人，cocorico！<br><br>
             他出生于1996年2月7日，来自一个热爱赛车的家庭：祖父1961年玩卡丁车，祖母是诺曼底冠军，父亲曾代表标致参加耐力赛。
             皮埃尔和他的两个兄弟在<strong>非常</strong>年幼的时候（2岁！当时我还在啃脚丫呢）就接触了卡丁车。<br><br>
             从一辆二手卡丁车起步，他在2006年成为诺曼底冠军，次年在全国比赛中获得第三名，并赢得一个冠军头衔。<br><br>
