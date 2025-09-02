@@ -32,6 +32,7 @@ $languageTexts = [
         'menu' => 'Menu',
         'passions' => 'Passions',
         'mods' => 'Modding',
+        'formula-1' => 'Formule 1'
     ],
     'US-en' => [
         'home' => 'Home',
@@ -49,6 +50,7 @@ $languageTexts = [
         'langue' => 'Languages',
         'menu' => 'Menu',
         'passions' => 'Passions',
+        'formula-1' => 'Formula 1'
     ],
     'CN-zh' => [
         'home' => '首页',
@@ -65,7 +67,8 @@ $languageTexts = [
         'traducode' => 'Traducode',
         'langue' => '语言',
         'menu' => 'Menu',
-        'passions' => 'Passions'
+        'passions' => 'Passions',
+        'formula-1' => '一级方程式赛车'
     ],
 ];
 
@@ -153,6 +156,9 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                             <li>
                                 <a id="mods" class="dropdown-item" href="<?php echo $baseURL; ?>Passions/modding.php">
                                     <?php echo $texts['mods']; ?>
+                                </a>
+                                <a id="formula-1" class="dropdown-item" href="<?php echo $baseURL;?>Passions/formula-1.png">
+                                    <?php echo $texts['formula-1']; ?>
                                 </a>
                             </li>
                         </ul>
