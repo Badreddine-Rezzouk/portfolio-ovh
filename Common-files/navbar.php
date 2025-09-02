@@ -157,7 +157,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                                 <a id="mods" class="dropdown-item" href="<?php echo $baseURL; ?>Passions/modding.php">
                                     <?php echo $texts['mods']; ?>
                                 </a>
-                                <a id="formula-1" class="dropdown-item" href="<?php echo $baseURL;?>Passions/formula-1.png">
+                                <a id="formula-1" class="dropdown-item" href="<?php echo $baseURL;?>Passions/formula-1.php">
                                     <?php echo $texts['formula-1']; ?>
                                 </a>
                             </li>
