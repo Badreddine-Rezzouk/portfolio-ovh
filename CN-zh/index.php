@@ -12,13 +12,9 @@ require "../Common-files/unsupportedlanguage.php" ?>
     <body>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
-            <div id="main_page_cover" class="container-fluid">
-                <br>
-                <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
-                    <h2>欢迎来到我的投资组合</h2>
-                </div>
-                <div class="box"></div>
-                <div class="card mb-3 offset-1" style="max-width: 540px; justify-content: center;">
+            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
+                <div class="halfbox"></div>
+                <div class="card mb-3 offset-lg-1 border border-5 col-lg-4">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
@@ -33,7 +29,7 @@ require "../Common-files/unsupportedlanguage.php" ?>
                     </div>
                 </div>
                 <br class="d-md-block d-none">
-                <div class="card mb-3 offset-md-7 offset-lg-1" style="max-width: 540px;">
+                <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
@@ -47,9 +43,14 @@ require "../Common-files/unsupportedlanguage.php" ?>
                         <div class="col"></div>
                     </div>
                 </div>
+                <div class="box"></div>
             </div>
+            <br>
             <?php echo $language_error_zh?>
             <div class="box"></div>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <h2>欢迎来到我的投资组合</h2>
+            </div>
             <div id="main_page_section" class="container-fluid">
                 <div class="row">
                     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
