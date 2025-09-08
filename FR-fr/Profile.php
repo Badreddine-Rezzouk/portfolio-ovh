@@ -50,9 +50,47 @@ $title = "Profil - Badreddine Rezzouk";
                 </div>
 
                 <p>Chinois (mandarin)</p>
-                <div class="container_langues">
+                <div class="container_langues mb-2">
                     <div class="skills chinese">En apprentissage</div>
                 </div>
+                <?php
+                // Duolingo username
+                $username = "Rrat_Deadbeat";
+
+                // Fetch data from Duolingo unofficial API
+                $url = "https://www.duolingo.com/api/1/users/show?username=" . urlencode($username);
+                $json = file_get_contents($url);
+
+                if ($json === false) {
+                    die("Could not fetch Duolingo data.");
+                }
+
+                $data = json_decode($json, true);
+
+                // Check if language data exists
+                if (!isset($data['languages'])) {
+                    die("No language data found for this user.");
+                }
+
+                // Find Chinese
+                $chinese = null;
+                foreach ($data['languages'] as $lang) {
+                    if (isset($lang['language']) && $lang['language'] === 'zh') { // "zh" = Chinese
+                        $chinese = $lang;
+                        break;
+                    }
+                }
+
+                if ($chinese) {
+                    echo "<h2>Mes progrès sur Duolingo</h2>";
+                    echo "Niveau: " . $chinese['level'] . "<br>";
+                    echo "Points: " . $chinese['points'] . "<br>";
+                    echo "Record: " . $data['site_streak'] . " jours<br>";
+                } else {
+                    echo "No Chinese data found for this account.";
+                }
+                ?>
+
             </div>
         </section>
         <div class="halfbox"></div>
@@ -61,9 +99,12 @@ $title = "Profil - Badreddine Rezzouk";
             <div class="row rows-cols-3">
                 <div class="col-3 card" style="width: 18rem;">
                     <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Gasly's A524">
-                    <div class="card-body">
+                    <div class="card-body mb-2">
                         <h5 class="card-title">La Formule 1</h5>
                         <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons (et dépression si vous êtes un fan de Ferrari).</p>
+                    </div>
+                    <div class="card-body mb-2">
+                        <h5 class="card-title">Le modding de jeux videos</h5>
                     </div>
                 </div>
             </div>
