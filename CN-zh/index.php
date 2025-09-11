@@ -1,6 +1,8 @@
 <?php global $language_error_zh;
 require "../Common-files/redirect.php";
-require "../Common-files/unsupportedlanguage.php" ?>
+require "../Common-files/unsupportedlanguage.php";
+$title = "首页 - Badreddine Rezzouk"
+?>
 
 
 <!DOCTYPE html>
@@ -47,10 +49,10 @@ require "../Common-files/unsupportedlanguage.php" ?>
             </div>
             <br>
             <?php echo $language_error_zh?>
-            <div class="box"></div>
             <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
                 <h2>欢迎来到我的投资组合</h2>
             </div>
+            <div class="box"></div>
             <div id="main_page_section" class="container-fluid">
                 <div class="row">
                     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
@@ -58,6 +60,48 @@ require "../Common-files/unsupportedlanguage.php" ?>
                     </div>
                 </div>
             </div>
+            <div class="box"></div>
+            <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
+                <h4>在此作品集中可以找到：</h4>
+            </div>
+            <div class="halfbox"></div>
+            <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg">
+                <div class="row">
+                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Profile.php">
+                        <div class="col">
+                            <h6> 我的个人资料 </h6>
+                            <p> 了解关于我的一切。 </p>
+                        </div>
+                    </a>
+                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Academics.php">
+                        <div class="col">
+                            <h6> 我的学术与职业简介 </h6>
+                            <p> 一个独特的方式来展示我的能力。 </p>
+                        </div>
+                    </a>
+                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences/Experiences.php">
+                        <div class="col">
+                            <h6> 我的工作与实习经历 </h6>
+                            <p> 证明我不是毫无经验之人。（进行中） </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col link-underline link-underline-opacity-0">
+                        <h6> </h6>
+                    </div>
+                    <div class="col link-underline link-underline-opacity-0">
+
+                    </div>
+                    <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Passions/modding.php">
+                        <div class="col">
+                            <h6> 我的模组项目 </h6>
+                            <p> 谁知道呢？也许我们有共同的爱好。 </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <div class="box"></div>
             <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
                 <script>
