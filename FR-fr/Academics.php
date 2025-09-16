@@ -102,17 +102,17 @@ $title = "Proficiences - Badreddine Rezzouk"
             <hr class="mx-auto rounded-2">
             <div class="halfbox"></div>
             <div class="row">
-                    <div class="bg-white p-4 rounded-3 col-10 col-md-4 text-center offset-1 border border-5 shadow-lg">
+                    <div class="bg-white p-4 rounded-3 col-10 col-md-8 text-center offset-1 border border-5 shadow-lg">
                         <div class="row">
                             <h4> Mes langues de programmation </h4>
                             <div class="col">
                                 <p class="text-start">
                                     Langues WEB:
-                                <ul>
-                                    <li> HTML5 </li>
-                                    <li> CSS3 </li>
-                                    <li> JavaScript </li>
-                                    <li> PHP (8.3) </li>
+                                <ul class="list-group list-group-flush list-group-horizontal">
+                                    <li class="list-group-item"> HTML5 </li>
+                                    <li class="list-group-item"> CSS3 </li>
+                                    <li class="list-group-item"> JavaScript </li>
+                                    <li class="list-group-item"> PHP (8.3) </li>
 
                                 </ul>
                                 </p>
@@ -120,14 +120,24 @@ $title = "Proficiences - Badreddine Rezzouk"
                             <div class="col">
                                 <p class="text-start">
                                     Frameworks:
-                                <ul>
-                                    <li> Bootstrap </li>
-                                    <li> React </li>
-                                    <li> Symfony </li>
-                                    <li> .NET </li>
+                                <ul class="list-group list-group-flush list-group-horizontal">
+                                    <li class="list-group-item"> Bootstrap </li>
+                                    <li class="list-group-item"> React </li>
+                                    <li class="list-group-item"> Symfony </li>
+                                    <li class="list-group-item"> .NET </li>
                                 </ul>
                                 </p>
 
+                            </div>
+                            <div class="col">
+                                <p class="text-start">
+                                    Systèmes BDD:
+                                <ul class="list-group list-group-flush list-group-horizontal">
+                                    <li class="list-group-item"> MariaDB </li>
+                                    <li class="list-group-item"> MySQL </li>
+                                    <li class="list-group-item"> SQLite </li>
+                                </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
