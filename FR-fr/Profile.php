@@ -67,6 +67,7 @@ $title = "Profil - Badreddine Rezzouk";
                     </div>
                     <div class="card-body mb-2">
                         <h5 class="card-title">Le modding de jeux videos</h5>
+                        <p> Lorem Ipsum </p>
                     </div>
                 </div>
             </div>
