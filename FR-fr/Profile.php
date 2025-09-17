@@ -60,14 +60,18 @@ $title = "Profil - Badreddine Rezzouk";
             <h4> Mes passions </h4>
             <div class="row rows-cols-3">
                 <div class="col-3 card mb-2" style="width: 18rem;">
-                    <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Gasly's A524">
+                    <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Alpine A524 de Gasly">
                     <div class="card-body mb-2">
                         <h5 class="card-title">La Formule 1</h5>
                         <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons (et dépression si vous êtes un fan de Ferrari).</p>
                     </div>
+
+                </div>
+                <div class="col-3 card mb-2" style="width: 18rem;">
+                    <img src="<?php echo $topURL?>Images/thumbnail/modding_thumbnail.png" class="card-img-top" alt="Mod Skyrim Fallguysfollower par m150">
                     <div class="card-body mb-2">
                         <h5 class="card-title">Le modding de jeux videos</h5>
-                        <p> Lorem Ipsum </p>
+                        <p> Le modding, prendre une expérience construite de manière précise, et la transformer en une expérience wtf. </p>
                     </div>
                 </div>
             </div>
