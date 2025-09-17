@@ -12,6 +12,33 @@ $title = "Accueil - Badreddine Rezzouk";
         <?php require "../Common-files/header.php"; ?>
     </head>
     <body>
+    <script type="text/javascript">
+        let bufferArray = [];
+        let lastKeystrokeTime = Date.now();
+
+        const cheatcode = "anisdoggo";
+        function clearContent() {
+            document.getElementById(video - spot).src = ""
+        }
+        window.addEventListener("keyup", e => {
+            const key = e.key.toLowerCase();
+            const latestKeystrokeTime = Date.now();
+
+            if (latestKeystrokeTime - lastKeystrokeTime > 1500) {
+                bufferArray = [];
+            }
+
+            bufferArray.push(key);
+
+            const word = bufferArray.join("");
+            if (word === cheatcode) {
+                 document.getElementById(video-spot).innerHTML = "<video style=\"height = 100vh; width = 100vw\" autoplay=\"autoplay\"><source src=\"<?php echo $topURL?>Images/videos/anis-wan.mp4\"></video>";
+                 setTimeout(function(clearContent), 2000)
+
+            }
+    </script>
+    <div id="wrapper">
+        <div id="video-spot"></div>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
             <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
@@ -120,22 +147,22 @@ $title = "Accueil - Badreddine Rezzouk";
             <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg">
                 <div class="row">
                     <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Profile.php">
-                    <div class="col">
-                        <h6> Mon profil personel</h6>
-                        <p> Pour tout savoir de ma personne. </p>
-                    </div>
+                        <div class="col">
+                            <h6> Mon profil personel</h6>
+                            <p> Pour tout savoir de ma personne. </p>
+                        </div>
                     </a>
                     <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Academics.php">
-                    <div class="col">
-                        <h6> Mon profil académique et professionel </h6>
-                        <p> Une manière pas piquée des hannetons de juger mes compétences. </p>
-                    </div>
+                        <div class="col">
+                            <h6> Mon profil académique et professionel </h6>
+                            <p> Une manière pas piquée des hannetons de juger mes compétences. </p>
+                        </div>
                     </a>
                     <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences/Experiences.php">
-                    <div class="col">
-                        <h6> Mes emplois et stages </h6>
-                        <p> Pour prouver que je ne viens pas de la dernière pluie. (WIP) </p>
-                    </div>
+                        <div class="col">
+                            <h6> Mes emplois et stages </h6>
+                            <p> Pour prouver que je ne viens pas de la dernière pluie. (WIP) </p>
+                        </div>
                     </a>
                 </div>
                 <div class="row">
@@ -146,10 +173,10 @@ $title = "Accueil - Badreddine Rezzouk";
 
                     </div>
                     <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Passions/modding.php">
-                    <div class="col">
-                        <h6> Mes projets de mods </h6>
-                        <p> Qui sait? Peut-être qu'on a des passions en commun. </p>
-                    </div>
+                        <div class="col">
+                            <h6> Mes projets de mods </h6>
+                            <p> Qui sait? Peut-être qu'on a des passions en commun. </p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -197,5 +224,7 @@ $title = "Accueil - Badreddine Rezzouk";
 
         </div>
         <?php require "../Common-files/footer.php" ?>
+    </div>
+
     </body>
 </html>
