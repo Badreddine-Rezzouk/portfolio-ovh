@@ -22,6 +22,21 @@ $title = "Accueil - Badreddine Rezzouk";
             document.getElementById("video-spot").innerHTML = "";
         }
 
+        function lockViewport(duration) {
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Lock scrolling
+            document.body.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
+
+            // Unlock after duration
+            setTimeout(() => {
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }, duration);
+        }
+
         window.addEventListener("keyup", e => {
             const key = e.key.toLowerCase();
             const latestKeystrokeTime = Date.now();
@@ -36,6 +51,7 @@ $title = "Accueil - Badreddine Rezzouk";
             const word = bufferArray.join("");
 
             if (word === cheatcode) {
+                lockViewport(5000);
                 document.getElementById("video-spot").innerHTML = `
                 <video style="height: 100vh; width: 100vw;" autoplay>
                     <source src="<?php echo $topURL ?>Images/videos/anis-wan.mp4" type="video/mp4">
@@ -46,7 +62,7 @@ $title = "Accueil - Badreddine Rezzouk";
         });
     </script>
     <div id="wrapper">
-        <div id="video-spot" style="z-index: 2"></div>
+        <div id="video-spot"></div>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
             <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
