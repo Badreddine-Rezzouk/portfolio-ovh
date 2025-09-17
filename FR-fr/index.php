@@ -17,9 +17,11 @@ $title = "Accueil - Badreddine Rezzouk";
         let lastKeystrokeTime = Date.now();
 
         const cheatcode = "anisdoggo";
+
         function clearContent() {
-            document.getElementById(video - spot).src = ""
+            document.getElementById("video-spot").innerHTML = "";
         }
+
         window.addEventListener("keyup", e => {
             const key = e.key.toLowerCase();
             const latestKeystrokeTime = Date.now();
@@ -28,14 +30,20 @@ $title = "Accueil - Badreddine Rezzouk";
                 bufferArray = [];
             }
 
+            lastKeystrokeTime = latestKeystrokeTime;
             bufferArray.push(key);
 
             const word = bufferArray.join("");
-            if (word === cheatcode) {
-                 document.getElementById(video-spot).innerHTML = "<video style=\"height = 100vh; width = 100vw\" autoplay=\"autoplay\"><source src=\"<?php echo $topURL?>Images/videos/anis-wan.mp4\"></video>";
-                 setTimeout(function(clearContent), 2000)
 
+            if (word === cheatcode) {
+                document.getElementById("video-spot").innerHTML = `
+                <video style="height: 100vh; width: 100vw;" autoplay>
+                    <source src="<?php echo $topURL ?>Images/videos/anis-wan.mp4" type="video/mp4">
+                </video>
+            `;
+                setTimeout(clearContent, 2000);
             }
+        });
     </script>
     <div id="wrapper">
         <div id="video-spot"></div>
