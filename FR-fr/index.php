@@ -41,7 +41,7 @@ $title = "Accueil - Badreddine Rezzouk";
                     <source src="<?php echo $topURL ?>Images/videos/anis-wan.mp4" type="video/mp4">
                 </video>
             `;
-                setTimeout(clearContent, 2000);
+                setTimeout(clearContent, 5000);
             }
         });
     </script>
