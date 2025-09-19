@@ -127,7 +127,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 div.innerHTML = `
                         <div class="row rounded-3 border border-5 p-1">
                         <div class="col">
-                            <img src="${modThumbnail}"></img>
+                            <img class="rounded rounded-start-5" src="${modThumbnail}"></img>
                         </div>
                         <div class="col">
                             <h4>${mod.title} | <small>${gameName}</small></h4>
