@@ -65,7 +65,7 @@ $title = "Accueil - Badreddine Rezzouk";
         <div id="video-spot"></div>
         <?php require "../Common-files/navbar.php" ?>
         <div class="gradient-box">
-            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
+            <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px); width: auto'>
                 <div class="halfbox"></div>
                 <div class="card mb-3 offset-lg-1 border border-5 col-lg-4">
                     <div class="row g-0">
