@@ -59,6 +59,7 @@ $title = "Profil - Badreddine Rezzouk";
                         J'y ai appris ce qu'est un processeur, une carte graphique, commment monter un ordinateur, etc.
                         <br><br>
                         En parallèle, j'ai aussi découvert ce doux langage de programmation qu'est le HTML (déjà en version 5.2). J'y ai pris goût et ai commencé à développer des petits sites sans trop refléchir aux principes de web design, web architecture et autres composants aussi avancé que le <i>CSS</i> (Oui, ce n'était pas beau à voir).
+                        D'ailleurs, vous devriez tapper "anisdoggo" sur la page d'accueil si vous lisez ceci.
                         <br><br>
                         Arrivé au lycée, je décide de prendre la voie de la <abbr title="Sciences Technologiques de l'Industrie et du Développement Durable">STI2D</abbr>, encore divisé sûr si je souhaitais me diriger vers de l'ingénierie ou vers de l'informatique.
                         <br>
@@ -98,7 +99,7 @@ $title = "Profil - Badreddine Rezzouk";
         <div class="bg-white p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
             <h4> Mes passions </h4>
             <div class="row rows-cols-3">
-                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
+                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;cursor: pointer;" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Alpine A524 de Gasly">
                         <figcaption class="figure-caption text-end"> Alpine A524 de Pierre Gasly au GP d'Autriche 2024 </figcaption>
@@ -109,7 +110,7 @@ $title = "Profil - Badreddine Rezzouk";
                     </div>
 
                 </div>
-                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
+                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;cursor: pointer;" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/modding_thumbnail.png" class="card-img-top" alt="Mod Skyrim Fallguysfollower par m150">
                         <figcaption class="figure-caption text-end"> Mod Skyrim Fallguysfollower par m150 </figcaption>
