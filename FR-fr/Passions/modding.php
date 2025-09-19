@@ -125,7 +125,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 };
 
                 div.innerHTML = `
-                        <div class="row">
+                        <div class="row rounded-3 border border-5 p-1">
                         <div class="col">
                             <img src="${modThumbnail}"></img>
                         </div>
