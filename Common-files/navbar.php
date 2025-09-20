@@ -98,6 +98,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             <div class="offcanvas-body">
                 <nav class="navbar-nav">
                     <a id="home" class="nav-link" href="<?php echo $baseURL; ?>index.php">
+                        <img src="<?php echo $topURL?>Images/logo/navbar_logo.png" style="object-fit: contain; max-width: 20px" class="my-auto" alt="Logo Navbar">
                         <?php echo $texts['home']; ?>
                     </a>
                     <a id="resume" class="nav-link" href="<?php echo $baseURL; ?>Resume/resume_download.php ">
