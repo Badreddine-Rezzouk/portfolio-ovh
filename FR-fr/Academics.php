@@ -109,10 +109,30 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 <p class="text-start">
                                     Langues WEB:
                                 <ul class="list-group list-group-flush list-group-horizontal">
-                                    <li class="list-group-item"> HTML5 </li>
-                                    <li class="list-group-item"> CSS3 </li>
-                                    <li class="list-group-item"> JavaScript </li>
-                                    <li class="list-group-item"> PHP (8.3) </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/html5-logo.png" class="w-auto img-fluid" alt="Logo HTML 5">
+                                            <figcaption> HTML 5 </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/css3-logo.png" class="w-auto img-fluid" alt="Logo CSS 3">
+                                            <figcaption> CSS 3 </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/javascript-logo.png" class="w-auto img-fluid" alt="Logo JavaScript">
+                                            <figcaption> JavaScript </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/php-logo.png" class="w-auto img-fluid" alt="Logo PHP">
+                                            <figcaption> PHP 8.3 </figcaption>
+                                        </figure>
+                                    </li>
 
                                 </ul>
                                 </p>
@@ -121,10 +141,30 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 <p class="text-start">
                                     Frameworks:
                                 <ul class="list-group list-group-flush list-group-horizontal">
-                                    <li class="list-group-item"> Bootstrap </li>
-                                    <li class="list-group-item"> React </li>
-                                    <li class="list-group-item"> Symfony </li>
-                                    <li class="list-group-item"> .NET </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/bootstrap-logo.png" class="w-auto img-fluid" alt="Logo Bootstrap">
+                                            <figcaption> Bootstrap </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/react-logo.png" class="w-auto img-fluid" alt="Logo React">
+                                            <figcaption> React JS </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/symfony-logo.png" class="w-auto img-fluid" alt="Logo Symfony">
+                                            <figcaption> Symfony </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="w-auto img-fluid" alt="Logo .NET">
+                                            <figcaption> .NET </figcaption>
+                                        </figure>
+                                    </li>
                                 </ul>
                                 </p>
 
@@ -132,15 +172,75 @@ $title = "Proficiences - Badreddine Rezzouk"
                             <div class="col">
                                 <p class="text-start">
                                     Systèmes BDD:
-                                <ul class="list-group list-group-flush list-group-horizontal">
-                                    <li class="list-group-item"> MariaDB </li>
-                                    <li class="list-group-item"> MySQL </li>
-                                    <li class="list-group-item"> SQLite </li>
-                                </ul>
                                 </p>
+                                <ul class="list-group list-group-flush list-group-horizontal">
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="w-auto img-fluid" alt="Logo MariaDB">
+                                            <figcaption> MariaDB </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/mysql5-logo.png" class="w-auto img-fluid" alt="Logo MariaDB">
+                                            <figcaption> MySQL </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <figure>
+                                            <img src="<?php echo $topURL?>Images/logo/sqlite-logo.png" class="w-auto img-fluid"  alt="Logo MariaDB">
+                                            <figcaption> SQLite </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+
                             </div>
+                            <div class="col"></div>
                         </div>
                     </div>
+            </div>
+            <div class="halfbox"></div>
+            <div class="row flex-column-reverse">
+                <div class="col-10 col-md-8 text-center offset-1 flex-column-reverse bg-white p-4 rounded-3 border border-5 shadow-lg">
+                    <div class="row">
+                        <h4> Mes logiciels de prédilection </h4>
+                        <div class="col">
+                            <ul class="list-group list-group-flush list-group-horizontal">
+                                <li class="list-group-item">
+                                    <figure>
+                                        <img src="<?php echo $topURL?>Images/logo/adobe-logo.png" class="img-fluid" alt="Logo Adobe Creative Cloud">
+                                        <figcaption> Suite Adobe </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="list-group-item">
+                                    <figure>
+                                        <img src="<?php echo $topURL?>Images/logo/davinci-logo.png" class="img-fluid" alt="Logo Davinci Resolve">
+                                        <figcaption> Davinci Resolve </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="list-group-item">
+                                    <figure>
+                                        <img src="<?php echo $topURL?>Images/logo/krita-logo.png" class="img-fluid" alt="Logo Krita">
+                                        <figcaption> Krita </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="list-group-item">
+                                    <figure>
+                                        <img src="<?php echo $topURL?>Images/logo/unreal-logo.png" class="img-fluid" alt="Logo Unreal Engine">
+                                        <figcaption> Unreal Engine </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="list-group-item">
+                                    <figure>
+                                        <img src="<?php echo $topURL?>Images/logo/blender-logo.png" class="img-fluid" alt="Logo Blender">
+                                        <figcaption> Blender </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="box"></div>

@@ -20,6 +20,9 @@ $title = "Accueil - Badreddine Rezzouk";
             .scroller section {
                 scroll-snap-align: start;
             }
+            .scroller section #bottom {
+                scroll-snap-align: end;
+            }
         </style>
     </head>
     <body>
@@ -260,6 +263,9 @@ $title = "Accueil - Badreddine Rezzouk";
                     <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
                 </div>
                 <div class="box"></div>
+
+            </section>
+            <section id="bottom">
                 <?php require "../Common-files/footer.php" ?>
             </section>
         </div>
