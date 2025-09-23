@@ -53,5 +53,10 @@ $baseURL = rtrim($protocol . $host . '/' . $full_lang . '/');
             You will be redirected soon.<br>
             您将很快被重定向
         </b></h3>
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
     </body>
 </html>
