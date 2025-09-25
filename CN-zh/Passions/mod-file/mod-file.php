@@ -126,10 +126,13 @@ $title = '模组 - Badreddine Rezzouk';
                 if (gameData.guide){
                     guideSection += gameData.guide
                 }
+                if (mod.credits) {
+                    credits += `<details class="p-2"><summary> 致谢 </summary>${mod.credits}</details>`
+                }
 
                 const contentHTML = `
                     <div class="row">
-                        <div class="col-md-6 text-start">
+                        <div class="col-10 col-md-6 text-start">
                             <h5><strong>游戏：</strong> ${gameName}</h5>
                             <h5><strong>日期：</strong> ${mod.date}</h5>
                             <p><strong>类别：</strong> ${modCategories}</p>
@@ -139,10 +142,11 @@ $title = '模组 - Badreddine Rezzouk';
                             </div>
                             ${guideSection}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-10 col-md-6">
                             ${imageHTML}
                         </div>
                         <p>${mod.description}</p>
+                        ${credits}
                     </div>
 
 

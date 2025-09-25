@@ -128,12 +128,12 @@ $title = 'Mod - Badreddine Rezzouk';
                 }
                 let credits = '';
                 if (mod.credits) {
-                    credits += `<summary class="p-2"><details> Crédits </details>${mod.credits}</summary>`
+                    credits += `<details class="p-2"><summary> Crédits </summary>${mod.credits}</details>`
                 }
 
                 const contentHTML = `
                     <div class="row">
-                        <div class="col-md-6 text-start">
+                        <div class="col-10 col-md-6 text-start">
                             <h5><strong>Jeu :</strong> ${gameName}</h5>
                             <h5><strong>Date :</strong> ${mod.date}</h5>
                             <p><strong>Catégories :</strong> ${modCategories}</p>
@@ -143,7 +143,7 @@ $title = 'Mod - Badreddine Rezzouk';
                             </div>
                             ${guideSection}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-10 col-md-6">
                             ${imageHTML}
                         </div>
                         <p>${mod.description}</p>

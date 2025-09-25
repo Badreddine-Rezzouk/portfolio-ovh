@@ -126,6 +126,9 @@ $title = 'Mod - Badreddine Rezzouk';
                 if (gameData.guide){
                     guideSection += gameData.guide
                 }
+                if (mod.credits) {
+                    credits += `<details class="p-2"><summary> Credits </summary>${mod.credits}</details>`
+                }
 
                 const contentHTML = `
                     <div class="row">
