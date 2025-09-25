@@ -126,6 +126,7 @@ $title = '模组 - Badreddine Rezzouk';
                 if (gameData.guide){
                     guideSection += gameData.guide
                 }
+                let credits = '';
                 if (mod.credits) {
                     credits += `<details class="p-2"><summary> 致谢 </summary>${mod.credits}</details>`
                 }
