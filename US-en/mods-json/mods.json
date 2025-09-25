@@ -127,6 +127,21 @@
 			"status": "released",
 			"title": "Gamersupps Vending Machine - Sinder"
 		},
+        {
+        "categories": [
+          "sinder"
+        ],
+        "date": "07/04/2025",
+        "description": "This mod replaces the original van texture with a Sinder based texture in a van racing style.",
+        "download": {
+          "direct": "SinderVan_P.pak"
+        },
+        "game": "payday3",
+        "id": "sinder-pd3_van",
+        "images": [
+          "sinder-pd3_van_1.png"
+        ]
+      },
 		{
 			"categories": [
 				"sinder",

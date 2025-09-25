@@ -127,6 +127,21 @@
 			"status": "released",
 			"title": "Gamersupps 自动售货机 - Sinder"
 		},
+        {
+        "categories": [
+          "sinder"
+        ],
+        "date": "2025年7月4日",
+        "description": "此模型将原始的货车纹理替换为基于 Sinder 的货车赛车风格的纹理。",
+        "download": {
+          "direct": "SinderVan_P.pak"
+        },
+        "game": "payday3",
+        "id": "sinder-pd3_van",
+        "images": [
+          "sinder-pd3_van_1.png"
+        ]
+      },
 		{
 			"categories": [
 				"sinder",

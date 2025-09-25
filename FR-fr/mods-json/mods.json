@@ -127,6 +127,21 @@
 			"status": "released",
 			"title": "Distributeur Gamersupps - Sinder"
 		},
+        {
+        "categories": [
+          "sinder"
+        ],
+        "date": "04/07/2025",
+        "description": "Ce mod remplace la texture originale du van par une texture basée sur Sinder prenant un style van racing.",
+        "download": {
+          "direct": "SinderVan_P.pak"
+        },
+        "game": "payday3",
+        "id": "sinder-pd3_van",
+        "images": [
+          "sinder-pd3_van_1.png"
+        ]
+      },
 		{
 			"categories": [
 				"sinder",
