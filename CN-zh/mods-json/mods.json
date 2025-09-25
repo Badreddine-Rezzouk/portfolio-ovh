@@ -1,192 +1,244 @@
 {
-  "games": [
-    {
-      "id": "payday3",
-      "name": "收获日3 (Payday 3)",
-      "guide": "<details class=\"text-start\">\n<summary> 如何安装《收获日3》模组 </summary>\n<p> 步骤 1: 找到您的《收获日3》游戏安装位置，并前往 <span class=\"text-muted\">{Location}/PAYDAY3/Content/Paks/</span> 。 </p>\n<p> 步骤 2: 创建 \"~mods\" 文件夹 </p>\n<p> 步骤 3: 打开您拥有该游戏的启动器，找到启动选项：</p>\n<ul>\n<li> 在 Steam 上：打开《收获日3》页面，点击设置按钮，然后选择“属性”，最后选择“通用”（如果 Steam 默认未跳转至此）。</li>\n<li> 在 Epic Games Store 上：找到《收获日3》图标，右键点击它，然后点击“管理”；该选项位于设置窗口的底部。</li>\n</ul>\n<p> 步骤 4: 在启动选项中输入 \"-fileopenlog\"。</p>\n<div class=\"halfbox\"></div>\n<p> 好了！您的游戏现已准备好安装模组。只需将您的模组文件放入之前创建的 \"~mods\" 文件夹中，然后启动游戏即可。</p>\n</details>\n"
-    },
-    {
-      "id": "f1-24",
-      "name": "EA Sports F1 24"
-    },
-    {
-      "id": "ets2",
-      "name": "欧洲卡车模拟2 (Euro Truck Simulator 2)"
-    }
-  ],
-  "categories": [
-    { "id": "sinder", "name": "Sinder 模组"},
-    { "id": "aura-gx", "name": "GX Aura 模组"},
-    { "id": "trickywi", "name": "Trickywi 模组"},
-    { "id": "yuzu", "name": "Yuzu 模组"},
-    { "id": "kilovolt", "name": "Kiri Kilovolt 模组"},
-    { "id": "calliope", "name": "Mori Calliope 模组"},
-    { "id": "immergreen", "name": "Cecilia Immergreen 模组"},
-    { "id": "vienna", "name": "Vienna 模组"}
-  ],
-  "mods": [
-    {
-      "id": "sinder-pd3_phone",
-      "title": "手机壁纸 - Sinder 魅魔",
-      "status": "released",
-      "date": "2024年07月20日",
-      "shortdescription": "此模组使用 Hioyami 创作的魅魔同人画作为手机壁纸。",
-      "description": "此模组使用 Hioyami 创作的魅魔同人画作为手机壁纸。",
-      "game": "payday3",
-      "categories": ["sinder"],
-      "images": [
-        "sinder-pd3_phone_1.png",
-        "sinder-pd3_phone_2.png",
-        "sinder-pd3_phone_3.png"
-      ],
-      "download": {
-        "direct": "SinderPhoneWallpaper_P.pak",
-        "modworkshop": "https://modworkshop.net/mod/48647"
-      }
-    },
-    {
-      "id": "sinder-pd3_art-gallery",
-      "title": "艺术画廊（任务“Under the Surphaze”）- Sinder",
-      "status": "released",
-      "date": "2025年04月10日",
-      "shortdescription": "此模组将任务“Under the Surphaze”中找到的画作替换为各种 Sinder 同人画。\n",
-      "description": "此模组将任务 <a href=\"https://payday.fandom.com/wiki/Under_The_Surphaze\">“Under the Surphaze”</a> 中找到的画作替换为各种 Sinder 同人画。\n",
-      "game": "payday3",
-      "categories": ["sinder"],
-      "images": [
-        "sinder-pd3_art-gallery_1.png",
-        "sinder-pd3_art-gallery_2.png",
-        "sinder-pd3_art-gallery_3.png",
-        "sinder-pd3_art-gallery_4.png",
-        "sinder-pd3_art-gallery_5.png",
-        "sinder-pd3_art-gallery_6.png",
-        "sinder-pd3_art-gallery_7.png",
-        "sinder-pd3_art-gallery_8.png",
-        "sinder-pd3_art-gallery_9.png",
-        "sinder-pd3_art-gallery_10.png",
-        "sinder-pd3_art-gallery_11.png",
-        "sinder-pd3_art-gallery_12.png",
-        "sinder-pd3_art-gallery_13.png",
-        "sinder-pd3_art-gallery_14.png",
-        "sinder-pd3_art-gallery_15.png",
-        "sinder-pd3_art-gallery_16.png",
-        "sinder-pd3_art-gallery_17.png",
-        "sinder-pd3_art-gallery_18.png",
-        "sinder-pd3_art-gallery_19.png"
-      ],
-      "download": {
-        "direct": "SinderArtGallery_P.pak"
-      }
-    },
-    {
-      "id": "sinder-pd3_vending-gg",
-      "title": "Gamersupps 自动售货机 - Sinder",
-      "status": "released",
-      "date": "2025年04月10日",
-      "shortdescription": "此模组将自动售货机广告替换为宣传 Sinder Pyro Power 款 Gamersupps 的纹理。",
-      "description": "此模组将自动售货机广告替换为宣传 Sinder Pyro Power 款 Gamersupps 的纹理。\n",
-      "game": "payday3",
-      "categories": ["sinder"],
-      "images": [
-        "sinder-pd3_vending-gg_1.png",
-        "sinder-pd3_vending-gg_2.png"
-      ],
-      "download": {
-        "direct": "SinderVendingGG_P.pak"
-      }
-    },
-    {
-      "id": "sinder-f1-24_red-bull",
-      "title": "Vtuber F1 车队",
-      "status": "working",
-      "date": "暂无",
-      "shortdescription": "此模组将多个车队替换为虚构的、以 Vtuber 为主题的车队。",
-      "description": "此模组将多个车队替换为虚构的、以 Vtuber 为主题的车队。 <br><br> 车手替换如下： <br> 马克斯·维斯塔潘 -> Sinder (重命名为 \"Sinder PUP\") <br> 塞尔吉奥·佩雷斯 -> Trickywi (重命名为 \"Trickywi Nouvelle NEPHASIS\") <br> 角田裕毅 -> Yuzu Sanagi <br> 丹尼尔·里卡多 -> Vienna (重命名为 \"Vienna Noodle\") <br> 夏尔·勒克莱尔 -> Aura GX <br> 小卡洛斯·塞恩斯 -> Kiri Kilovolt <br> 刘易斯·汉密尔顿 -> Mori Calliope <br> 乔治·拉塞尔 -> Cecilia Immergreen <br><br> 车队替换如下： <br> 甲骨文红牛车队 -> Gamersupps Pyro Pup Industries 一级方程式车队 <br> Visa Cashapp RB F1 车队 -> Demalyx Coschamps Racing <br> 梅赛德斯-AMG 马石油一级方程式车队 -> [赞助商待定] Holopro 一级方程式车队 <br> HP 法拉利车队 -> Opera 法拉利车队",
-      "game": "f1-24",
-      "categories": ["sinder","trickywi","yuzu","vienna","aura-gx","kilovolt","calliope","immergreen"],
-      "images": [
-        "sinder-f1-24_red-bull_1.png"
-      ],
-      "download": {}
-    },
-    {
-      "id": "aura-gx-pd3_phone",
-      "title": "手机壁纸 - GX Aura",
-      "status": "released",
-      "date": "2024年08月08日",
-      "shortdescription": "此模组使用 Roko 创作的《笨蛋你好》（Baka Mitai）同人画作为手机壁纸。",
-      "description": "此模组使用 Roko 创作的《笨蛋你好》（Baka Mitai）同人画作为手机壁纸。",
-      "game": "payday3",
-      "categories": ["aura-gx"],
-      "images": [
-        "aura-gx-pd3_phone_1.png"
-      ],
-      "download": {
-        "direct": "AuraGXPhoneWallpaper_P.pak",
-        "modworkshop": "https://modworkshop.net/mod/48899"
-      }
-    },
-    {
-      "id": "aura-gx-pd3_van",
-      "title": "厢式货车涂装 - GX Aura",
-      "status": "released",
-      "date": "2024年07月19日",
-      "shortdescription": "此模组将《收获日3》中的厢式货车变为基于主播 GX Aura 的设计。",
-      "description": "此模组将《收获日3》中的厢式货车变为基于主播 GX Aura 的设计。",
-      "game": "payday3",
-      "categories": ["aura-gx"],
-      "images": [
-        "aura-gx-pd3_van_1.png",
-        "aura-gx-pd3_van_2.png",
-        "aura-gx-pd3_van_3.png",
-        "aura-gx-pd3_van_4.png"
-      ],
-      "download": {
-        "direct": "AuraGXEscapeVan_P.pak",
-        "modworkshop": "https://modworkshop.net/mod/48630",
-        "nexus": "https://www.nexusmods.com/payday3/mods/96"
-      }
-    },
-    {
-      "id": "aura-gx-ets2_renault-t",
-      "title": "雷诺 T 卡车涂装 - GX Aura",
-      "status": "released",
-      "date": "2024年05月18日",
-      "shortdescription": "此模组将雷诺 T 卡车变为基于主播 GX Aura 的设计。",
-      "description": "此模组将雷诺 T 卡车变为基于主播 GX Aura 的设计。",
-      "game": "ets2",
-      "categories": ["aura-gx"],
-      "images": [
-        "aura-gx-ets2_renault-t_1.png",
-        "aura-gx-ets2_renault-t_2.png",
-        "aura-gx-ets2_renault-t_3.png",
-        "aura-gx-ets2_renault-t_4.png"
-      ],
-      "download": {
-        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3227703980"
-      }
-    },
-    {
-      "id": "aura-gx-ets2_trailers",
-      "title": "拖挂涂装 - GX Aura",
-      "status": "released",
-      "date": "2024年04月20日",
-      "shortdescription": "此模组将标准拖挂的涂装变为基于主播 GX Aura 的设计。",
-      "description": "此模组将标准拖挂的涂装变为基于主播 GX Aura 的设计。 <br> 受影响的拖挂类型包括：隔热、干式、帘式、冷藏",
-      "game": "ets2",
-      "categories": ["aura-gx"],
-      "images": [
-        "aura-gx-ets2_trailers_1.png",
-        "aura-gx-ets2_trailers_2.png",
-        "aura-gx-ets2_trailers_3.png",
-        "aura-gx-ets2_trailers_4.png",
-        "aura-gx-ets2_trailers_5.png",
-        "aura-gx-ets2_trailers_6.png",
-        "aura-gx-ets2_trailers_7.png"
-      ],
-      "download": {
-        "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3249068350"
-      }
-    }
-  ]
+	"categories": [
+		{
+			"id": "sinder",
+			"name": "Sinder 模组"
+		},
+		{
+			"id": "aura-gx",
+			"name": "GX Aura 模组"
+		},
+		{
+			"id": "trickywi",
+			"name": "Trickywi 模组"
+		},
+		{
+			"id": "yuzu",
+			"name": "Yuzu 模组"
+		},
+		{
+			"id": "kilovolt",
+			"name": "Kiri Kilovolt 模组"
+		},
+		{
+			"id": "calliope",
+			"name": "Mori Calliope 模组"
+		},
+		{
+			"id": "immergreen",
+			"name": "Cecilia Immergreen 模组"
+		},
+		{
+			"id": "vienna",
+			"name": "Vienna 模组"
+		}
+	],
+	"games": [
+		{
+			"guide": "<details class=\"text-start\">\n<summary> 如何安装《收获日3》模组 </summary>\n<p> 步骤 1: 找到您的《收获日3》游戏安装位置，并前往 <span class=\"text-muted\">{Location}/PAYDAY3/Content/Paks/</span> 。 </p>\n<p> 步骤 2: 创建 \"~mods\" 文件夹 </p>\n<p> 步骤 3: 打开您拥有该游戏的启动器，找到启动选项：</p>\n<ul>\n<li> 在 Steam 上：打开《收获日3》页面，点击设置按钮，然后选择“属性”，最后选择“通用”（如果 Steam 默认未跳转至此）。</li>\n<li> 在 Epic Games Store 上：找到《收获日3》图标，右键点击它，然后点击“管理”；该选项位于设置窗口的底部。</li>\n</ul>\n<p> 步骤 4: 在启动选项中输入 \"-fileopenlog\"。</p>\n<div class=\"halfbox\"></div>\n<p> 好了！您的游戏现已准备好安装模组。只需将您的模组文件放入之前创建的 \"~mods\" 文件夹中，然后启动游戏即可。</p>\n</details>\n",
+			"id": "payday3",
+			"name": "收获日3 (Payday 3)"
+		},
+		{
+			"id": "f1-24",
+			"name": "EA Sports F1 24"
+		},
+		{
+			"id": "ets2",
+			"name": "欧洲卡车模拟2 (Euro Truck Simulator 2)"
+		}
+	],
+	"mods": [
+		{
+			"categories": [
+				"sinder"
+			],
+			"credits": "<a href=\"https://x.com/hioyami02\">Hioyami</a> 负责设计。",
+			"date": "2024年07月20日",
+			"description": "此模组使用 Hioyami 创作的魅魔同人画作为手机壁纸。",
+			"download": {
+				"direct": "SinderPhoneWallpaper_P.pak",
+				"modworkshop": "https://modworkshop.net/mod/48647"
+			},
+			"game": "payday3",
+			"id": "sinder-pd3_phone",
+			"images": [
+				"sinder-pd3_phone_1.png",
+				"sinder-pd3_phone_2.png",
+				"sinder-pd3_phone_3.png"
+			],
+			"shortdescription": "此模组使用 Hioyami 创作的魅魔同人画作为手机壁纸。",
+			"status": "released",
+			"title": "手机壁纸 - Sinder 魅魔"
+		},
+		{
+			"categories": [
+				"sinder"
+			],
+			"credits": "JN Studio, Reimund, RawshawDark, Lilyon, ClickDraws, Woudpe, Ringeko, Tofuubear, ziiilu_ewe, Asinglepetal, Shiny, Nanoless, Zorkxa, cheriyfu, itsmsbunny, Bang nyfe, Sinder, froske, Kuroi Yoko, Kasimi, Shadow263, Bebatch, Chima, itsBearVT, Lynniia, meowmaffura, heikevbo 和 solevis_on- 用于艺术用途.",
+			"date": "2025年04月10日",
+			"description": "此模组将任务 <a href=\"https://payday.fandom.com/wiki/Under_The_Surphaze\">“Under the Surphaze”</a> 中找到的画作替换为各种 Sinder 同人画。\n",
+			"download": {
+				"direct": "SinderArtGallery_P.pak"
+			},
+			"game": "payday3",
+			"id": "sinder-pd3_art-gallery",
+			"images": [
+				"sinder-pd3_art-gallery_1.png",
+				"sinder-pd3_art-gallery_2.png",
+				"sinder-pd3_art-gallery_3.png",
+				"sinder-pd3_art-gallery_4.png",
+				"sinder-pd3_art-gallery_5.png",
+				"sinder-pd3_art-gallery_6.png",
+				"sinder-pd3_art-gallery_7.png",
+				"sinder-pd3_art-gallery_8.png",
+				"sinder-pd3_art-gallery_9.png",
+				"sinder-pd3_art-gallery_10.png",
+				"sinder-pd3_art-gallery_11.png",
+				"sinder-pd3_art-gallery_12.png",
+				"sinder-pd3_art-gallery_13.png",
+				"sinder-pd3_art-gallery_14.png",
+				"sinder-pd3_art-gallery_15.png",
+				"sinder-pd3_art-gallery_16.png",
+				"sinder-pd3_art-gallery_17.png",
+				"sinder-pd3_art-gallery_18.png",
+				"sinder-pd3_art-gallery_19.png"
+			],
+			"shortdescription": "此模组将任务“Under the Surphaze”中找到的画作替换为各种 Sinder 同人画。\n",
+			"status": "released",
+			"title": "艺术画廊（任务“Under the Surphaze”）- Sinder"
+		},
+		{
+			"categories": [
+				"sinder"
+			],
+			"date": "2025年04月10日",
+			"description": "此模组将自动售货机广告替换为宣传 Sinder Pyro Power 款 Gamersupps 的纹理。\n",
+			"download": {
+				"direct": "SinderVendingGG_P.pak"
+			},
+			"game": "payday3",
+			"id": "sinder-pd3_vending-gg",
+			"images": [
+				"sinder-pd3_vending-gg_1.png",
+				"sinder-pd3_vending-gg_2.png"
+			],
+			"shortdescription": "此模组将自动售货机广告替换为宣传 Sinder Pyro Power 款 Gamersupps 的纹理。",
+			"status": "released",
+			"title": "Gamersupps 自动售货机 - Sinder"
+		},
+		{
+			"categories": [
+				"sinder",
+				"trickywi",
+				"yuzu",
+				"vienna",
+				"aura-gx",
+				"kilovolt",
+				"calliope",
+				"immergreen"
+			],
+			"date": "暂无",
+			"description": "此模组将多个车队替换为虚构的、以 Vtuber 为主题的车队。 <br><br> 车手替换如下： <br> 马克斯·维斯塔潘 -> Sinder (重命名为 \"Sinder PUP\") <br> 塞尔吉奥·佩雷斯 -> Trickywi (重命名为 \"Trickywi Nouvelle NEPHASIS\") <br> 角田裕毅 -> Yuzu Sanagi <br> 丹尼尔·里卡多 -> Vienna (重命名为 \"Vienna Noodle\") <br> 夏尔·勒克莱尔 -> Aura GX <br> 小卡洛斯·塞恩斯 -> Kiri Kilovolt <br> 刘易斯·汉密尔顿 -> Mori Calliope <br> 乔治·拉塞尔 -> Cecilia Immergreen <br><br> 车队替换如下： <br> 甲骨文红牛车队 -> Gamersupps Pyro Pup Industries 一级方程式车队 <br> Visa Cashapp RB F1 车队 -> Demalyx Coschamps Racing <br> 梅赛德斯-AMG 马石油一级方程式车队 -> [赞助商待定] Holopro 一级方程式车队 <br> HP 法拉利车队 -> Opera 法拉利车队",
+			"game": "f1-24",
+			"id": "sinder-f1-24_red-bull",
+			"images": [
+				"sinder-f1-24_red-bull_1.png"
+			],
+			"shortdescription": "此模组将多个车队替换为虚构的、以 Vtuber 为主题的车队。",
+			"status": "working",
+			"title": "Vtuber F1 车队"
+		},
+		{
+			"categories": [
+				"aura-gx"
+			],
+			"credits": "<a href=\"https://x.com/rokokoprufei\">Roko</a> 负责设计。",
+			"date": "2024年08月08日",
+			"description": "此模组使用 Roko 创作的《笨蛋你好》（Baka Mitai）同人画作为手机壁纸。",
+			"download": {
+				"direct": "AuraGXPhoneWallpaper_P.pak",
+				"modworkshop": "https://modworkshop.net/mod/48899"
+			},
+			"game": "payday3",
+			"id": "aura-gx-pd3_phone",
+			"images": [
+				"aura-gx-pd3_phone_1.png"
+			],
+			"shortdescription": "此模组使用 Roko 创作的《笨蛋你好》（Baka Mitai）同人画作为手机壁纸。",
+			"status": "released",
+			"title": "手机壁纸 - GX Aura"
+		},
+		{
+			"categories": [
+				"aura-gx"
+			],
+			"credits": "<a href=\"https://x.com/peagade__\">Peagade</a> 用于缩略图设计。",
+			"date": "2024年07月19日",
+			"description": "此模组将《收获日3》中的厢式货车变为基于主播 GX Aura 的设计。",
+			"download": {
+				"direct": "AuraGXEscapeVan_P.pak",
+				"modworkshop": "https://modworkshop.net/mod/48630",
+				"nexus": "https://www.nexusmods.com/payday3/mods/96"
+			},
+			"game": "payday3",
+			"id": "aura-gx-pd3_van",
+			"images": [
+				"aura-gx-pd3_van_1.png",
+				"aura-gx-pd3_van_2.png",
+				"aura-gx-pd3_van_3.png",
+				"aura-gx-pd3_van_4.png"
+			],
+			"shortdescription": "此模组将《收获日3》中的厢式货车变为基于主播 GX Aura 的设计。",
+			"status": "released",
+			"title": "厢式货车涂装 - GX Aura"
+		},
+		{
+			"categories": [
+				"aura-gx"
+			],
+			"credits": "",
+			"date": "2024年05月18日",
+			"description": "此模组将雷诺 T 卡车变为基于主播 GX Aura 的设计。",
+			"download": {
+				"steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3227703980"
+			},
+			"game": "ets2",
+			"id": "aura-gx-ets2_renault-t",
+			"images": [
+				"aura-gx-ets2_renault-t_1.png",
+				"aura-gx-ets2_renault-t_2.png",
+				"aura-gx-ets2_renault-t_3.png",
+				"aura-gx-ets2_renault-t_4.png"
+			],
+			"shortdescription": "此模组将雷诺 T 卡车变为基于主播 GX Aura 的设计。",
+			"status": "released",
+			"title": "雷诺 T 卡车涂装 - GX Aura"
+		},
+		{
+			"categories": [
+				"aura-gx"
+			],
+			"credits": "",
+			"date": "2024年04月20日",
+			"description": "此模组将标准拖挂的涂装变为基于主播 GX Aura 的设计。 <br> 受影响的拖挂类型包括：隔热、干式、帘式、冷藏",
+			"download": {
+				"steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3249068350"
+			},
+			"game": "ets2",
+			"id": "aura-gx-ets2_trailers",
+			"images": [
+				"aura-gx-ets2_trailers_1.png",
+				"aura-gx-ets2_trailers_2.png",
+				"aura-gx-ets2_trailers_3.png",
+				"aura-gx-ets2_trailers_4.png",
+				"aura-gx-ets2_trailers_5.png",
+				"aura-gx-ets2_trailers_6.png",
+				"aura-gx-ets2_trailers_7.png"
+			],
+			"shortdescription": "此模组将标准拖挂的涂装变为基于主播 GX Aura 的设计。",
+			"status": "released",
+			"title": "拖挂涂装 - GX Aura"
+		}
+	]
 }
