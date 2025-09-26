@@ -83,7 +83,7 @@ $title = "Accueil - Badreddine Rezzouk";
                 <?php require "../Common-files/navbar.php" ?>
                 <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px);'>
                     <div class="halfbox"></div>
-                    <div class="card mb-3 offset-lg-1 border border-5 col-lg-4">
+                    <div class="card mb-3 offset-lg-1 border border-5 col-lg-4 fadeInLeft">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
@@ -98,7 +98,7 @@ $title = "Accueil - Badreddine Rezzouk";
                         </div>
                     </div>
                     <br class="d-md-block d-none">
-                    <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4">
+                    <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4 fadeInRight">
                         <div class="row g-0">
                             <div class="col-4">
                                 <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
@@ -186,7 +186,7 @@ $title = "Accueil - Badreddine Rezzouk";
                     <h4>Au programme sur ce portfolio:</h4>
                 </div>
                 <div class="halfbox"></div>
-                <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg">
+                <div class="container bg-white p-4 rounded-3 text-center w-auto mx-auto border border-5 shadow-lg fadeInUp">
                     <div class="row">
                         <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Profile.php">
                             <div class="col">
