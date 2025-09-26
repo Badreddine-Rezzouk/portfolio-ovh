@@ -118,6 +118,14 @@ $title = 'Modding - Badreddine Rezzouk';
                 } else if (mod.status === 'working') {
                     statusPill += `<span class="badge rounded-pill text-bg-warning"> En cours de production </span>`;
                 }
+                let borderColor = '';
+                if(mod.categories.length === 1){
+                    if(mod.categories.includes("sinder")){
+                        borderColor += 'border-sinder'
+                    } else if (mod.categories.includes("aura-gx")){
+                        borderColor += 'border-aura-gx'
+                    }
+                }
 
                 // Set the click handler using a proper function
                 div.onclick = function () {
@@ -125,7 +133,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 };
 
                 div.innerHTML = `
-                        <div class="row rounded-3 border border-5 p-1">
+                        <div class="row rounded-3 border border-5 ${borderColor} p-1">
                         <div class="col">
                             <img class="rounded rounded-start-1" src="${modThumbnail}"></img>
                         </div>
