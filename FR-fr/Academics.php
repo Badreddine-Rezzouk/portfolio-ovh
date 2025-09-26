@@ -111,25 +111,25 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 <ul class="list-group list-group-flush list-group-horizontal">
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/html5-logo.png" class="w-auto img-fluid img-logo" alt="Logo HTML 5">
+                                            <img src="<?php echo $topURL?>Images/logo/html5-logo.png" class="img-logo" alt="Logo HTML 5">
                                             <figcaption> HTML 5 </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/css3-logo.png" class="w-auto img-fluid img-logo" alt="Logo CSS 3">
+                                            <img src="<?php echo $topURL?>Images/logo/css3-logo.png" class="img-logo" alt="Logo CSS 3">
                                             <figcaption> CSS 3 </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/javascript-logo.png" class="w-auto img-fluid img-logo" alt="Logo JavaScript">
+                                            <img src="<?php echo $topURL?>Images/logo/javascript-logo.png" class="img-logo" alt="Logo JavaScript">
                                             <figcaption> JavaScript </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/php-logo.png" class="w-auto img-fluid img-logo" alt="Logo PHP">
+                                            <img src="<?php echo $topURL?>Images/logo/php-logo.png" class="img-logo" alt="Logo PHP">
                                             <figcaption> PHP 8.3 </figcaption>
                                         </figure>
                                     </li>
@@ -143,25 +143,25 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 <ul class="list-group list-group-flush list-group-horizontal">
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/bootstrap-logo.png" class="w-auto img-fluid img-logo" alt="Logo Bootstrap">
+                                            <img src="<?php echo $topURL?>Images/logo/bootstrap-logo.png" class="img-logo" alt="Logo Bootstrap">
                                             <figcaption> Bootstrap </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/react-logo.png" class="w-auto img-fluid img-logo" alt="Logo React">
+                                            <img src="<?php echo $topURL?>Images/logo/react-logo.png" class="img-logo" alt="Logo React">
                                             <figcaption> React JS </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/symfony-logo.png" class="w-auto img-fluid img-logo" alt="Logo Symfony">
+                                            <img src="<?php echo $topURL?>Images/logo/symfony-logo.png" class="img-logo" alt="Logo Symfony">
                                             <figcaption> Symfony </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="w-auto img-fluid img-logo" alt="Logo .NET">
+                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="img-logo" alt="Logo .NET">
                                             <figcaption> .NET </figcaption>
                                         </figure>
                                     </li>
@@ -176,19 +176,19 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 <ul class="list-group list-group-flush list-group-horizontal">
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="w-auto img-fluid img-logo" alt="Logo MariaDB">
+                                            <img src="<?php echo $topURL?>Images/logo/mariadb-logo.png" class="img-logo" alt="Logo MariaDB">
                                             <figcaption> MariaDB </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/mysql5-logo.png" class="w-auto img-fluid img-logo" alt="Logo MariaDB">
+                                            <img src="<?php echo $topURL?>Images/logo/mysql5-logo.png" class="img-logo" alt="Logo MariaDB">
                                             <figcaption> MySQL </figcaption>
                                         </figure>
                                     </li>
                                     <li class="list-group-item">
                                         <figure>
-                                            <img src="<?php echo $topURL?>Images/logo/sqlite-logo.png" class="w-auto img-fluid img-logo"  alt="Logo MariaDB">
+                                            <img src="<?php echo $topURL?>Images/logo/sqlite-logo.png" class="img-logo"  alt="Logo MariaDB">
                                             <figcaption> SQLite </figcaption>
                                         </figure>
                                     </li>
