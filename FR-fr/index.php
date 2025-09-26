@@ -203,7 +203,7 @@ $title = "Accueil - Badreddine Rezzouk";
                         <a class="col link-underline link-underline-opacity-0" href="<?php echo $baseURL;?>Experiences/Experiences.php">
                             <div class="col">
                                 <h6> Mes emplois et stages </h6>
-                                <p> Pour prouver que je ne viens pas de la dernière pluie. (WIP) </p>
+                                <p> Pour prouver que je ne viens pas de la dernière pluie.</p>
                             </div>
                         </a>
                     </div>
