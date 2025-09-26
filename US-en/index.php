@@ -1,4 +1,5 @@
-<?php global $language_error_en, $baseURL;
+<?php
+global $language_error_en;
 require "../Common-files/redirect.php";
 require "../Common-files/unsupportedlanguage.php";
 $title = "Home page - Badreddine Rezzouk";
@@ -9,13 +10,80 @@ $title = "Home page - Badreddine Rezzouk";
 <html class="gradient-box">
 <head>
     <?php require "../Common-files/header.php"; ?>
+    <style>
+        .scroller {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .scroller section {
+            scroll-snap-align: start;
+        }
+
+        .scroller section #bottom {
+            scroll-snap-align: end;
+        }
+    </style>
 </head>
 <body>
-<?php require "../Common-files/navbar.php" ?>
+<script type="text/javascript">
+    let bufferArray = [];
+    let lastKeystrokeTime = Date.now();
+
+    const cheatcode = "anisdoggo";
+
+    function clearContent() {
+        document.getElementById("video-spot").innerHTML = "";
+    }
+
+    function lockViewport(duration) {
+        // Scroll to top
+        window.scrollTo(0, 0);
+
+        // Lock scrolling
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+
+        // Unlock after duration
+        setTimeout(() => {
+            document.body.style.overflow = "";
+            document.documentElement.style.overflow = "";
+        }, duration);
+    }
+
+    window.addEventListener("keyup", e => {
+        const key = e.key.toLowerCase();
+        const latestKeystrokeTime = Date.now();
+
+        if (latestKeystrokeTime - lastKeystrokeTime > 1500) {
+            bufferArray = [];
+        }
+
+        lastKeystrokeTime = latestKeystrokeTime;
+        bufferArray.push(key);
+
+        const word = bufferArray.join("");
+
+        if (word === cheatcode) {
+            lockViewport(5000);
+            document.getElementById("video-spot").innerHTML = `
+                <video autoplay>
+                    <source src="<?php echo $topURL ?>Images/videos/anis-wan.mp4" type="video/mp4">
+                </video>
+            `;
+            setTimeout(clearContent, 5000);
+        }
+    });
+</script>
+<div class="scroller" id="wrapper">
 <div class="gradient-box">
-    <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken;'>
+    <div id="video-spot" class="m-auto" style="z-index: 2; position: sticky; top: calc(50vh/2); left: 0;"></div>
+    <section>
+    <?php require "../Common-files/navbar.php" ?>
+        <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px);'>
         <div class="halfbox"></div>
-        <div class="card mb-3 offset-lg-1 border border-5 col-lg-4">
+        <div class="card mb-3 offset-lg-1 border border-5 col-lg-4 fadeInLeft">
             <div class="row g-0">
                 <div class="col-4">
                     <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
@@ -30,7 +98,7 @@ $title = "Home page - Badreddine Rezzouk";
             </div>
         </div>
         <br class="d-md-block d-none">
-        <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4">
+        <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4 fadeInRight">
             <div class="row g-0">
                 <div class="col-4">
                     <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
@@ -46,6 +114,8 @@ $title = "Home page - Badreddine Rezzouk";
         </div>
         <div class="box"></div>
     </div>
+    </section>
+    <section>
     <br>
     <div class="bg-white p-4 rounded-3 text-center w-50 mx-auto border border-5 shadow-lg">
         <h2>Welcome to my portfolio</h2>
@@ -193,8 +263,12 @@ $title = "Home page - Badreddine Rezzouk";
         <h4> It is currently <span id="current-time"></span> on <span id="current-date"></span> for me.</h4>
     </div>
     <div class="box"></div>
+    </section>
+    <section id="bottom">
+        <?php require "../Common-files/footer.php" ?>
+    </section>
 
 </div>
-<?php require "../Common-files/footer.php" ?>
+</div>
 </body>
 </html>
