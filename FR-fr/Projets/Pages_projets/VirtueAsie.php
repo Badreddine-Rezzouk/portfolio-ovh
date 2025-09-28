@@ -1,40 +1,37 @@
 <?php
-// Extract the language from the URL (e.g., http://domain.sub/FR-fr/page)
-$uri = $_SERVER['REQUEST_URI']; // Get the full URI (e.g., /FR-fr/page)
-$uriParts = explode('/', trim($uri, '/')); // Split the URI into parts
-$languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null; // First part is the language (e.g., FR-fr)
-
-// Define allowed languages
-$allowed_languages = ['FR-fr', 'EN-us', 'CN-zh','Template']; // Example allowed languages
-
-// Validate and set the language
-if (in_array($languageFromURL, $allowed_languages)) {
-    // If the language in the URL is valid, update the session
-    $_SESSION['prev_lang'] = $languageFromURL;
-} elseif (isset($_SESSION['prev_lang'])) {
-    // If no valid language in the URL, use the session language
-    $languageFromURL = $_SESSION['prev_lang'];
-} else {
-    // Default language if no session or URL language is set
-    $languageFromURL = 'FR-fr';
-    $_SESSION['prev_lang'] = $languageFromURL;
-}
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
-
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . 'VirtueAsie.php/';
+require "../../../Common-files/redirect.php";
+require "../../../Common-files/unsupportedlanguage.php";
+$title = "Traducode - Badreddine Rezzouk";
 ?>
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <?php require '../../../Common-files/header.php'; ?>
+    <?php require_once "../../../Common-files/header.php"; ?>
 </head>
 <body>
-<?php require "../../../Common-files/navbar.php" ?>
+<?php require_once "../../../Common-files/navbar.php"; ?>
 <div class="gradient-box">
+    <div class="halfbox"></div>
+    <div class="bg-white p-4 rounded-3 text-center w-60 mx-auto border border-5 shadow-lg">
+        <h2>Virtueasie</h2>
+    </div>
+    <div class="box"></div>
+    <div class="bg-white p-4 rounded-3 w-70 mx-auto border border-5 shadow-lg">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="m-auto"> Images inexistantes </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p> Status : <span class="badge rounded-pill text-bg-warning"> En suspend </span></p>
+                <p> Ce projet consiste à créer une entreprise d'importation et de revente de produit type merchandising de célébrités d'Asie de l'Est.</p>
 
+            </div>
+        </div>
+    </div>
+    <div class="halfbox"></div>
 </div>
+<?php require_once "../../../Common-files/footer.php"; ?>
 </body>
 </html>
