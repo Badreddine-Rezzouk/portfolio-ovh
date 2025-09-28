@@ -49,6 +49,7 @@ $title = "Calliguh - Badreddine Rezzouk";
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
+                        <p> Status : <span class="badge rounded-pill text-bg-success"> Actif </span></p>
                         <p> Ce projet consiste à présenter un compteur synchronisé avec tout le monde. Ici, on remplace le bouton basique par un GIF de Mori Calliope.</p>
                         <a class="btn btn-primary me-2 mb-2" href="https://calliguh.com/" target="_blank"> Accéder au site </a>
                     </div>
