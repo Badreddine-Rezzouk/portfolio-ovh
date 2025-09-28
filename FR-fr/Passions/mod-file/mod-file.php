@@ -15,6 +15,14 @@ $title = 'Mod - Badreddine Rezzouk';
             border-radius: 12px;
             margin-bottom: 1rem;
         }
+
+        .modal-image {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
     </style>
 </head>
 <body>
@@ -71,7 +79,7 @@ $title = 'Mod - Badreddine Rezzouk';
 
                     const items = images.map((filename, i) => `
                         <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                            <img src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" class="d-block w-100 mod-screenshot" alt="Screenshot ${i + 1}">
+                            <img src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" class="d-block w-100 mod-screenshot" alt="Screenshot ${i + 1}" onclick="openImageModal('<?php echo $topURL ?>Images/mod/${modId}/${filename}')">
                         </div>
                     `).join('');
 
@@ -94,7 +102,7 @@ $title = 'Mod - Badreddine Rezzouk';
                         </div>
                     `;
                 } else if (images.length === 1) {
-                    imageHTML = `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${images[0]}" alt="Screenshot du mod">`;
+                    imageHTML = `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${images[0]}" alt="Screenshot du mod" onclick="openImageModal('<?php echo $topURL ?>Images/mod/${modId}/${images[0]}')">`;
                 }
 
                 // Build download buttons if any
@@ -126,10 +134,14 @@ $title = 'Mod - Badreddine Rezzouk';
                 if (gameData.guide){
                     guideSection += gameData.guide
                 }
+                let credits = '';
+                if (mod.credits) {
+                    credits += `<details class="p-2"><summary> Crédits </summary>${mod.credits}</details>`
+                }
 
                 const contentHTML = `
                     <div class="row">
-                        <div class="col-md-6 text-start">
+                        <div class="col-10 col-md-6 text-start">
                             <h5><strong>Jeu :</strong> ${gameName}</h5>
                             <h5><strong>Date :</strong> ${mod.date}</h5>
                             <p><strong>Catégories :</strong> ${modCategories}</p>
@@ -139,10 +151,11 @@ $title = 'Mod - Badreddine Rezzouk';
                             </div>
                             ${guideSection}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-10 col-md-6">
                             ${imageHTML}
                         </div>
                         <p>${mod.description}</p>
+                        ${credits}
                     </div>
 
 
@@ -155,11 +168,35 @@ $title = 'Mod - Badreddine Rezzouk';
                 document.getElementById('modTitle').innerText = "Erreur lors du chargement.";
             });
     });
+
+    document.querySelectorAll('#modContent img.mod-screenshot').forEach(img => {
+        img.addEventListener('click', () => {
+            // Set modal image and show modal
+            document.getElementById('modalImage').src = img.src;
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'), {
+                keyboard: false,
+            });
+            modal.show();
+        });
+    });
+
+    function openImageModal(imageUrl) {
+        document.getElementById('modalImage').src = imageUrl;
+        new bootstrap.Modal(document.getElementById('imageModal')).show();
+    }
 </script>
 
+<!-- Modal for Image Popup -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img id="modalImage" class="img-fluid modal-image rounded" src="" alt="Image Modal">
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php require "../../../Common-files/footer.php" ?>
 </body>
 </html>
-
-

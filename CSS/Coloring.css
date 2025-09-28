@@ -6,6 +6,8 @@
     --secondary-pink: #FD48C7;
     --gradient: linear-gradient(0.25turn,var(--primary-blue), var(--secondary-blue), var(--middle-color) , var(--secondary-pink), var(--primary-pink));
     --color-shifter: rgba(0,0,0,50%);
+    --bs-sinder-rgb: rgb(251,59,2);
+    --bs-aura-gx-rgb: rgb(199,38,79);
     overflow-x: hidden;
     width: 100vw;
 }
@@ -120,5 +122,15 @@ details summary::-webkit-details-marker {
 details > ul {
     padding-bottom: 1rem;
     margin-bottom: 0;
+}
+
+
+.border-sinder {
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-sinder-rgb), var(--bs-border-opacity)) !important;
+}
+.border-aura-gx {
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-aura-gx-rgb), var(--bs-border-opacity)) !important;
 }
 

@@ -85,8 +85,8 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 <div id="navbar">
     <div class="navbar navbar-expand-lg navbar-custom">
         <!-- Toggler Button for Small Screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-image: none!important;background-color: white!important;">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="background-image: none!important;background-color: grey!important;">
+            <img src="<?php echo $topURL?>Images/logo/navbar_logo.png" style="object-fit: contain; max-width: 20px" class="my-auto" alt="Logo Navbar">
         </button>
 
         <!-- Off-Canvas Sidebar -->
@@ -98,6 +98,7 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
             <div class="offcanvas-body">
                 <nav class="navbar-nav">
                     <a id="home" class="nav-link" href="<?php echo $baseURL; ?>index.php">
+                        <img src="<?php echo $topURL?>Images/logo/navbar_logo.png" style="object-fit: contain; max-width: 20px" class="my-auto" alt="Logo Navbar">
                         <?php echo $texts['home']; ?>
                     </a>
                     <a id="resume" class="nav-link" href="<?php echo $baseURL; ?>Resume/resume_download.php ">

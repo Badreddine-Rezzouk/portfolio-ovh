@@ -57,3 +57,9 @@ html, body {
     max-width: 570px;
     max-height: 570px;
 }
+
+.img-logo {
+    width: auto;
+    height: 50px; /* Fixed height for all logos */
+    object-fit: contain;
+}
