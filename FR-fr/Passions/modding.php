@@ -121,11 +121,20 @@ $title = 'Modding - Badreddine Rezzouk';
                 }
                 let borderColor = '';
                 if(mod.categories.length === 1){
-                    if(mod.categories.includes("sinder")){
-                        borderColor += 'border-sinder'
-                    } else if (mod.categories.includes("aura-gx")){
-                        borderColor += 'border-aura-gx'
+                    switch(mod.categories[0]){
+                        case "sinder":
+                            borderColor += 'border border-sinder';
+                            break;
+                        case "aura-gx":
+                            borderColor += 'border-aura-gx border';
+                            break;
+                        default:
+                            borderColor += 'border';
+                            break;
+
                     }
+                } else {
+                    borderColor += 'border';
                 }
 
                 // Set the click handler using a proper function
@@ -134,7 +143,7 @@ $title = 'Modding - Badreddine Rezzouk';
                 };
 
                 div.innerHTML = `
-    <div class="row rounded-3 border border-5 ${borderColor} p-1 g-2 clearfix">
+    <div class="row rounded-3 border-5 ${borderColor} p-1 g-2 clearfix">
         <div class="col-lg-6 col-12">
             <img class="rounded rounded-start-1 img-fluid w-100" src="${modThumbnail}">
         </div>
