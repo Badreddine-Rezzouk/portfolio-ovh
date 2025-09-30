@@ -34,7 +34,7 @@ $title = 'Mod - Badreddine Rezzouk';
     </div>
     <div class="halfbox"></div>
 
-    <div class="bg-white p-4 rounded-3 mx-auto w-75 border border-5 shadow-lg" id="modContent">
+    <div class="bg-white p-4 rounded-3 mx-auto col-sm-11 col-8 border border-5 shadow-lg" id="modContent">
         <!-- Content will be filled by JS -->
     </div>
     <div class="box"></div>
