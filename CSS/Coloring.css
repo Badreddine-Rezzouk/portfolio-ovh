@@ -124,10 +124,10 @@ details > ul {
     margin-bottom: 0;
 }
 
-.border-sinder {
+
+.border.border-sinder {
     border-color: var(--bs-sinder-rgb) !important;
 }
-.border-aura-gx {
+.border.border-aura-gx {
     border-color: var(--bs-aura-gx-rgb) !important;
 }
-
