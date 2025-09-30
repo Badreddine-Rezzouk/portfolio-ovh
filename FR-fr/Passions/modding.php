@@ -14,6 +14,7 @@ $title = 'Modding - Badreddine Rezzouk';
             cursor: pointer;
             background-color: rgba(255,255,255,0.2);
         }
+
     </style>
 </head>
 <body>
@@ -30,8 +31,8 @@ $title = 'Modding - Badreddine Rezzouk';
         </p>
     </div>
     <div class="box"></div>
-    <div class="row">
-    <div class="filters col-10 col-md-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg" style="max-height:14vw;">
+    <div class="row mod-row">
+    <div class="filters col-10 col-lg-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg">
         <label for="gameFilter"> Jeu concerné: </label>
         <select id="gameFilter" class="form-select mb-3">
             <option value="">Tous les jeux</option>
@@ -42,7 +43,7 @@ $title = 'Modding - Badreddine Rezzouk';
         </select>
     </div>
 
-    <div id="modList" class="mod-list col-10 col-md-7 mx-auto bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
+    <div id="modList" class="mod-list col-10 col-lg-7 mx-auto bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
     <div class="halfbox"></div>
     </div>
     <script>
@@ -133,20 +134,19 @@ $title = 'Modding - Badreddine Rezzouk';
                 };
 
                 div.innerHTML = `
-                        <div class="row rounded-3 border border-5 ${borderColor} p-1">
-                        <div class="col">
-                            <img class="rounded rounded-start-1" src="${modThumbnail}"></img>
-                        </div>
-                        <div class="col">
-                            <h4>${mod.title} | <small>${gameName}</small></h4>
-                            <h6>${mod.date}</h6>
-                            ${statusPill}
-                            <p>${mod.shortdescription}</p>
-                        </div>
-                        </div>
-                        <div class="quarterbox"></div>
-
-                `;
+    <div class="row rounded-3 border border-5 ${borderColor} p-1 g-2 clearfix">
+        <div class="col-lg-6 col-12">
+            <img class="rounded rounded-start-1 img-fluid w-100" src="${modThumbnail}">
+        </div>
+        <div class="col-lg-6 col-12">
+            <h4>${mod.title} | <small>${gameName}</small></h4>
+            <h6>${mod.date}</h6>
+            ${statusPill}
+            <p>${mod.shortdescription}</p>
+        </div>
+    </div>
+    <div class="quarterbox"></div>
+`;
 
                 list.appendChild(div);
             });

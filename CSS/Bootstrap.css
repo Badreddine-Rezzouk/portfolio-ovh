@@ -49,3 +49,21 @@
     }
 }
 
+
+@media (max-width: 767.98px) {
+    .filters {
+        max-height: 32vh;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .filters {
+        max-height: 32vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .filters {
+        max-height: 28vh;
+    }
+}
