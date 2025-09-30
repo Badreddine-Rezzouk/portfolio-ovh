@@ -181,7 +181,8 @@
 			"game": "payday3",
 			"id": "aura-gx-pd3_phone",
 			"images": [
-				"aura-gx-pd3_phone_1.png"
+				"aura-gx-pd3_phone_1.png",
+				"aura-gx-pd3_phone_2.png"
 			],
 			"shortdescription": "此模组使用 Roko 创作的《笨蛋你好》（Baka Mitai）同人画作为手机壁纸。",
 			"status": "released",

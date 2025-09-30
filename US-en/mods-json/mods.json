@@ -181,7 +181,8 @@
 			"game": "payday3",
 			"id": "aura-gx-pd3_phone",
 			"images": [
-				"aura-gx-pd3_phone_1.png"
+				"aura-gx-pd3_phone_1.png",
+				"aura-gx-pd3_phone_2.png"
 			],
 			"shortdescription": "This mod uses Roko’s Baka Mitai fanart as the phone wallpaper.",
 			"status": "released",
