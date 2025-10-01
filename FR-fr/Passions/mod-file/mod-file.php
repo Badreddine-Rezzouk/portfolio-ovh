@@ -138,6 +138,23 @@ $title = 'Mod - Badreddine Rezzouk';
                 if (mod.credits) {
                     credits += `<details class="p-2"><summary> Crédits </summary>${mod.credits}</details>`
                 }
+                let borderColor = '';
+                if(mod.categories.length === 1){
+                    switch(mod.categories[0]){
+                        case "sinder":
+                            borderColor += 'border border-sinder';
+                            break;
+                        case "aura-gx":
+                            borderColor += 'border-aura-gx border';
+                            break;
+                        default:
+                            borderColor += 'border';
+                            break;
+
+                    }
+                } else {
+                    borderColor += 'border';
+                }
 
                 const contentHTML = `
                     <div class="row">
@@ -162,6 +179,7 @@ $title = 'Mod - Badreddine Rezzouk';
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
+                document.getElementById('modContent').className += borderColor;
             })
             .catch(err => {
                 console.error("Erreur lors du chargement du mod:", err);
