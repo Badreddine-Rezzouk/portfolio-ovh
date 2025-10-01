@@ -12,7 +12,10 @@ $title = 'Modding - Badreddine Rezzouk';
     <style>
         .mod-card:hover{
             cursor: pointer;
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(0,0,0,0.7);
+        }
+        body{
+            overflow-x: hidden;
         }
 
     </style>
@@ -21,18 +24,18 @@ $title = 'Modding - Badreddine Rezzouk';
 <?php require "../../Common-files/navbar.php" ?>
 <div class="gradient-box">
     <div class="halfbox"></div>
-    <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
+    <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg slideInLeft">
         <h2> Mes mods de jeux vidéos</h2>
     </div>
     <div class="halfbox"></div>
-    <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg">
+    <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg slideInLeft">
         <p>
             Le modding de jeux vidéos est une pratique dont le but est de transformer un jeu vidéo en ajoutant ou modifiant du contenu, avec comme finalité un gameplay qui n'est pas originellement prévu par le développeur.
         </p>
     </div>
     <div class="box"></div>
     <div class="row mod-row">
-    <div class="filters col-10 col-lg-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg">
+    <div class="filters col-10 col-lg-3 offset-1 mb-2 bg-white p-4 rounded-3 border border-5 shadow-lg slideInLeft">
         <label for="gameFilter"> Jeu concerné: </label>
         <select id="gameFilter" class="form-select mb-3">
             <option value="">Tous les jeux</option>
@@ -43,10 +46,11 @@ $title = 'Modding - Badreddine Rezzouk';
         </select>
     </div>
 
-    <div id="modList" class="mod-list col-10 col-lg-7 mx-auto bg-white p-4 rounded-3 border border-5 shadow-lg"></div>
+    <div id="modList" class="mod-list col-10 col-lg-7 mx-auto bg-gradient-mod p-4 rounded-3 border border-5 border-black shadow-lg"></div>
     <div class="halfbox"></div>
     </div>
     <script>
+
         let allMods = [], games = [], categories = [];
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -101,6 +105,18 @@ $title = 'Modding - Badreddine Rezzouk';
             return game ? game.name : 'Unknown Game';
         }
 
+        // Applies a staggered animation delay to mod items
+        function setDelay(_, baseDelay) {
+            const items = document.querySelectorAll('#modList .slideInRight');
+            // Reset and apply incremental delays
+            items.forEach((el, i) => {
+                el.style.animationDelay = '';
+                el.style.webkitAnimationDelay = '';
+                const delay = (i * (typeof baseDelay === 'number' ? baseDelay : 0)) + 'ms';
+                el.style.animationDelay = delay;
+                el.style.webkitAnimationDelay = delay;
+            });
+        }
 
         function renderMods(mods) {
             const baseURL = "<?php echo $baseURL ?>";
@@ -109,7 +125,7 @@ $title = 'Modding - Badreddine Rezzouk';
             list.innerHTML = '';
             mods.forEach(mod => {
                 const div = document.createElement('div');
-                div.className = 'mod-card';
+                div.className = 'mod-section';
                 const gameName = getGameName(mod.game);
                 const modThumbnail = topURL + "Images/mod/" + mod.id + "/" + mod.images[0];
 
@@ -143,22 +159,27 @@ $title = 'Modding - Badreddine Rezzouk';
                 };
 
                 div.innerHTML = `
-    <div class="row rounded-3 border-5 ${borderColor} p-1 g-2 clearfix">
-        <div class="col-lg-6 col-12">
-            <img class="rounded rounded-start-1 img-fluid w-100" src="${modThumbnail}">
-        </div>
-        <div class="col-lg-6 col-12">
-            <h4>${mod.title} | <small>${gameName}</small></h4>
-            <h6>${mod.date}</h6>
-            ${statusPill}
-            <p>${mod.shortdescription}</p>
-        </div>
-    </div>
-    <div class="quarterbox"></div>
-`;
-
+                    <div class="mod-card row rounded-3 border-5 ${borderColor} bg-white p-1 g-2 clearfix slideInRight">
+                        <div class="col-lg-6 col-12">
+                            <img class="rounded rounded-start-1 img-fluid w-100" src="${modThumbnail}">
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <h4>${mod.title} | <small>${gameName}</small></h4>
+                            <h6>${mod.date}</h6>
+                            ${statusPill}
+                            <p>${mod.shortdescription}</p>
+                        </div>
+                    </div>
+                    <div class="quarterbox"></div>
+                `;
                 list.appendChild(div);
+                if (typeof setDelay === 'function') setDelay(null, 100);
             });
+            if(!mods){
+                const div = document.createElement('div')
+                div.className = 'row rounded-3 p-1 g-2'
+                div.innerHTML = `<img class="rounded rounded-start-1 img-fluid w-100" src="<?php echo $topURL?>Images/wow-such-empty.png">`
+            }
         }
     </script>
 </div>

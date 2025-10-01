@@ -4,10 +4,12 @@
     --middle-color: #9B4F96;
     --primary-pink: #FF0F73;
     --secondary-pink: #FD48C7;
+    --black: #000;
     --gradient: linear-gradient(0.25turn,var(--primary-blue), var(--secondary-blue), var(--middle-color) , var(--secondary-pink), var(--primary-pink));
     --color-shifter: rgba(0,0,0,50%);
     --bs-sinder-rgb: rgb(251,59,2);
     --bs-aura-gx-rgb: rgb(199,38,79);
+    --gradient-mod: linear-gradient(0.20turn, var(--black), var(--bs-sinder-rgb), var(--bs-aura-gx-rgb), var(--black));
     overflow-x: hidden;
     width: 100vw;
 }
@@ -130,4 +132,7 @@ details > ul {
 }
 .border.border-aura-gx {
     border-color: var(--bs-aura-gx-rgb) !important;
+}
+.bg-gradient-mod {
+    background-image: var(--gradient-mod) !important;
 }
