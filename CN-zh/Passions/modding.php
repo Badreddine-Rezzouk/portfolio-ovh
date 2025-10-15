@@ -78,6 +78,45 @@ $title = '模组制作 - Badreddine Rezzouk';
     <div class="halfbox"></div>
     </div>
     <script>
+        // Helper – parse the query string into an object
+        function getQueryParams() {
+            const params = {};
+            const search = window.location.search.substring(1); // strip leading '?'
+            if (!search) return params;
+
+            search.split('&').forEach(pair => {
+                const [key, value] = pair.split('=');
+                if (key) params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+            });
+            return params;
+        }
+
+        // Run after the DOM is ready and after the JSON data has been loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait until the filters have been populated (they're built in the same DOMContentLoaded)
+            const { category } = getQueryParams();
+
+            if (category) {
+                const catSelect = document.getElementById('categoryFilter');
+
+                // Make sure the option actually exists – the JSON load may still be pending,
+                // so we listen for the next tick after the data is fetched.
+                const trySet = () => {
+                    const optionExists = Array.from(catSelect.options).some(o => o.value === category);
+                    if (optionExists) {
+                        catSelect.value = category;
+                        // fire the change handler exactly like a manual user selection
+                        catSelect.dispatchEvent(new Event('change'));
+                    } else {
+                        // If the options aren't there yet (e.g., JSON still loading), retry shortly
+                        setTimeout(trySet, 100);
+                    }
+                };
+                trySet();
+            }
+        });
+    </script>
+    <script>
 
         let allMods = [], games = [], categories = [];
         const selectedCategories = new Set();
