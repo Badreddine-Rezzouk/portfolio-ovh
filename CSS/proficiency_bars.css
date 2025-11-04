@@ -1,17 +1,29 @@
 .container_langues{
-    width: 100%;
+    width: auto;
     background-color: #ddd;
     border-radius: 5px;
 }
 
 .skills {
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
+    padding-top: 5px; /* Add top padding */
+    padding-bottom: 5px; /* Add bottom padding */
     background-color: var(--primary-blue);
     color: white;
     border-radius: 5px;
 }
-.french {width: 100%;} /* Green */
-.english {width: 90%;} /* Blue */
-.spanish {width: 50%;} /* Red */
-.chinese {width: 15%;} /* Dark Grey */
+@keyframes french {
+    0% {width: 0%}
+    100% {width: 100%;} }
+@keyframes english {
+    0% {width: 0%}
+    100% {width: 90%;} }
+@keyframes spanish {
+    0% {width: 0%}
+    100% {width: 50%;} }
+@keyframes chinese {
+    0% {width: 0%}
+    100% {width: 15%;} }
+.french {animation: french 3s; width: 100%;}
+.english {animation: english 3s; width: 90%;} /* Blue */
+.spanish {animation: spanish 3s; width: 50%;} /* Red */
+.chinese {animation: chinese 3s; width: 15%;} /* Dark Grey */

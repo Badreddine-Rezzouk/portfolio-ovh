@@ -24,14 +24,14 @@ $title = "Proficiences - Badreddine Rezzouk"
         <hr class="mx-auto rounded-2">
             <div class="halfbox"></div>
             <div class="bg-white p-4 rounded-3 w-75 offset-1 border border-5 shadow-lg">
-                <h2 class="text-center"> Baccalauréat Technologique <abbr title="Sciences Technologiques de l'Industrie et du Développement Durable">STI2D</abbr></h2>
+                <h2 class="text-center"> Baccalauréat Technologique <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Sciences Technologiques de l'Industrie et du Développement Durable">STI2D</span></h2>
                 <p class="text-start"> Etudié au <a href="https://lyc-brassens-courcouronnes.ac-versailles.fr/">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
                 <div class="row">
                     <div class="col-6">
                         <img src="../Images/diplome_bac.jpg" class="img-fluid rounded-3 border border-5 shadow-lg">
                     </div>
                     <div class="col text-center mx-auto my-auto">
-                        <p> Spécialité <abbr title="Sciences informatiques du numérique">SIN</abbr>, reçu avec mention "Très bien".</p>
+                        <p> Spécialité <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Sciences Technologiques de l'Industrie et du Développement Durable">SIN</span>, reçu avec mention "Très bien".</p>
                         <div class="halfbox"></div>
                         <p class="text-start">
                             Matières (outre tronc commun):
@@ -83,18 +83,83 @@ $title = "Proficiences - Badreddine Rezzouk"
                         </div>
                     </div>
                     <div class="col text-start">
-                        <p>
-                            Matières:
-                            <ul>
-                                <li> Développement applications (C, C++, Java)</li>
-                                <li> Développement mobile </li>
-                                <li> Développement WEB </li>
-                                <li> Base de données </li>
-                                <li> Réseaux informatiques </li>
-                                <li> Management Systèmes Informatiques - Agile / Ethique</li>
-                            </ul>
-
-                        </p>
+                        <div class="col text-start">
+                            <p>Matières:</p>
+                            <div class="accordion" id="accordionMatières">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevApp" aria-expanded="false" aria-controls="collapseDevApp">
+                                            Développement applications (C, C++, Java)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseDevApp" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevMobile" aria-expanded="false" aria-controls="collapseDevMobile">
+                                            Développement mobile
+                                        </button>
+                                    </h2>
+                                    <div id="collapseDevMobile" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevWeb" aria-expanded="false" aria-controls="collapseDevWeb">
+                                            Développement WEB
+                                        </button>
+                                    </h2>
+                                    <div id="collapseDevWeb" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBDD" aria-expanded="false" aria-controls="collapseBDD">
+                                            Base de données
+                                        </button>
+                                    </h2>
+                                    <div id="collapseBDD" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReseaux" aria-expanded="false" aria-controls="collapseReseaux">
+                                            Réseaux informatiques
+                                        </button>
+                                    </h2>
+                                    <div id="collapseReseaux" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseManagement" aria-expanded="false" aria-controls="collapseManagement">
+                                            Management Systèmes Informatiques - Agile / Ethique
+                                        </button>
+                                    </h2>
+                                    <div id="collapseManagement" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                        <div class="accordion-body">
+                                            <p>Contenu à venir...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

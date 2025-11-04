@@ -15,30 +15,23 @@ $title = "Profil - Badreddine Rezzouk";
         <div class="box"></div>
         <section id="identifier">
             <div class="row w-75 mx-auto">
-                <div class="col-auto">
-                    <div class="bg-white p-4 rounded-3 px-1 border border-5 shadow-lg h-100">
-                        <figure>
-                            <img src="<?php echo $topURL?>Images/Profile/badreddine-thumbnail.png" class="img-fluid rounded" alt="Moi">
-                            <figcaption class="text-center"> C'est moi :D </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-                <div class="col bg-white p-4 rounded-3 mx-auto px-1 border border-5 shadow-lg">
+                <div class="col bg-dark p-4 rounded-3 mx-auto px-1 border border-5 shadow-lg">
                     <div class="row ms-2">
-                        <h4> Informations identifiantes </h4>
-                        <div class="col text-start">
-                            <p> Nom:</p>
-                            <p> Age:</p>
-                            <p> Status professionnel:</p>
-                            <p> Région:</p>
+                        <div>
+                            <p id="infoID" class="text-white"></p>
                         </div>
-                        <div class="col text-center">
-                            <p> Badreddine REZZOUK </p>
-                            <p> 20 ans </p>
-                            <p> Etudiant - En recherche d'entreprise </p>
-                            <p> Ile de France, France </p>
-                        </div>
+                        <script>
+                            new TypeIt("#infoID", {})
+                                .type('<span class="text-success">ovh-portfolio@guest</span> > ', { instant:true })
+                                .type("fetchinfo badreddine", { delay: 300 }).break()
+                                .type('<span class="text-warning">Nom:</span> Badreddine REZZOUK', { instant: true, delay: 20 }).break()
+                                .type('<span class="text-warning">Age:</span> 20 ans', { instant: true, delay: 20 }).break()
+                                .type('<span class="text-warning">Status professionnel:</span> Etudiant - En recherche d\'entreprise', { instant: true, delay: 20 }).break()
+                                .type('<span class="text-warning">Région:</span> Île-de-France, France', { instant: true, delay: 20 }).break()
+                                .type('<span class="text-warning">Photo de profil:</span>', { instant: true, delay: 20 }).break()
+                                .type('<img src="<?php echo $topURL?>Images/Profile/badreddine-thumbnail.png" class="img-fluid rounded" alt="Moi">').break()
+                                .go();
+                        </script>
                     </div>
                 </div>
             </div>
@@ -63,7 +56,7 @@ $title = "Profil - Badreddine Rezzouk";
                         <br><br>
                         Arrivé au lycée, je décide de prendre la voie de la <abbr title="Sciences Technologiques de l'Industrie et du Développement Durable">STI2D</abbr>, encore divisé sûr si je souhaitais me diriger vers de l'ingénierie ou vers de l'informatique.
                         <br>
-                        <span class="font-monospace fs-3"> AND THEN ALONG CAME <strike>ZEUS</strike> LE COVID-19</span>
+                        <span class="font-monospace"> AND THEN ALONG CAME <strike>ZEUS</strike> LE COVID-19</span>
                         <br>
                         Les médias parlaient déjà des répercussions sur la décennie à venir, mentionnant de potentielles grosses perturbations dans le recrutement d'ingénieurs notamment chez Airbus, et j'ai choisi en panique la voie du clavier.
                     </p>
@@ -72,52 +65,48 @@ $title = "Profil - Badreddine Rezzouk";
         </section>
         <div class="halfbox"></div>
         <section id="linguistic_proficiency">
-            <div class="bg-white p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
-                <h4> Mes langues </h4>
-                <p>Français</p>
-                <div class="container_langues">
-                    <div class="skills french"><p class="ms-3">Langue maternelle</p></div>
-                </div>
-
-                <p>Anglais</p>
-                <div class="container_langues">
-                    <div class="skills english"><p class="ms-3">Courant</p></div>
-                </div>
-
-                <p>Espagnol</p>
-                <div class="container_langues">
-                    <div class="skills spanish"><p class="ms-3">Conversationel</p></div>
-                </div>
-
-                <p>Chinois (mandarin)</p>
-                <div class="container_langues mb-2">
-                    <div class="skills chinese"><p class="ms-3">En apprentissage</p></div>
-                </div>
+            <div class="bg-dark text-white p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
+                <p id="languages"></p>
+                <script>
+                    new TypeIt("#languages", {})
+                        .type('<span class="text-success">ovh-portfolio@guest</span> > ', { instant:true })
+                        .type("fetchinfo badreddine langues", { delay: 300, lifelike: true }).break()
+                        .type('<p class="text-warning">Français: </p><div class="container_langues"><div class="skills french"></div></div><p>Langue maternelle</p>', { instant: true, delay: 20 }).break()
+                        .type('<p class="text-warning">Anglais: </p><div class="container_langues"><div class="skills english"></div></div><p>Courant</p>', { instant: true, delay: 20 }).break()
+                        .type('<p class="text-warning">Espagnol: </p><div class="container_langues"><div class="skills spanish"></div></div><p>Conversationel</p>', { instant: true, delay: 20 }).break()
+                        .type('<p class="text-warning">Chinois (mandarin): </p><div class="container_langues"><div class="skills chinese"></div></div><p>En apprentissage</p>', { instant: true, delay: 20 }).break()
+                        .go()
+                </script>
             </div>
         </section>
         <div class="halfbox"></div>
-        <div class="bg-white p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
-            <h4> Mes passions </h4>
+        <div class="bg-dark p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
+            <h4 class="text-warning"> Mes passions </h4>
             <div class="row rows-cols-3">
-                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;cursor: pointer;" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
+                <div class="col-4 text-white border border-primary bg-dark mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Alpine A524 de Gasly">
-                        <figcaption class="figure-caption text-end"> Alpine A524 de Pierre Gasly au GP d'Autriche 2024 </figcaption>
+                        <figcaption class="figure-caption text-end text-white"> Alpine A524 de Pierre Gasly au GP d'Autriche 2024 </figcaption>
                     </figure>
                     <div class="card-body">
-                        <h5 class="card-title">La Formule 1</h5>
-                        <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons (et dépression si vous êtes un fan de Ferrari).</p>
+                        <h5 class="card-title text-success">La Formule 1</h5>
+                        <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons <span class="text-primary">(et dépression si vous êtes un fan de Ferrari)</span>.</p>
                     </div>
-
                 </div>
-                <div class="col-3 card mb-2 mx-auto" style="width: 18rem;cursor: pointer;" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
+                <div class="col-4 border border-primary mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/modding_thumbnail.png" class="card-img-top" alt="Mod Skyrim Fallguysfollower par m150">
-                        <figcaption class="figure-caption text-end"> Mod Skyrim Fallguysfollower par m150 </figcaption>
+                        <figcaption class="figure-caption text-end text-white"> Mod Skyrim Fallguysfollower par m150 </figcaption>
                     </figure>
                     <div class="card-body">
-                        <h5 class="card-title">Le modding de jeux videos</h5>
-                        <p> Le modding, prendre une expérience construite de manière précise, et la transformer en une expérience wtf. </p>
+                        <p id="passion-modding" class="text-white"></p>
+                        <script>
+                            new TypeIt("#passion-modding", {
+                                speed: 10
+                            })
+                                .type('<h5 class="card-title text-success">Le modding de jeux videos</h5>').break()
+                                .type('<p> Le modding, prendre une expérience construite de manière précise, et la transformer en une expérience wtf. </p>').go()
+                        </script>
                     </div>
                 </div>
             </div>
