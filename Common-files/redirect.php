@@ -3,7 +3,7 @@ $uri = $_SERVER['REQUEST_URI'];
 $uriParts = explode('/', trim($uri, '/'));
 $languageFromURL = $uriParts[0] ?? null;
 
-$allowed_languages = ['FR-fr', 'EN-us', 'CN-zh'];
+$allowed_languages = ['FR-fr', 'US-en', 'CN-zh'];
 
 if (in_array($languageFromURL, $allowed_languages)) {
     $_SESSION['prev_lang'] = $languageFromURL;
