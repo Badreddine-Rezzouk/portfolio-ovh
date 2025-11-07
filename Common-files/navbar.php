@@ -1,19 +1,14 @@
 <?php
-$uri = $_SERVER['REQUEST_URI'];
-$uriParts = explode('/', trim($uri, '/'));
-$languageFromURL = isset($uriParts[0]) ? $uriParts[0] : null;
-$rest = $uriParts; unset($rest[0]);
-$restOfURL = implode("/", $rest);
-$allowed_languages = ['FR-fr', 'US-en', 'CN-zh'];
-
-if (in_array($languageFromURL, $allowed_languages)) {
-    $_SESSION['prev_lang'] = $languageFromURL;
-} elseif (isset($_SESSION['prev_lang'])) {
-    $languageFromURL = $_SESSION['prev_lang'];
+require 'redirect.php';
+if($_SERVER['HTTP_HOST'] == 'localhost:63342') {
+    $languageFromURL = $uriParts[1] ?? null;
+    $rest = $uriParts; unset($rest[0]); unset($rest[1]);
 } else {
-    $languageFromURL = 'FR-fr';
-    $_SESSION['prev_lang'] = $languageFromURL;
+    $languageFromURL = $uriParts[0] ?? null;
+    $rest = $uriParts; unset($rest[0]);
 }
+
+$restOfURL = implode("/", $rest);
 
 $languageTexts = [
     'FR-fr' => [
@@ -73,12 +68,6 @@ $languageTexts = [
 ];
 
 $texts = isset($languageTexts[$languageFromURL]) ? $languageTexts[$languageFromURL] : $languageTexts['FR-fr']; // Default to FR-fr if language is not found
-
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost'; // Fallback to 'localhost' if not set
-
-$baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
 ?>
 
 <!DOCTYPE html>
@@ -173,9 +162,9 @@ $baseURL = rtrim($protocol . $host . '/' . $languageFromURL, '/') . '/';
                             <?php echo $texts['langue']; ?>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/FR-fr/' . $restOfURL; ?>" lang="FR-fr">🇫🇷 Français</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/US-en/' . $restOfURL; ?>" lang="US-en">🇺🇸 English (WIP)</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $protocol . $host . '/CN-zh/' . $restOfURL; ?>" lang="CN-zh">🇨🇳 中文 (WIP)</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $topURL . 'FR-fr/' . $restOfURL; ?>" lang="FR-fr">🇫🇷 Français</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $topURL . 'US-en/' . $restOfURL; ?>" lang="US-en">🇺🇸 English (WIP)</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $topURL . 'CN-zh/' . $restOfURL; ?>" lang="CN-zh">🇨🇳 中文 (WIP)</a></li>
                         </ul>
                     </li>
                 </div>

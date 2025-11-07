@@ -93,20 +93,14 @@ $title = "Profil - Badreddine Rezzouk";
                         <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons <span class="text-primary">(et dépression si vous êtes un fan de Ferrari)</span>.</p>
                     </div>
                 </div>
-                <div class="col-4 border border-primary mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
+                <div class="col-4 text-white border border-primary mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/modding_thumbnail.png" class="card-img-top" alt="Mod Skyrim Fallguysfollower par m150">
                         <figcaption class="figure-caption text-end text-white"> Mod Skyrim Fallguysfollower par m150 </figcaption>
                     </figure>
                     <div class="card-body">
-                        <p id="passion-modding" class="text-white"></p>
-                        <script>
-                            new TypeIt("#passion-modding", {
-                                speed: 10
-                            })
-                                .type('<h5 class="card-title text-success">Le modding de jeux videos</h5>').break()
-                                .type('<p> Le modding, prendre une expérience construite de manière précise, et la transformer en une expérience wtf. </p>').go()
-                        </script>
+                        <h5 class="card-title text-success">Le modding de jeux videos</h5>
+                        <p> Le modding, prendre une expérience construite de manière précise, et la transformer en une expérience wtf. </p>
                     </div>
                 </div>
             </div>

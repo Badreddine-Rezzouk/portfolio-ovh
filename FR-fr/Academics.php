@@ -24,7 +24,14 @@ $title = "Proficiences - Badreddine Rezzouk"
         <hr class="mx-auto rounded-2">
             <div class="halfbox"></div>
             <div class="bg-white p-4 rounded-3 w-75 offset-1 border border-5 shadow-lg">
-                <h2 class="text-center"> Baccalauréat Technologique <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Sciences Technologiques de l'Industrie et du Développement Durable">STI2D</span></h2>
+                <div>
+                    <h2 id="titleLycee" class="text-primary text-center"></h2>
+                    <script>
+                        new TypeIt("#titleLycee", {
+                            strings: "Baccalauréat Technologique STI2D"
+                        }).go()
+                    </script>
+                </div>
                 <p class="text-start"> Etudié au <a href="https://lyc-brassens-courcouronnes.ac-versailles.fr/">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
                 <div class="row">
                     <div class="col-6">
@@ -33,20 +40,45 @@ $title = "Proficiences - Badreddine Rezzouk"
                     <div class="col text-center mx-auto my-auto">
                         <p> Spécialité <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Sciences Technologiques de l'Industrie et du Développement Durable">SIN</span>, reçu avec mention "Très bien".</p>
                         <div class="halfbox"></div>
-                        <p class="text-start">
-                            Matières (outre tronc commun):
-                            <ul class="text-start">
-                                <li>
-                                    Mathématiques
-                                </li>
-                                <li>
-                                    Physique-Chimie
-                                </li>
-                                <li>
-                                    Ingénierie, innovation et développement durable - Systèmes d'information et numérique
-                                </li>
-                            </ul>
-                        </p>
+                        <p class="text-start">Matières (outre tronc commun):</p>
+                        <div class="accordion" id="AccordionMatièresLycee">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaths" aria-expanded="false" aria-controls="collapseMaths">
+                                        Mathématiques
+                                    </button>
+                                </h2>
+                                <div id="collapseMaths" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresLycee">
+                                    <div class="accordion-body">
+                                        <p>Contenu à venir...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysique" aria-expanded="false" aria-controls="collapseMaths">
+                                        Physique-Chimie
+                                    </button>
+                                </h2>
+                                <div id="collapsePhysique" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresLycee">
+                                    <div class="accordion-body">
+                                        <p>Contenu à venir...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIngenieurie" aria-expanded="false" aria-controls="collapseMaths">
+                                        Ingénierie, innovation et développement durable - Systèmes d'information et numérique
+                                    </button>
+                                </h2>
+                                <div id="collapseIngenieurie" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresLycee">
+                                    <div class="accordion-body">
+                                        <p>Contenu à venir...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <p> Diplôme national de niveau IV </p>
@@ -54,9 +86,19 @@ $title = "Proficiences - Badreddine Rezzouk"
             <div class="halfbox"></div>
             <hr class="mx-auto rounded-2">
             <div class="halfbox"></div>
-            <div class="bg-white p-4 rounded-3 text-center w-80 mx-auto border border-5 shadow-lg">
-                <h4> BUT Informatique </h4>
-                <p class="text-start"> Etudié à l'<a href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>.</p>
+            <div class="bg-white text-dark p-4 rounded-3 text-center w-80 mx-auto border border-5 shadow-lg">
+                <div>
+                    <h2 id="titleBUT" class="text-primary"></h2>
+                    <script>
+                        new TypeIt("#titleBUT", {
+                            strings: "BUT Informatique "
+                        }).go()
+                    </script>
+                </div>
+                <p class="text-start"><span class="text-warning">Lieu d'étude:</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a></p>
+                <div>
+                </div>
+
                 <div class="row">
                     <div class="col">
                         <div id="carouselIUT" class="carousel slide rounded-3 border border-5" data-bs-ride="carousel">
@@ -85,14 +127,14 @@ $title = "Proficiences - Badreddine Rezzouk"
                     <div class="col text-start">
                         <div class="col text-start">
                             <p>Matières:</p>
-                            <div class="accordion" id="accordionMatières">
+                            <div class="accordion" id="accordionMatièresBUT">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevApp" aria-expanded="false" aria-controls="collapseDevApp">
                                             Développement applications (C, C++, Java)
                                         </button>
                                     </h2>
-                                    <div id="collapseDevApp" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseDevApp" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>
@@ -104,7 +146,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                             Développement mobile
                                         </button>
                                     </h2>
-                                    <div id="collapseDevMobile" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseDevMobile" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>
@@ -116,7 +158,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                             Développement WEB
                                         </button>
                                     </h2>
-                                    <div id="collapseDevWeb" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseDevWeb" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>
@@ -128,7 +170,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                             Base de données
                                         </button>
                                     </h2>
-                                    <div id="collapseBDD" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseBDD" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>
@@ -140,7 +182,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                             Réseaux informatiques
                                         </button>
                                     </h2>
-                                    <div id="collapseReseaux" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseReseaux" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>
@@ -152,7 +194,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                             Management Systèmes Informatiques - Agile / Ethique
                                         </button>
                                     </h2>
-                                    <div id="collapseManagement" class="accordion-collapse collapse" data-bs-parent="#accordionMatières">
+                                    <div id="collapseManagement" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
                                             <p>Contenu à venir...</p>
                                         </div>

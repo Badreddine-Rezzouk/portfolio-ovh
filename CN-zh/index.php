@@ -39,7 +39,7 @@ $title = "首页 - Badreddine Rezzouk"
                         <div class="col-8">
                             <div class="card-body">
                                 <p class="card-text">"Hör auf, mich irgendetwas sagen zu lassen"</p>
-                                <p class="card-text"><small> - Albert Einstein </small></p>
+                                <p class="card-text"><small> - 愛因斯坦 </small></p>
                             </div>
                         </div>
                         <div class="col"></div>

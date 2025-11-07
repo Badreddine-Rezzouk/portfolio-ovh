@@ -1,5 +1,5 @@
 <?php
-global $language_error_fr;
+global $language_error_fr, $topURL;
 require "../Common-files/redirect.php";
 require "../Common-files/unsupportedlanguage.php";
 $title = "Accueil - Badreddine Rezzouk";
@@ -81,12 +81,12 @@ $title = "Accueil - Badreddine Rezzouk";
             <div id="video-spot" class="m-auto" style="z-index: 2; position: sticky; top: calc(50vh/2); left: 0;"></div>
             <section>
                 <?php require "../Common-files/navbar.php" ?>
-                <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px);'>
+                <div id="main_page_cover" class="container-fluid" style='background-image: url("<?php echo $topURL?>Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px);'>
                     <div class="halfbox"></div>
                     <div class="card mb-3 offset-lg-1 border border-5 col-lg-4 fadeInLeft">
                         <div class="row g-0">
                             <div class="col-4">
-                                <img src="../Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
+                                <img src="<?php echo $topURL?>Images/bainville.jpg" class="img-fluid rounded-start" alt="Portrait de Jacques Bainville">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -101,7 +101,7 @@ $title = "Accueil - Badreddine Rezzouk";
                     <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4 fadeInRight">
                         <div class="row g-0">
                             <div class="col-4">
-                                <img src="../Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
+                                <img src="<?php echo $topURL?>/Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -266,6 +266,14 @@ $title = "Accueil - Badreddine Rezzouk";
 
             </section>
             <section id="bottom">
+                <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            Hello, world! This is a toast message.
+                        </div>
+                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
                 <?php require "../Common-files/footer.php" ?>
             </section>
         </div>
