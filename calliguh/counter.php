@@ -1,4 +1,8 @@
 <?php
+$db = Database::getInstance();
+$mysqli = $db->getConnection();
+
+$mysqli->connect('localhost', 'root', '', 'counter');
 $file = 'counter.txt';
 
 // Lock the file while reading/writing
