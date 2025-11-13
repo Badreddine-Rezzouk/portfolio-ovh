@@ -104,52 +104,6 @@ $title = "首页 - Badreddine Rezzouk"
 
             <div class="box"></div>
             <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
-                <script>
-                    // Function to update the time
-                    function updateTime() {
-                        // Use Luxon to get the current time in Paris with the Bengali numbering system
-                        const dt = luxon.DateTime.now().setZone('Europe/Paris').setLocale('zh');
-
-                        // Format the time with the Bengali numbering system
-                        const formattedTime = dt.toLocaleString(luxon.DateTime.TIME_WITH_SECONDS);
-                        const formattedDate = dt.toLocaleString(luxon.DateTime.DATE_FULL);
-
-                        // Insert the formatted time into the <span> element
-                        const timeElement = document.getElementById('current-time');
-                        if (timeElement) {
-                            timeElement.textContent = formattedTime;
-                        } else {
-                            console.error("Element with ID 'current-time' not found!");
-                        }
-                        const dateElement = document.getElementById('current-date');
-                        if (dateElement) {
-                            dateElement.textContent = formattedDate;
-                        } else {
-                            console.error("Element with ID 'current-date' not found!");
-                        }
-                    }
-                    function updateDate() {
-                        const dt = luxon.DateTime.now().setZone('Europe/Paris').setLocale('zh');
-
-                        const formattedDate = dt.toLocaleString(luxon.DateTime.DATE_FULL);
-
-                        const dateElement = document.getElementById('current-date');
-                        if (dateElement) {
-                            dateElement.textContent = formattedDate;
-                        } else {
-                            console.error("Element with ID 'current-date' not found!");
-                        }
-                    }
-                    // Ensure the DOM is fully loaded before running the script
-                    document.addEventListener("DOMContentLoaded", function () {
-                        // Update the time immediately
-                        updateTime();
-                        updateDate();
-                        // Update the time every second (1000 milliseconds)
-                        setInterval(updateTime, 1000);
-                        setInterval(updateDate, 1000);
-                    });
-                </script>
                 <h4>现在是 <span id="current-time"></span>，日期是 <span id="current-date"></span>。</h4>
             </div>
             <div class="box"></div>

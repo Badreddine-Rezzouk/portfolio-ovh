@@ -32,7 +32,7 @@ $title = 'Stages - Badreddine Rezzouk';
                         <table class="table">
                             <tr>
                                 <th scope="col"> Type de contrat : </th>
-                                <td> Stage en télétravail </td>
+                                <td> Stage en télétravail et présentiel</td>
                             </tr>
                             <tr>
                                 <th scope="row"> Exploitant du contrat :</th>
@@ -46,13 +46,18 @@ $title = 'Stages - Badreddine Rezzouk';
                                 <th scope="row"> Durée du contrat:</th>
                                 <td> Du 28 Avril 2025 au 27 Juin 2025 </td>
                             </tr>
+                            <tr>
+                                <th scope="row"> Maitre de stage:</th>
+                                <td> Mr. Billal AGHANIM </td>
+                            </tr>
                         </table>
                     </div>
                 </div>
                 <div class="halfbox"></div>
                 <p class="text-start">
-                    En attendant d'avoir l'expérience pour commenter ce stage, voici un paragraphe de lorem ipsum pour combler: <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus at magna eget volutpat. Fusce vestibulum nibh a lacus auctor, id posuere dolor mollis. Ut iaculis commodo justo, quis consectetur arcu. Etiam hendrerit justo vitae eros condimentum, at finibus dui vulputate. Integer consectetur orci quis pulvinar consequat. Sed sollicitudin sapien velit. Quisque tortor nulla, ultricies at erat ut, viverra cursus nisl.
+                    Durant ce stage, j'ai eu l'occasion de travailler sur un projet de gestion locative. Afin de garantir l'intégrité de la sécurité d'AB Legacy, je vais m'abstenir de toute mention des systèmes sensibles.<br>
+                    Le cahier des charges du stage originellement proposé se résumait à créer dans l'application en ligne Notion une base de données gérable à distance et d'y connecter un système d'automatisation nommé Make. Cependant, je me suis très rapidement rendu compte de l'infaisabilité du projet tel quel.
+                    Après une analyse des choix s'offrant à nous, le projet a été modifier pour devenir un portail web local avec base de données relationelle (MySQL), et une intégration de Make.
                 </p>
             </div>
         </div>

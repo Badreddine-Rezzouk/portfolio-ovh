@@ -12,7 +12,7 @@ $title = "Experiences - Badreddine Rezzouk";
     </head>
     <body>
         <?php require "../../Common-files/navbar.php" ?>
-        <div class="gradient-box">
+        <div class="gradient-box" style="min-height: 92.5vh">
             <div class="halfbox"></div>
             <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
                 <h2> Mes expériences </h2>
@@ -34,6 +34,7 @@ $title = "Experiences - Badreddine Rezzouk";
             <div class="bg-white p-4 rounded-3 mx-auto text-center w-50 border border-5 shadow-lg">
                 <h4> Mes autres expériences </h4>
             </div>
+            <div class="halfbox"></div>
         </div>
         <?php require "../../Common-files/footer.php" ?>
     </body>

@@ -29,18 +29,18 @@ $title = "Proficiences - Badreddine Rezzouk"
                     <script>
                         new TypeIt("#titleLycee", {
                             strings: "Baccalauréat Technologique STI2D"
-                        }).go()
+                        }).go().destroy()
                     </script>
                 </div>
-                <p class="text-start"> Etudié au <a href="https://lyc-brassens-courcouronnes.ac-versailles.fr/">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
+                <p class="text-start"><span class="text-warning">Lieu d'étude:</span>  <a class="text-dark" href="https://lyc-brassens-courcouronnes.ac-versailles.fr/">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
                 <div class="row">
                     <div class="col-6">
-                        <img src="../Images/diplome_bac.jpg" class="img-fluid rounded-3 border border-5 shadow-lg">
+                        <img src="../Images/diplome_bac.jpg" class="img-fluid rounded-3 border border-5 shadow-lg" alt="Diplôme national de niveau IV">
                     </div>
                     <div class="col text-center mx-auto my-auto">
                         <p> Spécialité <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Sciences Technologiques de l'Industrie et du Développement Durable">SIN</span>, reçu avec mention "Très bien".</p>
                         <div class="halfbox"></div>
-                        <p class="text-start">Matières (outre tronc commun):</p>
+                        <p class="text-start">Matières (outre tronc commun) :</p>
                         <div class="accordion" id="AccordionMatièresLycee">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -50,7 +50,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 </h2>
                                 <div id="collapseMaths" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresLycee">
                                     <div class="accordion-body">
-                                        <p>Contenu à venir...</p>
+                                        <p> Que ce soit 2+2 ou de l'algorithmique, les maths nous servent bien dans le quotidien. </p>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 </h2>
                                 <div id="collapsePhysique" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresLycee">
                                     <div class="accordion-body">
-                                        <p>Contenu à venir...</p>
+                                        <p> En spécialité physique-chimie ont été couverts : les masses moléculaires, les forces</p>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,6 @@ $title = "Proficiences - Badreddine Rezzouk"
                         </div>
                     </div>
                 </div>
-                <p> Diplôme national de niveau IV </p>
             </div>
             <div class="halfbox"></div>
             <hr class="mx-auto rounded-2">
@@ -92,10 +91,10 @@ $title = "Proficiences - Badreddine Rezzouk"
                     <script>
                         new TypeIt("#titleBUT", {
                             strings: "BUT Informatique "
-                        }).go()
+                        }).go().destroy()
                     </script>
                 </div>
-                <p class="text-start"><span class="text-warning">Lieu d'étude:</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a></p>
+                <p class="text-start"><span class="text-warning">Lieu d'étude:</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>, à Paris 16e</p>
                 <div>
                 </div>
 
@@ -172,7 +171,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                                     </h2>
                                     <div id="collapseBDD" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                         <div class="accordion-body">
-                                            <p>Contenu à venir...</p>
+                                            <p> MySQL, Oracle SQL, MariaDB, SQLite, tellement de formats différents qui pourraient n'être qu'un si l'être humain pouvait s'entendre. En attendant, je ne peux pas jouer les dieux, mais je peux gérer ces formats là.</p>
                                         </div>
                                     </div>
                                 </div>

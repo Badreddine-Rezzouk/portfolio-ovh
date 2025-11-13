@@ -100,10 +100,16 @@ $texts = isset($languageTexts[$languageFromURL]) ? $languageTexts[$languageFromU
                         <?php echo $texts['profile']; ?>
                     </a>
                     <li class="nav-item dropdown">
-                        <a id="experiences" class="nav-link dropdown-toggle" href="<?php echo $baseURL;?>Experiences/Experiences.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="experiences" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo $texts['experiences']; ?>
                         </a>
                         <ul class="dropdown-menu">
+                            <li>
+                                <a id="emplois" class="dropdown-item" href="<?php echo $baseURL; ?>Experiences/Experiences  .php">
+                                    <?php echo $texts['experiences']; ?>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
                             <li>
                                 <a id="emplois" class="dropdown-item" href="<?php echo $baseURL; ?>Experiences/Emplois/emplois.php">
                                     <?php echo $texts['emplois']; ?>
