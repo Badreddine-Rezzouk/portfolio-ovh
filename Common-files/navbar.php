@@ -1,5 +1,5 @@
 <?php
-require 'redirect.php';
+require_once 'redirect.php';
 if($_SERVER['HTTP_HOST'] == 'localhost:63342') {
     $languageFromURL = $uriParts[1] ?? null;
     $rest = $uriParts; unset($rest[0]); unset($rest[1]);
@@ -68,6 +68,13 @@ $languageTexts = [
 ];
 
 $texts = isset($languageTexts[$languageFromURL]) ? $languageTexts[$languageFromURL] : $languageTexts['FR-fr']; // Default to FR-fr if language is not found
+if ($host == 'localhost:63342') {
+    $baseURL = rtrim($protocol . $host . '/portfolio-ovh/' . $languageFromURL . '/');
+    $topURL = rtrim($protocol . $host) . '/portfolio-ovh/' ;
+} else {
+    $baseURL = rtrim($protocol . $host . '/' . $languageFromURL . '/');
+    $topURL = rtrim($protocol . $host) . '/';
+}
 ?>
 
 <!DOCTYPE html>

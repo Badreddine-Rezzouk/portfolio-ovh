@@ -10,20 +10,6 @@ $title = "Accueil - Badreddine Rezzouk";
 <html class="gradient-box">
     <head>
         <?php require "../Common-files/header.php"; ?>
-        <style>
-            .scroller {
-                height: 100vh;
-                overflow-y: scroll;
-                scroll-snap-type: y mandatory;
-            }
-
-            .scroller section {
-                scroll-snap-align: start;
-            }
-            .scroller section #bottom {
-                scroll-snap-align: end;
-            }
-        </style>
     </head>
     <body>
     <div class="scroller" id="wrapper">
@@ -52,7 +38,7 @@ $title = "Accueil - Badreddine Rezzouk";
                     <div class="card mb-3 offset-lg-7 border border-5 col col-lg-4 fadeInRight">
                         <div class="row g-0">
                             <div class="col-4">
-                                <img src="<?php echo $topURL?>/Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
+                                <img src="<?php echo $topURL?>Images/einstein-langue-1600-1600.jpg" class="img-fluid rounded-start" alt="Portrait de Albert Einstein">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -123,7 +109,6 @@ $title = "Accueil - Badreddine Rezzouk";
                         return cleanNode;
                     }
                 </script>
-
                 <div class="box"></div>
                 <div id="main_page_section" class="container-fluid">
                     <div class="row">
@@ -178,15 +163,12 @@ $title = "Accueil - Badreddine Rezzouk";
                     <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
                 </div>
                 <div class="box"></div>
-
             </section>
             <section id="bottom">
-                <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            Hello, world! This is a toast message.
-                        </div>
-                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="w-50 m-3 alert alert-dark fixed-bottom" role="alert">
+                    <div class="w-auto">Afin de ne pas vous embêter à chaque visite de la page, un cookie a été placé sur votre navigateur expirant après 24h, celui-ci ne collecte aucune donnée.</div>
+                    <div class="w-auto">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </div>
                 <?php require "../Common-files/footer.php" ?>
