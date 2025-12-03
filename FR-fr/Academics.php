@@ -32,7 +32,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                         }).go().destroy()
                     </script>
                 </div>
-                <p class="text-start"><span class="text-warning">Lieu d'étude:</span>  <a class="text-dark" href="https://lyc-brassens-courcouronnes.ac-versailles.fr/">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
+                <p class="text-start"><span class="text-warning">Lieu d'étude:</span>  <a class="text-dark" href="https://lyc-brassens-courcouronnes.ac-versailles.fr/" target="_blank">Lycée polyvalent Georges Brassens</a>, à Evry-Courcouronnes. </p>
                 <div class="row">
                     <div class="col-6">
                         <img src="../Images/diplome_bac.jpg" class="img-fluid rounded-3 border border-5 shadow-lg" alt="Diplôme national de niveau IV">
@@ -94,7 +94,7 @@ $title = "Proficiences - Badreddine Rezzouk"
                         }).go().destroy()
                     </script>
                 </div>
-                <p class="text-start"><span class="text-warning">Lieu d'étude:</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>, à Paris 16e</p>
+                <p class="text-start"><span class="text-warning">Lieu d'étude:</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/" target="_blank">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>, à Paris 16e</p>
                 <div>
                 </div>
 
@@ -301,7 +301,8 @@ $title = "Proficiences - Badreddine Rezzouk"
                                 </ul>
 
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                            </div>
                         </div>
                     </div>
             </div>

@@ -38,7 +38,7 @@ $title = "专长 - Badreddine Rezzouk"
                 <img src="../Images/diplome_bac.jpg" class="img-fluid rounded-3 border border-5 shadow-lg" alt="国家四级学历证书">
             </div>
             <div class="col text-center mx-auto my-auto">
-                <p> 专业 <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="工业与可持续发展技术科学">SIN</span>，以 “优秀” 等级获得。 </p>
+                <p> 专业 <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="工业与可持续发展技术科学">SIN</span>，以 “优秀” 等级获得。 </p>
                 <div class="halfbox"></div>
                 <p class="text-start">选修科目（除公共课程外）：</p>
                 <div class="accordion" id="AccordionMatièresLycee">

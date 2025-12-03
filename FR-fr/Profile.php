@@ -21,16 +21,24 @@ $title = "Profil - Badreddine Rezzouk";
                             <p id="infoID" class="text-white"></p>
                         </div>
                         <script>
+                            function calculerAge(birthDate) {
+                                const today = new Date();
+                                let age = today.getFullYear() - birthDate.getFullYear();
+                                const monthDiff = today.getMonth() - birthDate.getMonth();
+                                const dayDiff   = today.getDate()  - birthDate.getDate();
+                                if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+                                    age--;
+                                }
+                                return age;
+                            }
                             const naissance = new Date("2005-06-28");
-                            aujd = new Date();
-                            value = aujd - naissance;
-                            age = Math.abs(value.getUTCFullYear() - 1970)
+                            const age = calculerAge(naissance);
                             new TypeIt("#infoID", {})
                                 .type('<span class="text-success">ovh-portfolio@guest</span> > ', { instant:true })
                                 .type("fetchinfo badreddine", { delay: 300 }).break()
                                 .type('<span class="text-warning">Nom:</span> Badreddine REZZOUK', { instant: true, delay: 20 }).break()
-                                .type('<span class="text-warning">Age:</span> age ans', { instant: true, delay: 20 }).break()
-                                .type('<span class="text-warning">Status professionnel:</span> Etudiant - En recherche d\'entreprise', { instant: true, delay: 20 }).break()
+                                .type(`<span class="text-warning">Age:</span> ${age} ans`, { instant: true, delay: 20 }).break()
+                                .type(' <span class="text-warning">Status professionnel:</span> Etudiant - En recherche d\'entreprise', { instant: true, delay: 20 }).break()
                                 .type('<span class="text-warning">Région:</span> Île-de-France, France', { instant: true, delay: 20 }).break()
                                 .type('<span class="text-warning">Photo de profil:</span>', { instant: true, delay: 20 }).break()
                                 .type('<img src="<?php echo $topURL?>Images/Profile/badreddine-thumbnail.png" class="img-fluid rounded" alt="Moi">').break()

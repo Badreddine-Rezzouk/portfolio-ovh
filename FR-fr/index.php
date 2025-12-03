@@ -10,6 +10,7 @@ $title = "Accueil - Badreddine Rezzouk";
 <html class="gradient-box">
     <head>
         <?php require "../Common-files/header.php"; ?>
+        <script src="<?php echo $topURL?>JS/Luxor_real-time.js"></script>
     </head>
     <body>
     <div class="scroller" id="wrapper">
@@ -78,6 +79,10 @@ $title = "Accueil - Badreddine Rezzouk";
                                 secure: true,
                                 sameSite: 'Strict'
                             });
+                            const sectionCookie = document.getElementById('msgCookie');
+                            const msgCookie = document.createElement('div')
+                            msgCookie.innerHTML = `<div class="col-10 col-md-6 m-3 alert alert-dark fixed-bottom alert-dismissible"><div class="w-auto">Afin de ne pas vous embêter à chaque visite de la page, un cookie a été placé sur votre navigateur expirant après 24h, celui-ci ne collecte aucune donnée.</div> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`;
+                            sectionCookie.appendChild(msgCookie);
                         }
                     });
 
@@ -114,6 +119,25 @@ $title = "Accueil - Badreddine Rezzouk";
                     <div class="row">
                         <div class="bg-white p-4 rounded-3 text-center w-60 mx-auto border border-5 shadow-lg">
                             Bonjour, je m'appelle Badreddine et je suis un étudiant d'origine française actuellement à l'université Paris Cité - Rives de Seine. Bienvenue sur ce désordre qu'est mon portfolio!
+                        </div>
+                    </div>
+                </div>
+                <div class="box"></div>
+                <div class="bg-light p-4 rounded-3 col-10 col-lg-8 mx-auto border border-5 border-danger shadow-lg">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-center"> Urgent </h2>
+                            <div class="position-relative text-center top-50 translate-middle-y">
+                                <p class="w-70 mx-auto"> A l'heure actuelle, je suis à la recherche d'une entreprise afin de commencer ma formation avec l'ISCOD, école digitale d'alternance, en Bachelor développement WEB.<br> Si vous ou une de vos connaissances avez besoin d'un développeur WEB (Front-end, Back-end, Fullstack) sur 2 ans, n'hésitez pas à me considérer.<br></p>
+                                <p class="w-80 mx-auto bg-info rounded rounded-3 p-2">Pour plus d'information sur l'ISCOD, vous pouvez visiter <a class="text-reset" href="https://www.iscod.fr/">leur site</a> et la <a class="text-reset" href="https://www.iscod.fr/formation-developpeur-web">section du bachelor</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="mx-auto">
+                                <img src="<?php echo $topURL;?>Images/CV_ISCOD.jpg" class="img-thumbnail img-fluid" style="max-height: 50vh;"><br>
+                                <a class="btn btn-primary my-2 mx-auto text-decoration-none mx-auto" href="<?php echo $baseURL;?>Resume/CV_Badreddine_REZZOUK_FR-fr_ISCOD.pdf" download>Télécharger le CV pertinent</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -159,17 +183,14 @@ $title = "Accueil - Badreddine Rezzouk";
                     </div>
                 </div>
                 <div class="box"></div>
-                <div class="bg-white p-4 rounded-3 text-center w-50 offset-1 border border-5 shadow-lg">
+                <div class="bg-white p-4 rounded-3 text-center col-6 offset-1 border border-5 shadow-lg">
                     <h4> Il est actuellement <span id="current-time"></span> le <span id="current-date"></span> pour moi.</h4>
                 </div>
                 <div class="box"></div>
             </section>
             <section id="bottom">
-                <div class="w-50 m-3 alert alert-dark fixed-bottom" role="alert">
-                    <div class="w-auto">Afin de ne pas vous embêter à chaque visite de la page, un cookie a été placé sur votre navigateur expirant après 24h, celui-ci ne collecte aucune donnée.</div>
-                    <div class="w-auto">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div id="msgCookie" role="alert">
+
                 </div>
                 <?php require "../Common-files/footer.php" ?>
             </section>

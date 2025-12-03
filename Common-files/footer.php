@@ -132,3 +132,9 @@ $texts = $texts_footer[$languageFromURL] ?? $texts_footer['FR-fr'];
     </div>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.umd.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const triggers = document.querySelectorAll('[data-bs-toggle="popover"]');
+        triggers.forEach(el => new bootstrap.Popover(el));
+    });
+</script>

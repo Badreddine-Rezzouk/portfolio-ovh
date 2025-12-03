@@ -29,7 +29,7 @@ $title = 'Stages - Badreddine Rezzouk';
             <div class="col-12 col-lg-8 mx-auto">
                 <div class="row">
                     <div class="text-start">
-                        <table class="table">
+                        <table class="table table-info table-striped-columns    ">
                             <tr>
                                 <th scope="col"> Type de contrat : </th>
                                 <td> Stage en télétravail et présentiel</td>
@@ -57,8 +57,55 @@ $title = 'Stages - Badreddine Rezzouk';
                 <p class="text-start">
                     Durant ce stage, j'ai eu l'occasion de travailler sur un projet de gestion locative. Afin de garantir l'intégrité de la sécurité d'AB Legacy, je vais m'abstenir de toute mention des systèmes sensibles.<br>
                     Le cahier des charges du stage originellement proposé se résumait à créer dans l'application en ligne Notion une base de données gérable à distance et d'y connecter un système d'automatisation nommé Make. Cependant, je me suis très rapidement rendu compte de l'infaisabilité du projet tel quel.
-                    Après une analyse des choix s'offrant à nous, le projet a été modifier pour devenir un portail web local avec base de données relationelle (MySQL), et une intégration de Make.
+                    Après une analyse des choix s'offrant à nous, le projet a été modifié pour devenir un portail web local avec base de données relationelle (MySQL), et une intégration de Make.<br><br>
+                    Le projet a été développé avec une optique de modularité, permettant non seulement d'ajouter ou supprimer des points de vue selon l'utilisateur, mais également de pouvoir connecter des applications tierces.
+                    Pendant la durée du stage, les sections suivantes ont été développées :
                 </p>
+                <table class="table table-striped text-start">
+                    <tr class="text-center table-info">
+                        <th scope="col"> Section </th>
+                        <th scope="col"> Usage </th>
+                    </tr>
+                    <tbody class="table-group-divider">
+                    <tr>
+                        <td> Dashboard </td>
+                        <td> Voir rapidement les informations pertinentes dès la connection. </td>
+                    </tr>
+                    <tr>
+                        <td> Gérer Lots </td>
+                        <td>
+                            <ul>
+                                <li>Ajouter, modifier ou supprimer les informations sur les lots possédés par l'entreprise</li>
+                                <li>Afficher l'historique des incidents et travaux d'un lot </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Gérer Locataires </td>
+                        <td>
+                            <ul>
+                                <li>Ajouter, modifier ou supprimer les informations sur les locataires actifs et passés</li>
+                                <li>Afficher l'historique des incidents et travaux d'un lot </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Gérer baux</td>
+                        <td>
+                            <ul>
+                                <li>Ajouter, modifier ou supprimer les différents baux actifs</li>
+                                <li>Voir tous les incidents du bail, qu'il soit lié au locataire ou au lot</li>
+                                <li>Voir les paiements de loyers à venir et les retards de paiement</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Gérer Travaux</td>
+                        <td>
+                            Enregistrer les travaux et incidents
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

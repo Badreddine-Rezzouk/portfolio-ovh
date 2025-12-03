@@ -10,6 +10,7 @@ $title = "首页 - Badreddine Rezzouk"
 <html class="gradient-box">
     <head>
         <?php require "../Common-files/header.php"; ?>
+        <script src="<?php echo $topURL?>JS/Luxor_real-time.js"></script>
     </head>
     <body>
     <div class="scroller" id="wrapper">
@@ -166,7 +167,7 @@ $title = "首页 - Badreddine Rezzouk"
             </section>
             <section id="bottom">
                 <div class="w-50 m-3 alert alert-dark fixed-bottom" role="alert">
-                    <div class="w-auto">Afin de ne pas vous embêter à chaque visite de la page, un cookie a été placé sur votre navigateur expirant après 24h, celui-ci ne collecte aucune donnée.</div>
+                    <div class="w-auto">为了避免您每次访问此页面时的麻烦，我们在您的浏览器上设置了一个有效期为24小时的cookie，此cookie不收集任何数据。</div>
                     <div class="w-auto">
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>

@@ -19,12 +19,12 @@ $title = "Formule 1 - Badreddine Rezzouk";
             <div class="halfbox"></div>
             <div class="bg-white p-4 text-center rounded-3 w-75 mx-auto">
                 <h4> La Formule 1 en résumé </h4>
-                <p class="text-start"> La Formule 1 est une compétition automobile <abbr title="la performance de la voiture varie selon l'écurie">polytype</abbr> régie par la Fédération Internationale de l'Automobile (ou FIA) qui se tient annuellement depuis 1950. </p>
+                <p class="text-start"> La Formule 1 est une compétition automobile <span class="fw-bold" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="la performance de la voiture varie selon l'écurie">polytype</span> régie par la Fédération Internationale de l'Automobile (ou FIA) qui se tient annuellement depuis 1950. </p>
             </div>
             <div class="halfbox"></div>
-            <div id="gasly" class="bg-white p-4 rounded-3 w-50 offset-1">
+            <div id="gasly" class="bg-white p-4 rounded-3 col-10 col-lg-6 offset-1">
                 <div class="row">
-                    <div id="info" class="col offset-1">
+                    <div id="info" class="col-md-12 col-lg-5 offset-1">
                         <h2 class='text-center'>Mon pilote favori</h2><ul>
                         <li><strong>Nom:</strong> Pierre Gasly </li>
                         <li><strong>Numéro:</strong> 10 </li>
@@ -33,8 +33,8 @@ $title = "Formule 1 - Badreddine Rezzouk";
                         </ul>
 
                     </div>
-                    <div id="photo" class="col offset-1 border border-5 rounded square" style="background: var(--gradient)">
-                        <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly-face_thumbnail.png" alt="Pierre Gasly">
+                    <div id="photo" class="col-md-12 col-lg-5 offset-1">
+                        <img class="gradient-box border border-5 rounded square" src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly-face_thumbnail.png" alt="Pierre Gasly">
                     </div>
                 </div>
                 <p> Un bon français de chez nous, cocorico!<br><br>

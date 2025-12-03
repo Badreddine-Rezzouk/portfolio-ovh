@@ -10,75 +10,13 @@ $title = "Home page - Badreddine Rezzouk";
 <html class="gradient-box">
 <head>
     <?php require "../Common-files/header.php"; ?>
-    <style>
-        .scroller {
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-        }
-
-        .scroller section {
-            scroll-snap-align: start;
-        }
-
-        .scroller section #bottom {
-            scroll-snap-align: end;
-        }
-    </style>
+    <script src="<?php echo $topURL?>JS/Luxor_real-time.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-    let bufferArray = [];
-    let lastKeystrokeTime = Date.now();
-
-    const cheatcode = "anisdoggo";
-
-    function clearContent() {
-        document.getElementById("video-spot").innerHTML = "";
-    }
-
-    function lockViewport(duration) {
-        // Scroll to top
-        window.scrollTo(0, 0);
-
-        // Lock scrolling
-        document.body.style.overflow = "hidden";
-        document.documentElement.style.overflow = "hidden";
-
-        // Unlock after duration
-        setTimeout(() => {
-            document.body.style.overflow = "";
-            document.documentElement.style.overflow = "";
-        }, duration);
-    }
-
-    window.addEventListener("keyup", e => {
-        const key = e.key.toLowerCase();
-        const latestKeystrokeTime = Date.now();
-
-        if (latestKeystrokeTime - lastKeystrokeTime > 1500) {
-            bufferArray = [];
-        }
-
-        lastKeystrokeTime = latestKeystrokeTime;
-        bufferArray.push(key);
-
-        const word = bufferArray.join("");
-
-        if (word === cheatcode) {
-            lockViewport(5000);
-            document.getElementById("video-spot").innerHTML = `
-                <video autoplay>
-                    <source src="<?php echo $topURL ?>Images/videos/anis-wan.mp4" type="video/mp4">
-                </video>
-            `;
-            setTimeout(clearContent, 5000);
-        }
-    });
-</script>
 <div class="scroller" id="wrapper">
 <div class="gradient-box">
     <div id="video-spot" class="m-auto" style="z-index: 2; position: sticky; top: calc(50vh/2); left: 0;"></div>
+    <script src="<?php echo $topURL?>JS/easter-egg_cheatcode.js"></script>
     <section>
     <?php require "../Common-files/navbar.php" ?>
         <div id="main_page_cover" class="container-fluid" style='background-image: url("../Images/Home_Page_Banner_Paris_2024_2000.png"); background-size: cover; background-position: center; background-color: rgba(255,255,255,0.6); background-blend-mode: darken; height: calc(100vh - 56px);'>

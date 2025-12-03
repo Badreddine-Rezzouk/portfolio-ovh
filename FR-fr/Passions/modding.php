@@ -9,31 +9,6 @@ $title = 'Modding - Badreddine Rezzouk';
 <html>
 <head>
     <?php require '../../Common-files/header.php'; ?>
-    <style>
-        .mod-card:hover{
-            cursor: pointer;
-            background-color: rgba(0,0,0,0.7);
-        }
-        body{
-            overflow-x: hidden;
-        }
-
-        /* Category dropdown styles */
-        .cat-dropdown { position: relative; }
-        .cat-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border: 1px solid rgba(0,0,0,0.15); border-radius: .5rem; z-index: 1050; max-height: 280px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); overflow: hidden; }
-        .cat-menu-header { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: .5rem .75rem; border-bottom: 1px solid rgba(0,0,0,.1); background: #f8f9fa; position: sticky; top: 0; z-index: 1; }
-        .cat-menu-body { max-height: 240px; overflow: auto; padding: .5rem .75rem; }
-        .cat-dropdown.searching .cat-menu { display: block; }
-        @media (hover: none) { .cat-dropdown.searching .cat-menu { display: block; } }
-
-        /* Tag/pill input styles */
-        .tag-input { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; min-height: 38px; padding: .375rem .5rem; border: 1px solid #ced4da; border-radius: .375rem; background: #fff; cursor: text; }
-        .tag-input:focus-within { border-color: #86b7fe; box-shadow: 0 0 0 .25rem rgba(13,110,253,.25); }
-        .tag-input .tag-text-input { border: none; outline: none; flex: 1 1 120px; min-width: 80px; padding: 0; height: 1.6rem; }
-        .pill { display: inline-flex; align-items: center; gap: .35rem; padding: .15rem .5rem; background: #e9f5ff; color: #0d6efd; border: 1px solid #b6daff; border-radius: 999px; font-size: .85rem; }
-        .pill .pill-remove { appearance: none; border: none; background: transparent; color: inherit; font-weight: bold; line-height: 1; padding: 0; cursor: pointer; opacity: .7; }
-        .pill .pill-remove:hover { opacity: 1; }
-    </style>
 </head>
 <body>
 <?php require "../../Common-files/navbar.php" ?>
@@ -43,7 +18,7 @@ $title = 'Modding - Badreddine Rezzouk';
         <h2> Mes mods de jeux vidéos</h2>
     </div>
     <div class="halfbox"></div>
-    <div class="bg-white p-4 rounded-3 offset-1 w-50 border border-5 shadow-lg slideInLeft">
+    <div class="bg-white p-4 rounded-3 offset-1 col-10 col-lg-6 mx-auto mx-lg-5 border border-5 shadow-lg slideInLeft">
         <p>
             Le modding de jeux vidéos est une pratique dont le but est de transformer un jeu vidéo en ajoutant ou modifiant du contenu, avec comme finalité un gameplay qui n'est pas originellement prévu par le développeur.
         </p>
@@ -74,7 +49,7 @@ $title = 'Modding - Badreddine Rezzouk';
         </div>
     </div>
 
-    <div id="modList" class="mod-list col-10 col-lg-7 mx-auto bg-gradient-mod p-4 rounded-3 border border-5 border-black shadow-lg fadeInRight"></div>
+    <div id="modList" class="mod-list col-11 col-lg-7 mx-auto bg-gradient-mod p-4 rounded-3 border border-5 border-black shadow-lg fadeInRight"></div>
     <div class="halfbox"></div>
     </div>
     <script>
