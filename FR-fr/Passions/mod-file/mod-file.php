@@ -9,21 +9,6 @@ $title = 'Mod - Badreddine Rezzouk';
 <html>
 <head>
     <?php require '../../../Common-files/header.php'; ?>
-    <style>
-        .mod-screenshot {
-            width: 100%;
-            border-radius: 12px;
-            margin-bottom: 1rem;
-        }
-
-        .modal-image {
-            object-fit: contain;
-            height: 100%;
-            width: 100%;
-            display: block;
-        }
-
-    </style>
 </head>
 <body>
 <?php require "../../../Common-files/navbar.php" ?>

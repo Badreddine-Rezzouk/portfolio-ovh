@@ -136,3 +136,12 @@ details > ul {
 .bg-gradient-mod {
     background-image: var(--gradient-mod) !important;
 }
+
+.accordion-button {
+    transition: 0.25s;
+}
+.accordion-button:hover {
+    background-color: #0d6efd !important;
+    color: white;
+    transition: 0.25s;
+}

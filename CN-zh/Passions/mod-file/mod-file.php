@@ -9,13 +9,6 @@ $title = '模组 - Badreddine Rezzouk';
 <html>
 <head>
     <?php require '../../../Common-files/header.php'; ?>
-    <style>
-        .mod-screenshot {
-            width: 100%;
-            border-radius: 12px;
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 <body>
 <?php require "../../../Common-files/navbar.php" ?>

@@ -134,7 +134,7 @@ $title = "Accueil - Badreddine Rezzouk";
                         </div>
                         <div class="col-auto">
                             <div class="mx-auto">
-                                <img src="<?php echo $topURL;?>Images/CV_ISCOD.jpg" class="img-thumbnail img-fluid" style="max-height: 50vh;"><br>
+                                <img src="<?php echo $topURL;?>Images/thumbnail/CV_ISCOD_thumbnail.jpg" class="img-thumbnail img-fluid" style="max-height: 50vh;"><br>
                                 <a class="btn btn-primary my-2 mx-auto text-decoration-none mx-auto" href="<?php echo $baseURL;?>Resume/CV_Badreddine_REZZOUK_FR-fr_ISCOD.pdf" download>Télécharger le CV pertinent</a>
                             </div>
 

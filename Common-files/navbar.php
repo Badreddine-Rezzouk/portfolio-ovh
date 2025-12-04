@@ -112,7 +112,7 @@ if ($host == 'localhost:63342') {
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a id="emplois" class="dropdown-item" href="<?php echo $baseURL; ?>Experiences/Experiences  .php">
+                                <a id="emplois" class="dropdown-item" href="<?php echo $baseURL; ?>Experiences/Experiences.php">
                                     <?php echo $texts['experiences']; ?>
                                 </a>
                             </li>

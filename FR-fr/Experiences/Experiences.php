@@ -23,10 +23,12 @@ $title = "Experiences - Badreddine Rezzouk";
                 <div class="col"></div>
                 <div class="col-4 bg-white p-4 rounded-3 mx-auto w-40 border border-5 shadow-lg" style="cursor: pointer;" onclick="window.location.href='<?php echo $baseURL;?>Experiences/Stages/stages.php'">
                     <h3 class="text-center"> Mes stages</h3>
+                    <img class="rounded rounded-3 img-fluid" src="<?php echo $topURL;?>Images/stage_card.png">
                 </div>
                 <div class="col"></div>
                 <div class="col-4 bg-white p-4 rounded-3 mx-auto w-40 border border-5 shadow-lg" style="cursor: pointer;" onclick="window.location.href='<?php echo $baseURL;?>Experiences/Emplois/emplois.php'">
                     <h3 class="text-center">Mes emplois / jobs</h3>
+                    <img class="rounded rounded-3 img-fluid" src="<?php echo $topURL;?>Images/job_card.png">
                 </div>
                 <div class="col"></div>
             </div>
