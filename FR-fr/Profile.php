@@ -95,7 +95,7 @@ $title = "Profil - Badreddine Rezzouk";
         <div class="bg-dark p-4 rounded-3 w-75 mx-auto border border-5 shadow-lg">
             <h4 class="text-warning"> Mes passions </h4>
             <div class="row rows-cols-3">
-                <div class="col-4 text-white border border-primary bg-dark mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
+                <div id="passion-card" class="col-4 text-white mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/formula-1.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/formula-1_gasly_thumbnail.png" class="card-img-top" alt="Alpine A524 de Gasly">
                         <figcaption class="figure-caption text-end text-white"> Alpine A524 de Pierre Gasly au GP d'Autriche 2024 </figcaption>
@@ -105,7 +105,7 @@ $title = "Profil - Badreddine Rezzouk";
                         <p class="card-text">La formule 1, sport automobile mythique faisant ressentir frissons <span class="text-primary">(et dépression si vous êtes un fan de Ferrari)</span>.</p>
                     </div>
                 </div>
-                <div class="col-4 text-white border border-primary mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
+                <div id="passion-card" class="col-4 text-white mb-2 mx-auto" onclick="window.location.href='<?php echo $baseURL?>Passions/modding.php'">
                     <figure class="figure mt-2">
                         <img src="<?php echo $topURL?>Images/thumbnail/modding_thumbnail.png" class="card-img-top" alt="Mod Skyrim Fallguysfollower par m150">
                         <figcaption class="figure-caption text-end text-white"> Mod Skyrim Fallguysfollower par m150 </figcaption>

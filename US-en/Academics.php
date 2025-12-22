@@ -94,7 +94,7 @@ $title = "Proficiencies - Badreddine Rezzouk"
                 }).go().destroy()
             </script>
         </div>
-        <p class="text-start"><span class="text-warning">Studied at :</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>, à Paris 16e</p>
+        <p class="text-start"><span class="text-warning">Studied at :</span> <a class="text-dark" href="https://iutparis-seine.u-paris.fr/">Institut Universitaire Technologique Paris Cité - Rives de Seine (Descartes)</a>, at Paris 16e</p>
         <div>
         </div>
 
@@ -171,7 +171,7 @@ $title = "Proficiencies - Badreddine Rezzouk"
                             </h2>
                             <div id="collapseBDD" class="accordion-collapse collapse" data-bs-parent="#accordionMatièresBUT">
                                 <div class="accordion-body">
-                                    <p> MySQL, Oracle SQL, MariaDB, SQLite, tellement de formats différents qui pourraient n'être qu'un si l'être humain pouvait s'entendre. En attendant, je ne peux pas jouer les dieux, mais je peux gérer ces formats là.</p>
+                                    <p> MySQL, Oracle SQL, MariaDB, SQLite, so many different formats which would be one if humans could collaborate. In the meantime, I can't play God, but I can handle these formats.</p>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@ $title = "Proficiencies - Badreddine Rezzouk"
                 <h4> My programming languages </h4>
                 <div class="col">
                     <p class="text-start">
-                        Langues WEB:
+                        WEB Languages:
                     <ul class="list-group list-group-flush list-group-horizontal">
                         <li class="list-group-item">
                             <figure>
@@ -277,7 +277,7 @@ $title = "Proficiencies - Badreddine Rezzouk"
                 </div>
                 <div class="col">
                     <p class="text-start">
-                        Systèmes BDD:
+                        Database systems:
                     </p>
                     <ul class="list-group list-group-flush list-group-horizontal">
                         <li class="list-group-item">

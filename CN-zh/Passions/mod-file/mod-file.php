@@ -64,7 +64,7 @@ $title = '模组 - Badreddine Rezzouk';
 
                     const items = images.map((filename, i) => `
                         <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                            <img src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" class="d-block w-100 mod-screenshot" alt="截图 ${i + 1}">
+                            <img src="<?php echo $topURL ?>Images/mod/${modId}/${filename}" class="d-block w-100 mod-screenshot" alt="截图 ${i + 1}" onclick="openImageModal('<?php echo $topURL ?>Images/mod/${modId}/${filename}')">
                         </div>
                     `).join('');
 
@@ -87,7 +87,7 @@ $title = '模组 - Badreddine Rezzouk';
                         </div>
                     `;
                 } else if (images.length === 1) {
-                    imageHTML = `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${images[0]}" alt="模组截图">`;
+                    imageHTML = `<img class="mod-screenshot" src="<?php echo $topURL ?>Images/mod/${modId}/${images[0]}" alt="模组截图" onclick="openImageModal('<?php echo $topURL ?>Images/mod/${modId}/${images[0]}')">`;
                 }
 
                 // Build download buttons if any
@@ -123,6 +123,23 @@ $title = '模组 - Badreddine Rezzouk';
                 if (mod.credits) {
                     credits += `<details class="p-2"><summary> 致谢 </summary>${mod.credits}</details>`
                 }
+                let borderColor = '';
+                if(mod.categories.length === 1){
+                    switch(mod.categories[0]){
+                        case "sinder":
+                            borderColor += 'border border-sinder';
+                            break;
+                        case "aura-gx":
+                            borderColor += 'border-aura-gx border';
+                            break;
+                        default:
+                            borderColor += 'border';
+                            break;
+
+                    }
+                } else {
+                    borderColor += 'border';
+                }
 
                 const contentHTML = `
                     <div class="row">
@@ -143,18 +160,43 @@ $title = '模组 - Badreddine Rezzouk';
                         ${credits}
                     </div>
 
-
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
+                document.getElementById('modContent').className += borderColor;
             })
             .catch(err => {
                 console.error("加载模组时出错:", err);
                 document.getElementById('modTitle').innerText = "加载时出错。";
             });
     });
+
+    document.querySelectorAll('#modContent img.mod-screenshot').forEach(img => {
+        img.addEventListener('click', () => {
+            // Set modal image and show modal
+            document.getElementById('modalImage').src = img.src;
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'), {
+                keyboard: false,
+            });
+            modal.show();
+        });
+    });
+
+    function openImageModal(imageUrl) {
+        document.getElementById('modalImage').src = imageUrl;
+        new bootstrap.Modal(document.getElementById('imageModal')).show();
+    }
 </script>
 
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img id="modalImage" class="img-fluid modal-image rounded" src="" alt="Image Modal">
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php require "../../../Common-files/footer.php" ?>
 </body>

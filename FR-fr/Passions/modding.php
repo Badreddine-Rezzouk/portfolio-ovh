@@ -66,24 +66,18 @@ $title = 'Modding - Badreddine Rezzouk';
             return params;
         }
 
-        // Run after the DOM is ready and after the JSON data has been loaded
         document.addEventListener('DOMContentLoaded', () => {
-            // Wait until the filters have been populated (they're built in the same DOMContentLoaded)
             const { category } = getQueryParams();
 
             if (category) {
                 const catSelect = document.getElementById('categoryFilter');
 
-                // Make sure the option actually exists – the JSON load may still be pending,
-                // so we listen for the next tick after the data is fetched.
                 const trySet = () => {
                     const optionExists = Array.from(catSelect.options).some(o => o.value === category);
                     if (optionExists) {
                         catSelect.value = category;
-                        // fire the change handler exactly like a manual user selection
                         catSelect.dispatchEvent(new Event('change'));
                     } else {
-                        // If the options aren't there yet (e.g., JSON still loading), retry shortly
                         setTimeout(trySet, 100);
                     }
                 };
@@ -124,17 +118,14 @@ $title = 'Modding - Badreddine Rezzouk';
             };
             categoryInput.addEventListener('input', () => { filterCategoryList(categoryInput.value); applyFilters(); updateSearchingState(); });
             categoryInput.addEventListener('change', () => { filterCategoryList(categoryInput.value); applyFilters(); updateSearchingState(); });
-            // Make clicking on the tag-input focus the real input
             const tagBox = document.getElementById('categoryTagInput');
             if (tagBox) {
                 tagBox.addEventListener('pointerdown', (e) => {
-                    // avoid focusing when clicking on a pill remove button
                     const target = e.target;
                     if (target && (target.classList?.contains('pill-remove') || target.closest?.('.pill'))) return;
                     categoryInput.focus();
                 });
             }
-            // Disable native datalist/autofill overlay while searching; we keep our custom menu
             categoryInput.addEventListener('focus', () => {
                 if (categoryInput.hasAttribute('list')) categoryInput.dataset.listId = categoryInput.getAttribute('list') || '';
                 categoryInput.removeAttribute('list');
@@ -145,7 +136,6 @@ $title = 'Modding - Badreddine Rezzouk';
                 catMenu.addEventListener('mouseenter', () => { hoveringCatMenu = true; updateSearchingState(); });
                 catMenu.addEventListener('mouseleave', () => { hoveringCatMenu = false; updateSearchingState(); });
             }
-            // Close when clicking outside
             document.addEventListener('pointerdown', (e) => {
                 if (!catDropdownWrap) return;
                 if (!catDropdownWrap.contains(e.target)) {
@@ -162,7 +152,6 @@ $title = 'Modding - Badreddine Rezzouk';
                 if (el && el.classList.contains('category-check')) {
                     const id = el.getAttribute('data-id');
                     if (el.checked) {
-                        // enforce max 3 selections
                         if (selectedCategories.size >= 3) {
                             el.checked = false;
                             // optional: brief visual feedback
@@ -227,7 +216,6 @@ $title = 'Modding - Badreddine Rezzouk';
                 return `<span class="pill" data-id="${id}">${label}<button type="button" class="pill-remove" aria-label="Retirer" title="Retirer" data-id="${id}">×</button></span>`;
             }).join('');
 
-            // attach remove handlers
             holder.querySelectorAll('.pill-remove').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const cid = e.currentTarget.getAttribute('data-id');
@@ -250,7 +238,6 @@ $title = 'Modding - Badreddine Rezzouk';
             });
         }
 
-        // Render the clickable list of categories with checkboxes
         function renderCategoryCheckboxes(list) {
             const container = document.getElementById('categoryCheckboxes');
             if (!container) return;
@@ -265,7 +252,6 @@ $title = 'Modding - Badreddine Rezzouk';
             }).join('');
         }
 
-        // Filter (show/hide) category checkbox rows based on the search input
         function filterCategoryList(term) {
             const container = document.getElementById('categoryCheckboxes');
             if (!container) return;
@@ -282,7 +268,6 @@ $title = 'Modding - Badreddine Rezzouk';
             const selectedGame = document.getElementById('gameFilter').value;
             const categoryInput = document.getElementById('categoryFilter').value.trim().toLowerCase();
 
-            // Resolve exact category id if user picked a suggestion or typed exact match (used only if no checkboxes selected)
             let selectedCategoryId = '';
             if (categoryInput) {
                 const exact = categories.find(c => c.name.toLowerCase() === categoryInput || c.id.toLowerCase() === categoryInput);
@@ -296,13 +281,10 @@ $title = 'Modding - Badreddine Rezzouk';
 
                 let categoryMatch = true;
                 if (hasSelections) {
-                    // Inclusive OR: any overlap between mod categories and selected checkboxes
                     categoryMatch = mod.categories.some(id => selectedCategories.has(id));
                 } else if (selectedCategoryId) {
-                    // Exact match via datalist/text
                     categoryMatch = mod.categories.includes(selectedCategoryId);
                 } else if (categoryInput) {
-                    // Partial text search across category ids and names
                     const term = categoryInput;
                     categoryMatch = mod.categories.some(id => {
                         const cat = categories.find(c => c.id === id);
@@ -322,10 +304,8 @@ $title = 'Modding - Badreddine Rezzouk';
             return game ? game.name : 'Unknown Game';
         }
 
-        // Applies a staggered animation delay to mod items
         function setDelay(_, baseDelay) {
             const items = document.querySelectorAll('#modList .slideInRight');
-            // Reset and apply incremental delays
             items.forEach((el, i) => {
                 el.style.animationDelay = '';
                 el.style.webkitAnimationDelay = '';
@@ -370,7 +350,6 @@ $title = 'Modding - Badreddine Rezzouk';
                     borderColor += 'border';
                 }
 
-                // Set the click handler using a proper function
                 div.onclick = function () {
                     window.location.href = baseURL + 'Passions/mod-file/mod-file.php?modId=' + mod.id;
                 };

@@ -96,7 +96,8 @@ body{overflow-x: hidden;}
 }
 
 .list-group-item{
-    transition: 0.25s
+    transition: 0.25s;
+    cursor: default;
 }
 .list-group-item:hover {
     scale: 1.2;
@@ -114,4 +115,18 @@ body{overflow-x: hidden;}
     height: 100%;
     width: 100%;
     display: block;
+}
+
+#passion-card {
+    background-color: var(--bs-dark);
+}
+#passion-card:hover {
+    background-color: var(--gradient) !important;
+    clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            90% 0%,
+            10% 0%
+
+    );
 }

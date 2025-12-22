@@ -160,7 +160,6 @@ $title = 'Mod - Badreddine Rezzouk';
                         ${credits}
                     </div>
 
-
                 `;
 
                 document.getElementById('modContent').innerHTML = contentHTML;
@@ -189,7 +188,6 @@ $title = 'Mod - Badreddine Rezzouk';
     }
 </script>
 
-<!-- Modal for Image Popup -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
         <div class="modal-content">
