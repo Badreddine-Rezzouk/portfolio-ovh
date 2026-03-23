@@ -38,3 +38,10 @@ const rawChoice = getChosenLanguage();
 const userlanguage = availableLanguage.get(rawChoice) || 'en';
 ```
 La variable availableLanguage sert ici à traduire le format utilisé par l'URL en un format lisible pour Luxon.
+
+**Modding**
+------------------------------------------------------------
+
+Cette page est une vitrine vers une de mes passions: le modding de jeux vidéos. Cette pratique consiste à transformer un jeu vidéo en ajoutant ou modifiant du contenu, avec comme finalité un gameplay qui n'est pas originellement prévu par le développeur.
+
+Ayant fait des mods sur plusieurs jeux et avec plusieurs sujets, il a fallu intégrer un système de filtrage dynamique pour permettre à l'utilisateur de ne pas se noyer dans les cartes.
